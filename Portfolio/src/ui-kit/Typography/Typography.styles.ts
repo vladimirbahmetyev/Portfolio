@@ -4,7 +4,11 @@ import {CSSObject} from "tss-react";
 
 export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorType, block: boolean}>()((theme, {variant, color, block})=>{
 	const typographyMap: Record<TypoVariantType, CSSObject> = {
-		h1:{},
+		h1:{
+			fontSize: 120,
+			lineHeight: "132px",
+			fontWeight: 400,
+		},
 		h2:{},
 		h3:{},
 		h4:{

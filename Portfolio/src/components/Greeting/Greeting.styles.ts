@@ -5,7 +5,18 @@ export const useStyle = makeStyles()(() => ({
 		backgroundImage:"url('/images/background/greeting.jpg')",
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",
-		height: "100vh",
+		height: "140vh",
 		width: "100%",
+		position: "relative"
+	},
+	greetText:{
+		marginTop: 140,
+		marginLeft: 140,
+		textAlign: "left"
+	},
+	cat:{
+		position: "absolute",
+		top: 23,
+		right: 200,
 	}
 }));
