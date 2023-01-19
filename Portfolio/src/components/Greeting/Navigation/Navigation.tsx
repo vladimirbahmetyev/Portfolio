@@ -1,7 +1,7 @@
 import { FC } from "react";
 import React from "react";
 import {useStyle} from "./Navigation.styles";
-import {Typography} from "../../../ui-kit";
+import {Typography} from "ui-kit";
 
 export const Navigation: FC = () => {
 	const {classes} = useStyle();
