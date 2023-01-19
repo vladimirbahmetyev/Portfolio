@@ -16,8 +16,16 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			fontWeight: 400,
 			lineHeight: "24px"
 		},
-		body:{},
-		description:{}
+		body:{
+			fontSize: 20,
+			lineHeight:"27px",
+			fontWeight: 400,
+		},
+		description:{
+			fontSize: 14,
+			lineHeight: "19px",
+			fontWeight: 400
+		}
 	};
 
 	const colorMap:Record<TypoColorType, CSSObject> ={

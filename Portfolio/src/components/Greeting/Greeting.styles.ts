@@ -1,8 +1,9 @@
 import { makeStyles } from "theme";
 
-export const useStyle = makeStyles()(() => ({
+export const useStyle = makeStyles()((theme) => ({
 	greetContainer:{
-		backgroundImage:"url('/images/background/greeting.jpg')",
+		backgroundImage:"url('/images/background/greeting.png')",
+		backgroundColor: theme.palette.black,
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",
 		height: "140vh",
