@@ -10,7 +10,11 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			fontWeight: 400,
 		},
 		h2:{},
-		h3:{},
+		h3:{
+			fontSize: 24,
+			lineHeight: "30px",
+			fontWeight: 400
+		},
 		h4:{
 			fontSize: 18,
 			fontWeight: 400,
