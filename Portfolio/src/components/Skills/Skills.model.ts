@@ -73,6 +73,17 @@ export const skillsList: SkillData[] = [
 	},
 	{
 		skillLevel: 3,
+		skillName: "JavaScript",
+		subSkillList:[
+			"ES6",
+			"Scope, Closer, Context",
+			"Iterators",
+			"Types",
+			"Functional Programming"
+		]
+	},
+	{
+		skillLevel: 3,
 		skillName: "React",
 		subSkillList:[
 			"Hooks",
@@ -87,17 +98,6 @@ export const skillsList: SkillData[] = [
 			"React Reconciliation",
 			"Memoization",
 			"Next"
-		]
-	},
-	{
-		skillLevel: 3,
-		skillName: "JavaScript",
-		subSkillList:[
-			"ES6",
-			"Scope, Closer, Context",
-			"Iterators",
-			"Types",
-			"Functional Programming"
 		]
 	},
 	{
