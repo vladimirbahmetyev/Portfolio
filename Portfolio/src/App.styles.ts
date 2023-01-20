@@ -1,13 +1,15 @@
 import {makeStyles} from "./theme";
 
-export const useStyle = makeStyles()(() => ({
+export const useStyle = makeStyles()((theme) => ({
 	appContainer:{
-		width:"100%",
+		backgroundImage:"url('/images/background/greeting.webp'), url('/images/background/paperBackground.png')",
+		backgroundRepeat: "no-repeat, repeat",
+		backgroundColor: theme.palette.black,
+		backgroundSize: "contain, contain",
 	},
-	contentContainer:{
-		backgroundImage:"url('/images/background/paperBackground.png')",
-		backgroundColor: "black",
-		backgroundSize: "cover",
-		paddingTop: 100,
+	contentContainer: {
+		maxWidth: 1400,
+		marginLeft: "auto",
+		marginRight: "auto",
 	}
 }));

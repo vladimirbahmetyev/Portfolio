@@ -8,8 +8,8 @@ function App() {
 	const {classes} = useStyle();
 	return (
 		<div className={classes.appContainer}>
-			<Greeting/>
 			<div className={classes.contentContainer}>
+				<Greeting/>
 				<About/>
 				<Skills/>
 			</div>

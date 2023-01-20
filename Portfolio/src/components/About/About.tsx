@@ -1,6 +1,7 @@
 import {FC} from "react";
 import {useStyle} from "./About.styles";
 import {Typography} from "ui-kit";
+import {AboutTitle} from "icons";
 
 export const About: FC = () => {
 	const {classes} = useStyle();
@@ -9,7 +10,7 @@ export const About: FC = () => {
 			<div className={classes.topContainer}>
 				<img src='/images/computer.png' alt='cat in the computer'/>
 				<div className={classes.titleWithDescription}>
-					<Typography variant='h1' block>About </Typography>
+					<AboutTitle/>
 					<Typography block variant='body' >
 					Frontend Developer with 3.5 years of experience
 and 5 years with passion to frontend.

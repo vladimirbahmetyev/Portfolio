@@ -2,22 +2,21 @@ import { makeStyles } from "theme";
 
 export const useStyle = makeStyles()((theme) => ({
 	greetContainer:{
-		backgroundImage:"url('/images/background/greeting.png')",
-		backgroundColor: theme.palette.black,
-		backgroundRepeat: "no-repeat",
-		backgroundSize: "cover",
-		height: "140vh",
+		height:"110vh",
 		width: "100%",
 		position: "relative"
 	},
 	greetText:{
 		marginTop: 140,
-		marginLeft: 140,
-		textAlign: "left"
+		textAlign: "left",
+		position: "relative",
+		zIndex: 2,
 	},
 	cat:{
 		position: "absolute",
+		right: 0,
 		top: 23,
-		right: 200,
+		zIndex: 0,
+		width: 1000,
 	}
 }));
