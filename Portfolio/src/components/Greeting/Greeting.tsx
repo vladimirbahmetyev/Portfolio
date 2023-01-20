@@ -10,7 +10,7 @@ export const Greeting: FC = () => {
 		<div className={classes.greetContainer}>
 			<Navigation/>
 			<Typography variant='h1' color='black' block className={classes.greetText}>
-				Hello, <br/>I’m Vladimir
+				HELLO, <br/>I’M VLADIMIR
 			</Typography>
 			<img src='/images/greetCat.png' alt='Nice cat' className={classes.cat}/>
 		</div>);

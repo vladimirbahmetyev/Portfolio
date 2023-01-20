@@ -5,7 +5,8 @@ export const useStyle = makeStyles()(()=> ({
 		display: "flex",
 		flexDirection: "column",
 		gap: 90,
-		padding: "0 140px"
+		padding: "0 140px",
+		marginTop: 100,
 	},
 	topContainer:{
 		display: "flex",
