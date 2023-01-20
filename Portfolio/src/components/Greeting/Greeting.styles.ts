@@ -17,6 +17,5 @@ export const useStyle = makeStyles()((theme) => ({
 		right: 0,
 		top: 23,
 		zIndex: 0,
-		width: 1000,
 	}
 }));
