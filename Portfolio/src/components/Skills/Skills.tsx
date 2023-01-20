@@ -2,9 +2,10 @@ import {FC} from "react";
 import {useStyle} from "./Skills.styles";
 import {Accordion} from "ui-kit";
 import {SkillsTitle} from "icons";
+import {skillsList} from "./Skills.model";
 
-const mockSkill= "React";
-const mockSub = ["Hooks", "Redux", "Swr", "Redux-Form"];
+const skillFirst = skillsList.slice(0, 6);
+const skillSecond = skillsList.slice(6, 11);
 
 
 export const Skills: FC = () => {
@@ -13,19 +14,10 @@ export const Skills: FC = () => {
 		<div className={classes.skillsContainer}>
 			<div className={classes.skillsColumn}>
 				<SkillsTitle className={classes.skillsTitle}/>
-				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={1}/>
-				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={3}/>
-				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={3}/>
-				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={3}/>
-				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={3}/>
+				{skillFirst.map((skill) => <Accordion {...skill} key={skill.skillName}/>)}
 			</div>
 			<div className={classes.skillsColumn}>
-				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={3}/>
-				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={3}/>
-				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={3}/>
-				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={3}/>
-				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={3}/>
-				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={3}/>
+				{skillSecond.map((skill) => <Accordion {...skill} key={skill.skillName}/>)}
 			</div>
 		</div>);
 };
