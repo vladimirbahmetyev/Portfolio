@@ -7,6 +7,7 @@ export const useStyle = makeStyles()(()=> ({
 		gap: 35
 	},
 	skillsTitle:{
+		marginTop: 120,
 		marginBottom: 160
 	},
 	skillsColumn:{
