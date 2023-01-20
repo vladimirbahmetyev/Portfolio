@@ -23,7 +23,8 @@ export const useStyle = makeStyles()(()=> ({
 	bottomContainer:{
 		display: "flex",
 		width: "100%",
-		justifyContent: "space-around"
+		justifyContent: "space-around",
+		alignItems: "flex-start",
 	},
 	knowledgeContainer:{
 		display: "flex",
@@ -39,10 +40,8 @@ export const useStyle = makeStyles()(()=> ({
 
 	educationTitleContainer:{
 		display: "flex",
-		gap: 4
+		gap: 16
 	},
-
-
 	itemContainer:{
 		display: "flex",
 		gap: 40
@@ -51,5 +50,19 @@ export const useStyle = makeStyles()(()=> ({
 		display: "flex",
 		flexDirection: "column",
 		gap:2
-	}
+	},
+	starContainer:{
+		display: "flex",
+		gap: 9,
+		marginTop: 10,
+	},
+	tap:{
+		position: "relative",
+		top: -75,
+	},
+	photo: {
+		position: "relative",
+		top: -160,
+		right: -30
+	},
 }));

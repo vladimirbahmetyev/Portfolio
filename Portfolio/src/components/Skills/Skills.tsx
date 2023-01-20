@@ -1,10 +1,10 @@
 import {FC} from "react";
 import {useStyle} from "./Skills.styles";
-import {Accordion, Typography} from "ui-kit";
+import {Accordion} from "ui-kit";
+import {SkillsTitle} from "icons";
 
 const mockSkill= "React";
 const mockSub = ["Hooks", "Redux", "Swr", "Redux-Form"];
-const mockLevel = 3;
 
 
 export const Skills: FC = () => {
@@ -12,7 +12,7 @@ export const Skills: FC = () => {
 	return (
 		<div className={classes.skillsContainer}>
 			<div className={classes.skillsColumn}>
-				<Typography variant='h1' block className={classes.skillsTitle}>SKILLS</Typography>
+				<SkillsTitle className={classes.skillsTitle}/>
 				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={1}/>
 				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={3}/>
 				<Accordion skillName={mockSkill} subSkillList={mockSub} skillLevel={3}/>

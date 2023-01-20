@@ -8,27 +8,32 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			fontSize: 120,
 			lineHeight: "132px",
 			fontWeight: 400,
+			fontFamily: "Krona One,Nunito, sans-serif",
 		},
 		h2:{},
 		h3:{
 			fontSize: 24,
 			lineHeight: "30px",
-			fontWeight: 400
+			fontWeight: 400,
+			fontFamily: "Krona One,Nunito, sans-serif"
 		},
 		h4:{
 			fontSize: 18,
 			fontWeight: 400,
-			lineHeight: "24px"
+			lineHeight: "24px",
+			fontFamily: "Krona One,Nunito, sans-serif"
 		},
 		body:{
 			fontSize: 20,
 			lineHeight:"27px",
 			fontWeight: 400,
+			fontFamily:"Montserrat, sans-serif"
 		},
 		description:{
 			fontSize: 14,
 			lineHeight: "19px",
-			fontWeight: 400
+			fontWeight: 400,
+			fontFamily:"Montserrat, sans-serif"
 		}
 	};
 
@@ -47,7 +52,6 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			...typographyMap[variant],
 			...colorMap[color],
 			display:block ? "inline-block" : "inline",
-			fontFamily: "Krona One,Nunito, sans-serif"
 		}
 	};
 });

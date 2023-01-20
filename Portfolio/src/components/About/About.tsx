@@ -1,7 +1,7 @@
 import {FC} from "react";
 import {useStyle} from "./About.styles";
 import {Typography} from "ui-kit";
-import {AboutTitle} from "icons";
+import {AboutTitle, FilledStar, Star} from "icons";
 
 export const About: FC = () => {
 	const {classes} = useStyle();
@@ -36,15 +36,25 @@ and 5 years with passion to frontend.
 						<div className={classes.languageContainer}>
 							<Typography variant='h4' block>Russian</Typography>
 							<Typography variant='description' block>Native</Typography>
+							<div className={classes.starContainer}>
+								<FilledStar/>
+								<FilledStar/>
+								<FilledStar/>
+							</div>
 						</div>
 						<div className={classes.languageContainer}>
 							<Typography variant='h4' block>English</Typography>
 							<Typography variant='description' block>B2</Typography>
+							<div className={classes.starContainer}>
+								<FilledStar/>
+								<FilledStar/>
+								<Star/>
+							</div>
 						</div>
 					</div>
 				</div>
-				<img src='/images/tape.png'alt='tape'/>
-				<img src='/images/photo.jpg' alt='Vladimir in the forest'/>
+				<img src='/images/tape.png'alt='tape' className={classes.tap}/>
+				<img src='/images/photo.jpg' alt='Vladimir in the forest' className={classes.photo}/>
 			</div>
 		</div>);
 };
