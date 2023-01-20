@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import {About, Greeting, Skills, WorkExpirience} from "./components";
+import {About, Contacts, Greeting, Skills, WorkExpirience} from "./components";
 import {useStyle} from "./App.styles";
 
 
@@ -14,6 +14,7 @@ function App() {
 				<Skills/>
 				<WorkExpirience/>
 			</div>
+			<Contacts/>
 		</div>
 	);
 }

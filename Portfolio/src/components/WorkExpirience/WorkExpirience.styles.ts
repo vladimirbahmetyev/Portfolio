@@ -11,6 +11,7 @@ export const useStyle = makeStyles()(()=> ({
 		flexDirection: "column",
 		alignItems: "flex-end",
 		gap: 24,
+		marginBottom: 40,
 	},
 	rowContainer:{
 		display: "flex",
@@ -29,5 +30,49 @@ export const useStyle = makeStyles()(()=> ({
 		position: "absolute",
 		left: 90,
 		top: -66
+	},
+	projectContainer:{
+		display: "flex",
+		svg:{
+			marginTop: 80,
+		}
+	},
+	projectPack:{
+		mixBlendMode: "lighten"
+	},
+	firstSecondProject:{
+		display: "flex",
+		justifyContent: "space-between",
+		gap: 90,
+		"div:first-of-type":{
+			marginLeft: 250,
+			marginTop: 250,
+		},
+		"div:last-of-type":{
+			img:{
+				height: 520,
+				width: 617
+			}
+		}
+	},
+	thirdProject:{
+		justifyContent:"flex-end",
+		marginTop: 30,
+	},
+	fourthProject:{
+		marginTop: 30,
+		marginLeft: 120,
+	},
+	fifthProject:{
+		justifyContent:"flex-end",
+		marginTop: -70,
+	},
+	sixthProject:{
+		marginTop: -270,
+		paddingLeft: 250
+	},
+	seventhProject:{
+		justifyContent: "flex-end",
+		marginTop: 60
 	}
 }));

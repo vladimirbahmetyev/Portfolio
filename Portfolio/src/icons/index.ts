@@ -6,4 +6,5 @@ export {ReactComponent as AboutTitle} from "./about.svg";
 export {ReactComponent as SkillsTitle} from "./skills.svg";
 export {ReactComponent as ExperienceTitle} from "./experience.svg";
 export {ReactComponent as WorkTitle} from "./work.svg";
-
+export {N1, N2,N3, N4, N5, N6, N7} from "./workExperience";
+export {ReactComponent as ContactsTitle} from "./contacts.svg";
