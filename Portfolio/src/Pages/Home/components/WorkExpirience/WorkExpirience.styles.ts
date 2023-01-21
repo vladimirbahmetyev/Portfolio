@@ -33,6 +33,7 @@ export const useStyle = makeStyles()(()=> ({
 	},
 	projectContainer:{
 		position: "relative",
+		cursor: "pointer",
 		display: "flex",
 		svg:{
 			marginTop: 80,

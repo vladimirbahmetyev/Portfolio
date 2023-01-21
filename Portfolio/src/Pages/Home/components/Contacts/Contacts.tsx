@@ -1,7 +1,7 @@
 import {FC} from "react";
 import {useStyle} from "./Contacts.styles";
 import {ContactsTitle, HH, Instagram, LinkedIn, Telegram} from "icons";
-import {Typography} from "../../ui-kit";
+import {Typography} from "ui-kit";
 
 export const Contacts:FC = () => {
 	const {classes} =useStyle();

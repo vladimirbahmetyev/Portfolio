@@ -1,4 +1,4 @@
-import {About, Contacts, Greeting, Skills, WorkExpirience} from "components";
+import {About, Contacts, Greeting, Skills, WorkExpirience} from "./components";
 import React, {FC} from "react";
 import {useStyle} from "./Home.styles";
 
