@@ -1,4 +1,4 @@
-import {makeStyles} from "./theme";
+import {makeStyles} from "theme";
 
 export const useStyle = makeStyles()((theme) => ({
 	appContainer:{

@@ -6,7 +6,9 @@ export const useStyle = makeStyles()(() => ({
 		padding: "48px 140px",
 		display: "flex",
 		gap: 32,
-		justifyContent: "flex-end"
+		justifyContent: "flex-end",
+		position: "relative",
+		zIndex: 10
 	},
 	item:{
 		cursor:"pointer"

@@ -11,7 +11,7 @@ const skillSecond = skillsList.slice(6, 11);
 export const Skills: FC = () => {
 	const {classes} = useStyle();
 	return (
-		<div className={classes.skillsContainer}>
+		<div className={classes.skillsContainer} id='skills'>
 			<div className={classes.skillsColumn}>
 				<SkillsTitle className={classes.skillsTitle}/>
 				{skillFirst.map((skill) => <Accordion {...skill} key={skill.skillName}/>)}

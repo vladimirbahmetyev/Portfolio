@@ -6,7 +6,7 @@ import {AboutTitle, FilledStar, Star} from "icons";
 export const About: FC = () => {
 	const {classes} = useStyle();
 	return(
-		<div className={classes.aboutContainer}>
+		<div className={classes.aboutContainer} id='about'>
 			<div className={classes.topContainer}>
 				<img src='/images/computer.png' alt='cat in the computer'/>
 				<div className={classes.titleWithDescription}>

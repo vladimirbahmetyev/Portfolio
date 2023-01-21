@@ -6,7 +6,7 @@ import {Typography} from "../../ui-kit";
 export const Contacts:FC = () => {
 	const {classes} =useStyle();
 	return (
-		<div className={classes.container}>
+		<div className={classes.container} id='contacts'>
 			<ContactsTitle className={classes.contactsTitle}/>
 			<Typography className={classes.description} block variant='body'>I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form.</Typography>
 			<div className={classes.contentContainer}>

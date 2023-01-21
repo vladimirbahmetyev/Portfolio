@@ -1,21 +1,23 @@
 import React from "react";
 import "./App.css";
-import {About, Contacts, Greeting, Skills, WorkExpirience} from "./components";
-import {useStyle} from "./App.styles";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {Home, Project} from "Pages";
 
+
+const router = createBrowserRouter([
+	{
+		path:"/",
+		element: <Home/>
+	},
+	{
+		path:"/project/:projectName",
+		element: <Project/>
+	},
+]);
 
 function App() {
-	const {classes} = useStyle();
 	return (
-		<div className={classes.appContainer}>
-			<div className={classes.contentContainer}>
-				<Greeting/>
-				<About/>
-				<Skills/>
-				<WorkExpirience/>
-			</div>
-			<Contacts/>
-		</div>
+		<RouterProvider router={router}/>
 	);
 }
 
