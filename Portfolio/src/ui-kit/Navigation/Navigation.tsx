@@ -1,17 +1,22 @@
 import { FC } from "react";
 import React from "react";
 import {useStyle} from "./Navigation.styles";
-import {Typography} from "ui-kit/index";
+import {Typography} from "ui-kit";
 import { HashLink } from "react-router-hash-link";
 
-export const Navigation: FC = () => {
-	const {classes} = useStyle();
+interface INavigationProps {
+	isWhite?:boolean,
+	className?:string
+}
+
+export const Navigation: FC<INavigationProps> = ({isWhite = false, className=""}) => {
+	const {classes, cx} = useStyle();
 	return (
-		<div className={classes.navigationContainer}>
+		<div className={cx(classes.navigationContainer, className)}>
 			<HashLink to='/#about' smooth>
 				<Typography
 					variant='h4'
-					color='black'
+					color={isWhite? "white" : "black"}
 					block
 					className={classes.item}
 				>
@@ -20,7 +25,7 @@ export const Navigation: FC = () => {
 			</HashLink>
 			<HashLink to='/#skills' smooth>
 				<Typography variant='h4'
-					color='black'
+					color={isWhite? "white" : "black"}
 					block
 					className={classes.item}
 				>
@@ -29,7 +34,7 @@ export const Navigation: FC = () => {
 			</HashLink>
 			<HashLink to='/#work' smooth>
 				<Typography variant='h4'
-					color='black'
+					color={isWhite? "white" : "black"}
 					block
 					className={classes.item}
 				>
@@ -39,7 +44,7 @@ export const Navigation: FC = () => {
 			<HashLink to='/#contacts' smooth>
 				<Typography
 					variant='h4'
-					color='black'
+					color={isWhite? "white" : "black"}
 					block
 					className={classes.item}
 				>

@@ -14,10 +14,21 @@ export const Skills: FC = () => {
 		<div className={classes.skillsContainer} id='skills'>
 			<div className={classes.skillsColumn}>
 				<SkillsTitle className={classes.skillsTitle}/>
-				{skillFirst.map((skill) => <Accordion {...skill} key={skill.skillName}/>)}
+				{skillFirst.map((skill) => (
+					<Accordion
+						{...skill}
+						key={skill.skillName}
+					/>
+				))}
 			</div>
 			<div className={classes.skillsColumn}>
-				{skillSecond.map((skill) => <Accordion {...skill} key={skill.skillName}/>)}
+				{skillSecond.map((skill, index) =>(
+					<Accordion
+						{...skill}
+						key={skill.skillName}
+						isOpenDefault={index === 0}
+					/>
+				))}
 			</div>
 		</div>);
 };

@@ -8,7 +8,8 @@ type SkillLevelType = 1 | 2 | 3
 interface IAccordionProps {
 	skillName: string;
 	subSkillList: string[];
-	skillLevel: SkillLevelType
+	skillLevel: SkillLevelType,
+	isOpenDefault?:boolean
 }
 
 const Level = ({level}:{level: number}) => {
@@ -21,8 +22,8 @@ const Level = ({level}:{level: number}) => {
 	return <><FilledStar/><FilledStar/><FilledStar/></>;
 };
 
-export const Accordion: FC<IAccordionProps> = ({skillName, skillLevel, subSkillList}) => {
-	const [isOpen, setIsOpen] = useState<boolean>(false);
+export const Accordion: FC<IAccordionProps> = ({skillName, skillLevel, subSkillList, isOpenDefault = false}) => {
+	const [isOpen, setIsOpen] = useState<boolean>(isOpenDefault);
 	const {classes} = useStyle({isOpen});
 	return (
 		<div className={classes.accordionContainer}>
