@@ -1,8 +1,7 @@
 import { FC }  from "react";
 import React from "react";
 import { useStyle } from "./Greeting.styles";
-import {Navigation} from "./Navigation";
-import {Typography} from "../../../../ui-kit";
+import {Typography, Navigation} from "ui-kit";
 
 export const Greeting: FC = () => {
 	const {classes} = useStyle();

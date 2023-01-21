@@ -1,1 +1,1 @@
-export type {ProjectUrlType} from "./projectTypes";
+export type {ProjectUrlType, ProjectDataType} from "./projectTypes";

@@ -11,10 +11,16 @@ interface ITypographyProps {
   children?:React.ReactNode,
   block?:boolean
   className?:string
+  onClick?:()=> void
 }
 
-export const Typography:FC<ITypographyProps> = ({variant = "body", color = "white", children, block = false, className=""}) => {
+export const Typography:FC<ITypographyProps> = ({
+	variant = "body",
+	color = "white", children,
+	block = false,
+	className="", onClick
+}) => {
 	const {classes, cx} = useStyle({variant, color, block});
-	return <span className={cx(classes.typo, className)}>{children}</span>;
+	return <span className={cx(classes.typo, className)} onClick={onClick}>{children}</span>;
 
 };
