@@ -2,6 +2,7 @@ import { makeStyles } from "theme";
 
 export const useStyle = makeStyles()((theme) => ({
 	greetContainer:{
+		paddingTop: 48,
 		height:"110vh",
 		width: "100%",
 		position: "relative"
