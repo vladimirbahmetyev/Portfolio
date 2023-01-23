@@ -23,7 +23,7 @@ export const useStyle = makeStyles<{isOpen: boolean}>()((theme, {isOpen})=>({
 		overflow: "hidden",
 		transitionDuration: "300ms",
 		height: isOpen ? "content-fix" : 0,
-		paddingLeft: 90,
+		paddingLeft: 105,
 		display: "flex",
 		flexDirection: "column",
 		gap: 8

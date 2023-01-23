@@ -1,7 +1,7 @@
 import {FC} from "react";
 import {useStyle} from "./Project.styles";
 import {useNavigate, useParams} from "react-router-dom";
-import {Navigation, Typography} from "ui-kit";
+import {List, Navigation, Typography} from "ui-kit";
 import {Back} from "icons";
 import {ProjectUrlType} from "types";
 import {projectsData} from "./projectsData";
@@ -39,9 +39,12 @@ export const Project: FC = () => {
 
 			<div className={classes.contentContainer}>
 				<div className={classes.projectInfoContainer}>
-					<Typography variant='h2' block>{name}</Typography>
+					<Typography variant='h2' block className={classes.title}>{name}</Typography>
 					<Description description={description}/>
-					<Typography variant='h4' block>{roleDescription}</Typography>
+					<Typography variant='h4' block className={classes.roleDescription}>{roleDescription}</Typography>
+					<div className={classes.listContainer}>
+						<List options={listOfResp}/>
+					</div>
 				</div>
 			</div>
 

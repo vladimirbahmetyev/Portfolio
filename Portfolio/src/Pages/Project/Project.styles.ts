@@ -33,5 +33,15 @@ export const useStyle = makeStyles()((theme)=>({
 		display: "flex",
 		flexDirection: "column",
 		maxWidth: 700,
+	},
+	title:{
+		marginBottom: 20,
+	},
+	roleDescription: {
+		marginTop: 42,
+	},
+	listContainer:{
+		marginTop: 24,
+		paddingLeft: 5
 	}
 }));
