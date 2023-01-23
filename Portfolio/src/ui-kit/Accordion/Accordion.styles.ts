@@ -1,4 +1,5 @@
 import {makeStyles} from "theme";
+import {queries} from "@testing-library/react";
 
 export const useStyle = makeStyles<{isOpen: boolean}>()((theme, {isOpen})=>({
 	accordionContainer:{
@@ -25,18 +26,7 @@ export const useStyle = makeStyles<{isOpen: boolean}>()((theme, {isOpen})=>({
 		paddingLeft: 90,
 		display: "flex",
 		flexDirection: "column",
-		gap: 12
-	},
-	dot:{
-		width: 3,
-		height: 3,
-		backgroundColor:theme.palette.white,
-		borderRadius: "50%"
-	},
-	item:{
-		display: "flex",
-		alignItems: "center",
-		gap:15
+		gap: 8
 	},
 	icon:{
 		marginLeft: "auto",

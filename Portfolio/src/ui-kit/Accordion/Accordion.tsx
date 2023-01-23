@@ -2,6 +2,7 @@ import {FC, useState} from "react";
 import {useStyle} from "./Accordion.styles";
 import {Typography} from "../Typography";
 import {FilledStar, Minus, Plus, Star} from "icons";
+import {List} from "../List";
 
 type SkillLevelType = 1 | 2 | 3
 
@@ -35,11 +36,7 @@ export const Accordion: FC<IAccordionProps> = ({skillName, skillLevel, subSkillL
 				{isOpen ? <Minus className={classes.icon} onClick={() => setIsOpen(false)}/> : <Plus className={classes.icon} onClick={() => setIsOpen(true)}/>}
 			</div>
 			<div className={classes.subskillContainer}>
-				{subSkillList.map((subSkill) => (
-					<div className={classes.item} key={subSkill}>
-						<div className={classes.dot}/>
-						<Typography variant='body'>{subSkill}</Typography>
-					</div>))}
+				<List options={subSkillList}/>
 			</div>
 		</div>);
 };
