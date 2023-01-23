@@ -1,7 +1,7 @@
 import {FC} from "react";
 import {useStyle} from "./Contacts.styles";
 import {ContactsTitle, HH, Instagram, LinkedIn, Telegram} from "icons";
-import {Typography} from "ui-kit";
+import {Button, Typography} from "ui-kit";
 
 export const Contacts:FC = () => {
 	const {classes} =useStyle();
@@ -22,9 +22,9 @@ export const Contacts:FC = () => {
 					<div className={classes.inputContainer}>
 						<Typography variant='body'>Message</Typography>
 					</div>
-					<button type='button' className={classes.button}>
-						<Typography variant='h4'>Send message</Typography>
-					</button>
+					<Button >
+						Send message
+					</Button>
 				</div>
 				<div className={classes.contactsContainer}>
 					<div className={classes.contact}>

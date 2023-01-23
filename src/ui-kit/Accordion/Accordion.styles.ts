@@ -1,5 +1,4 @@
 import {makeStyles} from "theme";
-import {queries} from "@testing-library/react";
 
 export const useStyle = makeStyles<{isOpen: boolean}>()((theme, {isOpen})=>({
 	accordionContainer:{

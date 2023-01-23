@@ -1,7 +1,7 @@
 import {FC} from "react";
 import {useStyle} from "./Project.styles";
 import {useNavigate, useParams} from "react-router-dom";
-import {List, Navigation, Typography} from "ui-kit";
+import {Button, List, Navigation, Typography} from "ui-kit";
 import {Back} from "icons";
 import {ProjectUrlType} from "types";
 import {projectsData} from "./projectsData";
@@ -45,6 +45,15 @@ export const Project: FC = () => {
 					<div className={classes.listContainer}>
 						<List options={listOfResp}/>
 					</div>
+				</div>
+				<div className={classes.sideContainer}>
+					{siteUrl && (
+						<a href={siteUrl} target='_blank' rel="noreferrer">
+							<Button className={classes.button}>
+								Open site
+							</Button>
+						</a>
+					)}
 				</div>
 			</div>
 

@@ -43,5 +43,12 @@ export const useStyle = makeStyles()((theme)=>({
 	listContainer:{
 		marginTop: 24,
 		paddingLeft: 5
+	},
+	sideContainer:{
+		position:"relative",
+		paddingTop: 90
+	},
+	button:{
+		width: 360
 	}
 }));
