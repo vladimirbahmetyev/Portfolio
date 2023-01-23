@@ -10,7 +10,10 @@ export const useStyle = makeStyles()((theme)=>({
 		backgroundSize: "cover",
 	},
 	contentContainer:{
-		width: 1400
+		width: 1400,
+		display:"flex",
+		gap: 100,
+		margin: "50px auto 0 auto"
 	},
 	navigationContainer:{
 		width: "100%",
@@ -25,5 +28,10 @@ export const useStyle = makeStyles()((theme)=>({
 		gap:8,
 		cursor:"pointer",
 		alignItems: "center"
+	},
+	projectInfoContainer:{
+		display: "flex",
+		flexDirection: "column",
+		maxWidth: 700,
 	}
 }));

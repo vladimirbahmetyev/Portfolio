@@ -21,8 +21,9 @@ export const Project: FC = () => {
 			</div>
 
 			<div className={classes.contentContainer}>
-
-				{projectName}
+				<div className={classes.projectInfoContainer}>
+					<Typography variant='h2' block>{projectName}</Typography>
+				</div>
 			</div>
 
 		</div>);
