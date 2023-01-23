@@ -17,6 +17,16 @@ const Description:FC<{description: string | string[]}> = ({description}) => {
 	})}</>;
 };
 
+const manMap: Record<ProjectUrlType, string> = {
+	Mugler: "/images/project/m4.png",
+	Metamap: "/images/project/m1.png",
+	Jobswidget: "/images/project/m2.png",
+	CorpPass: "/images/project/m6.png",
+	GameGreed: "/images/project/m3.png",
+	MyGlo: "/images/project/m5.png",
+	Shopic:"/images/project/m7.png"
+};
+
 export const Project: FC = () => {
 	const {classes} = useStyle();
 	const {projectName} = useParams<{projectName: ProjectUrlType}>();
@@ -54,6 +64,7 @@ export const Project: FC = () => {
 							</Button>
 						</a>
 					)}
+					<img className={classes.manImg} src={manMap[projectName]} alt='Man with tv'/>
 				</div>
 			</div>
 

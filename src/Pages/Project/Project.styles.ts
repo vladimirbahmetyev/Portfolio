@@ -3,9 +3,10 @@ import {makeStyles} from "../../theme";
 export const useStyle = makeStyles()((theme)=>({
 	projectContainer:{
 		paddingTop: 48,
+		boxSizing: "border-box",
 		width: "100%",
 		backgroundImage: "url('/images/background/paperBackground.png')",
-		height: "100vh",
+		minHeight: "100vh",
 		backgroundColor: theme.palette.black,
 		backgroundSize: "cover",
 	},
@@ -50,5 +51,11 @@ export const useStyle = makeStyles()((theme)=>({
 	},
 	button:{
 		width: 360
+	},
+	manImg:{
+		position: "fixed",
+		right: 0,
+		bottom: 0
 	}
+
 }));
