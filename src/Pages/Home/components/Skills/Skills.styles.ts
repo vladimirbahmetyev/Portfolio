@@ -8,7 +8,7 @@ export const useStyle = makeStyles()(()=> ({
 	},
 	skillsTitle:{
 		marginTop: 120,
-		marginBottom: 167
+		marginBottom: 122
 	},
 	skillsColumn:{
 		display: "flex",
