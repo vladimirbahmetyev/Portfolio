@@ -2,7 +2,7 @@ export type ProjectUrlType = "Metamap" | "Jobswidget" | "GameGreed"|"Mugler" | "
 
 export type ProjectDataType = {
   name:string,
-  description:string,
+  description:string | string[],
   roleDescription:string,
   listOfResp:string[],
   siteUrl?:string
