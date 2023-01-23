@@ -10,11 +10,11 @@ export const useStyle= makeStyles()(()=>{
 		return {
 			[`char-${index}`]: {
 				"animation": `${keyframes(`
-            from {
-							transform:rotate3d(-1,2,0.2, ${+angle}deg) translateZ(180px);
+            0% {
+							transform:rotate3d(-1,2,0.2, ${+angle}deg) translateZ(180px) rotate(30deg);
             }
-            to {
-							transform: rotate3d(-1,2,0.2, ${+angle + 180}deg) translateZ(180px);
+            100% {
+							transform: rotate3d(-1,2,0.2, ${+angle + 180}deg) translateZ(180px) rotate(25deg);
             }
             `)} 3s infinite linear`,
 				position: "absolute"
