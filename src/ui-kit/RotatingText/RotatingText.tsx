@@ -7,12 +7,12 @@ const label = "* frontend developer * frontend developer ";
 const labelArray = [...label];
 
 export const RotatingText:FC = () => {
-	const {classes} = useStyle();
+	const {classes, cx} = useStyle();
 	return <div className={classes.labelContainer}>
 		{labelArray.map((value, index) => {
 			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 			// @ts-ignore
-			return <div key={value} className={classes[`char-${index}`]}>{value}</div>;
+			return <div key={value + index} className={cx(classes[`char-${index}`], classes[""])}>{value}</div>;
 		}
 		)}
 	</div>;
