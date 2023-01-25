@@ -1,6 +1,6 @@
 import { makeStyles } from "theme";
 
-export const useStyle = makeStyles()((theme) => ({
+export const useStyle = makeStyles()(() => ({
 	greetContainer:{
 		paddingTop: 48,
 		height:"110vh",
