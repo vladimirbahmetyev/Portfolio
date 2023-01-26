@@ -1,4 +1,4 @@
-import {FC, useState} from "react";
+import {FC} from "react";
 import {useStyle} from "./Accordion.styles";
 import {Typography} from "../Typography";
 import {FilledStar, Minus, Plus, Star} from "icons";
