@@ -39,6 +39,12 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			lineHeight: "19px",
 			fontWeight: 400,
 			fontFamily:"Montserrat, sans-serif"
+		},
+		bodyBold:{
+			fontSize: 30,
+			lineHeight: "32px",
+			fontWeight: 700,
+			fontFamily:"Montserrat, sans-serif"
 		}
 	};
 

@@ -11,10 +11,10 @@ export const useStyle= makeStyles()(()=>{
 			[`char-${index}`]: {
 				"animation": `${keyframes(`
             0% {
-							transform:rotate3d(-1,2,0.2, ${+angle}deg) translateZ(180px) rotate(30deg);
+							transform:rotate3d(-1.1,2,1, ${+angle}deg) translateZ(180px) rotate(30deg);
             }
             100% {
-							transform: rotate3d(-1,2,0.2, ${+angle + 180}deg) translateZ(180px) rotate(25deg);
+							transform: rotate3d(-1.1,2,1, ${+angle + 180}deg) translateZ(180px) rotate(30deg);
             }
             `)} 3s infinite linear`,
 				position: "absolute"
@@ -23,10 +23,7 @@ export const useStyle= makeStyles()(()=>{
 	}).reduce((acc, curr) => ({...curr, ...acc}),{});
 	return {
 		labelContainer:{
-			position: "relative",
-			marginTop: 100,
-			marginLeft: 600,
-			fontSize: 32,
+			fontSize: 30,
 			fontWeight: "bold",
 		},
 		...charAnimations

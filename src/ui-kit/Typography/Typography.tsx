@@ -2,7 +2,7 @@ import {FC} from "react";
 import React from "react";
 import {useStyle} from "./Typography.styles";
 
-export type TypoVariantType = "h1" | "h4" | "h2"| "h3" | "body" | "description"
+export type TypoVariantType = "h1" | "h4" | "h2"| "h3" | "body" | "description"| "bodyBold"
 export type TypoColorType = "black" | "white"| "colorful"
 
 interface ITypographyProps {

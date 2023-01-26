@@ -16,7 +16,22 @@ export const useStyle = makeStyles()(() => ({
 	cat:{
 		position: "absolute",
 		right: 0,
-		top: 23,
-		zIndex: 0,
+		bottom: -600,
+	},
+	catContainer:{
+		position:"relative",
+		zIndex: 1
+	},
+	rotatingText:{
+		position: "absolute",
+		top: 200,
+		right: 350,
+		zIndex: 2
+	},
+	catEnd:{
+		position: "absolute",
+		right: 0,
+		bottom: -600,
+		zIndex: 3,
 	}
 }));

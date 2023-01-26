@@ -11,7 +11,10 @@ export const Greeting: FC = () => {
 			<Typography variant='h1' color='black' block className={classes.greetText}>
 				HELLO, <br/>I’M VLADIMIR
 			</Typography>
-			<RotatingText/>
-			<img src='/images/greetCat.png' alt='Nice cat' className={classes.cat}/>
+			<div className={classes.catContainer}>
+				<RotatingText className={classes.rotatingText}/>
+				<img src='/images/greetCatEnd.png' alt='Nice cat' className={classes.catEnd}/>
+				<img src='/images/greetCat.png' alt='Nice cat' className={classes.cat}/>
+			</div>
 		</div>);
 };
