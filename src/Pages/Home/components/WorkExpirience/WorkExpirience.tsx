@@ -67,13 +67,19 @@ export const WorkExpirience:FC= () => {
 			</div>
 			<div className={cx(classes.projectContainer, classes.sixthProject)} onClick={()=>onProjectClick("CorpPass")}>
 				<N6/>
-				<img src='/images/workExperience/p6.png' className={classes.projectPack}/>
-				<img src='/images/workExperience/pr6.jpg'className={classes.projectImage}/>
+				<div>
+					<img src='/images/workExperience/p6.png' className={classes.projectPack}/>
+					<img src='/images/workExperience/pr6.jpg'className={classes.projectImage}/>
+					<Typography variant='h3' block>CorpPass</Typography>
+				</div>
 			</div>
 			<div className={cx(classes.projectContainer, classes.seventhProject)} onClick={()=>onProjectClick("Shopic")}>
 				<N7/>
-				<img src='/images/workExperience/p7.png' className={classes.projectPack}/>
-				<img src='/images/workExperience/pr7.jpg'className={classes.projectImage}/>
+				<div>
+					<img src='/images/workExperience/p7.png' className={classes.projectPack}/>
+					<img src='/images/workExperience/pr7.jpg'className={classes.projectImage}/>
+					<Typography variant='h3' block>Shopic</Typography>
+				</div>
 			</div>
 		</div>);
 };

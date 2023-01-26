@@ -185,7 +185,7 @@ export const useStyle = makeStyles()(()=> ({
 	},
 	fourthProject:{
 		marginTop: 30,
-		marginLeft: 120,
+		marginLeft: 320,
 		div:{
 			position: "relative",
 			minHeight: 400,
@@ -248,7 +248,7 @@ export const useStyle = makeStyles()(()=> ({
 			}
 		},
 		justifyContent:"center",
-		marginLeft: 600,
+		marginLeft: 200,
 		marginTop: -10,
 		"img:last-of-type":{
 			minWidth: 560,
@@ -272,22 +272,88 @@ export const useStyle = makeStyles()(()=> ({
 	},
 	sixthProject:{
 		marginTop: -270,
-		paddingLeft: 250,
+		justifyContent:"center",
+		marginRight: 900,
+		minHeight: 400,
+		div:{
+			position: "relative",
+			":hover":{
+				"img:last-of-type":{
+					top: -20,
+					transitionDuration: "300ms",
+				},
+				"img:first-of-type":{
+					top: 50,
+					transitionDuration: "300ms",
+				},
+				span:{
+					transitionDuration: "300ms",
+					top: 295
+				}
+			}
+		},
+
 		"img:last-of-type":{
 			width: 300,
 			height: 300,
-			left: 340,
-			top: 30
+			position: "absolute",
+			transitionDuration: "300ms",
+			left: 20,
+			top: 30,
+		},
+		"img:first-of-type":{
+			position: "absolute",
+			transitionDuration: "300ms",
+			top: 0
+		},
+		span: {
+			top: 345,
+			position: "absolute",
+			left: 20,
+			transitionDuration: "300ms",
 		}
 	},
 	seventhProject:{
-		justifyContent: "flex-end",
+		justifyContent: "center",
 		marginTop: 60,
+		minHeight: 800,
+		marginLeft: -350,
+		div:{
+			position: "relative",
+			":hover":{
+				"img:last-of-type":{
+					transitionDuration: "300ms",
+					left: 75,
+				},
+				"img:first-of-type":{
+					transitionDuration: "300ms",
+					left: -50
+				},
+				span:{
+					transitionDuration: "300ms",
+					left: 75,
+				}
+			}
+		},
 		"img:last-of-type":{
 			width: 760,
 			height: 450,
-			right: 30,
-			top: 35
+			position: "absolute",
+			top: 40,
+			left: 25,
+			transitionDuration: "300ms",
+
+		},
+		"img:first-of-type":{
+			position: "absolute",
+			transitionDuration: "300ms",
+			left: 0,
+		},
+		span:{
+			position: "absolute",
+			transitionDuration: "300ms",
+			top: 505,
+			left: 25
 		}
 	},
 	projectImage:{
