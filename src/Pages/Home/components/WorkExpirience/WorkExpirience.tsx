@@ -51,13 +51,19 @@ export const WorkExpirience:FC= () => {
 			</div>
 			<div className={cx(classes.projectContainer, classes.fourthProject)} onClick={()=>onProjectClick("Mugler")}>
 				<N4/>
-				<img src='/images/workExperience/p4.png' className={classes.projectPack}/>
-				<img src='/images/workExperience/pr4.jpg'className={classes.projectImage}/>
+				<div>
+					<img src='/images/workExperience/p4.png' className={classes.projectPack}/>
+					<img src='/images/workExperience/pr4.jpg'className={classes.projectImage}/>
+					<Typography variant='h3' block>Mugler</Typography>
+				</div>
 			</div>
 			<div className={cx(classes.projectContainer, classes.fifthProject)} onClick={()=>onProjectClick("MyGlo")}>
 				<N5/>
-				<img src='/images/workExperience/p5.png' className={classes.projectPack}/>
-				<img src='/images/workExperience/pr5.jpg'className={classes.projectImage}/>
+				<div>
+					<img src='/images/workExperience/p5.png' className={classes.projectPack}/>
+					<img src='/images/workExperience/pr5.jpg'className={classes.projectImage}/>
+					<Typography variant='h3' block>MyGlo</Typography>
+				</div>
 			</div>
 			<div className={cx(classes.projectContainer, classes.sixthProject)} onClick={()=>onProjectClick("CorpPass")}>
 				<N6/>

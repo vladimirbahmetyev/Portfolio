@@ -186,21 +186,88 @@ export const useStyle = makeStyles()(()=> ({
 	fourthProject:{
 		marginTop: 30,
 		marginLeft: 120,
+		div:{
+			position: "relative",
+			minHeight: 400,
+			":hover":{
+				"img:first-of-type":{
+					top: 75,
+					transitionDuration: "300ms"
+				},
+				"img:last-of-type":{
+					top: 0,
+					transitionDuration: "300ms"
+				},
+				span:{
+					top: 315,
+					transitionDuration: "300ms"
+				}
+			}
+		},
+		"img:first-of-type":{
+			minWidth: 400,
+			minHeight: 300,
+			top: 25,
+			left: 0,
+			zIndex: 2,
+			position: "absolute",
+			transitionDuration: "300ms"
+		},
 		"img:last-of-type":{
 			width: 400,
 			height: 300,
-			left: 110,
-			top: 25
+			left: 40,
+			top: 50,
+			zIndex: 1,
+			position: "absolute",transitionDuration: "300ms"
+		},
+		span:{
+			left: 40,
+			top: 365,
+			transitionDuration: "300ms",
+			position: "absolute"
 		}
 	},
 	fifthProject:{
-		justifyContent:"flex-end",
-		marginTop: -70,
+		div:{
+			position: "relative",
+			minHeight: 400,
+			":hover":{
+				"img:first-of-type":{
+					top: 50,
+					transitionDuration: "300ms",
+				},
+				"img:last-of-type":{
+					top: 40,
+					transitionDuration: "300ms"
+				},
+				span:{
+					top: 355,
+					transitionDuration: "300ms"
+				}
+			}
+		},
+		justifyContent:"center",
+		marginLeft: 600,
+		marginTop: -10,
 		"img:last-of-type":{
-			width: 560,
-			height: 300,
-			right: 30,
-			top: 95
+			minWidth: 560,
+			minHeight: 300,
+			position: "absolute",
+			top: 90,
+			left: 30,
+			transitionDuration: "300ms"
+		},
+		"img:first-of-type":{
+			position: "absolute",
+			top: 0,
+			transitionDuration: "300ms"
+		},
+		span: {
+			position: "absolute",
+			transitionDuration: "300ms",
+			left: 30,
+			top: 405,
 		}
 	},
 	sixthProject:{
