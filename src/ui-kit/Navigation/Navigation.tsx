@@ -13,43 +13,47 @@ export const Navigation: FC<INavigationProps> = ({isWhite = false, className=""}
 	const {classes, cx} = useStyle();
 	return (
 		<div className={cx(classes.navigationContainer, className)}>
-			<HashLink to='/#about' smooth>
-				<Typography
-					variant='h4'
-					color={isWhite? "white" : "black"}
-					block
-					className={classes.item}
-				>
+			<div className={classes.itemContainer}>
+				<HashLink to='/#about' smooth>
+					<Typography
+						variant='h4'
+						color={isWhite? "white" : "black"}
+						block
+					>
 			About
-				</Typography>
-			</HashLink>
-			<HashLink to='/#skills' smooth>
-				<Typography variant='h4'
-					color={isWhite? "white" : "black"}
-					block
-					className={classes.item}
-				>
+					</Typography>
+				</HashLink>
+			</div>
+			<div className={classes.itemContainer}>
+				<HashLink to='/#skills' smooth>
+					<Typography variant='h4'
+						color={isWhite? "white" : "black"}
+						block
+					>
 			Skills
-				</Typography>
-			</HashLink>
-			<HashLink to='/#work' smooth>
-				<Typography variant='h4'
-					color={isWhite? "white" : "black"}
-					block
-					className={classes.item}
-				>
+					</Typography>
+				</HashLink>
+			</div>
+			<div className={classes.itemContainer}>
+				<HashLink to='/#work' smooth>
+					<Typography variant='h4'
+						color={isWhite? "white" : "black"}
+						block
+					>
 			Work
-				</Typography>
-			</HashLink>
-			<HashLink to='/#contacts' smooth>
-				<Typography
-					variant='h4'
-					color={isWhite? "white" : "black"}
-					block
-					className={classes.item}
-				>
+					</Typography>
+				</HashLink>
+			</div>
+			<div className={classes.itemContainer}>
+				<HashLink to='/#contacts' smooth>
+					<Typography
+						variant='h4'
+						color={isWhite? "white" : "black"}
+						block
+					>
 			Contacts
-				</Typography>
-			</HashLink>
+					</Typography>
+				</HashLink>
+			</div>
 		</div>);
 };
