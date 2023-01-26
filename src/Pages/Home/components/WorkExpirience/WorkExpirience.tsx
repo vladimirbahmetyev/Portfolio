@@ -26,19 +26,28 @@ export const WorkExpirience:FC= () => {
 			<div className={classes.firstSecondProject}>
 				<div className={cx(classes.projectContainer,classes.secondProject)} onClick={()=>onProjectClick("Jobswidget")}>
 					<N2/>
-					<img src='/images/workExperience/p2.png' className={classes.projectPack}/>
-					<img src='/images/workExperience/pr2.jpg' className={classes.projectImage}/>
+					<div>
+						<img src='/images/workExperience/p2.png' className={classes.projectPack}/>
+						<img src='/images/workExperience/pr2.jpg' className={classes.projectImage}/>
+						<Typography variant='h3' block>JobsWidget</Typography>
+					</div>
 				</div>
 				<div className={cx(classes.projectContainer, classes.firstProject)} onClick={()=>onProjectClick("Metamap")}>
 					<N1/>
-					<img src='/images/workExperience/p1.png' className={classes.projectPack}/>
-					<img src='/images/workExperience/pr1.jpg'className={classes.projectImage}/>
+					<div>
+						<img src='/images/workExperience/p1.png' className={classes.projectPack}/>
+						<img src='/images/workExperience/pr1.jpg'className={classes.projectImage}/>
+						<Typography variant='h3' block>Metamap</Typography>
+					</div>
 				</div>
 			</div>
 			<div className={cx(classes.projectContainer, classes.thirdProject)} onClick={()=>onProjectClick("GameGreed")}>
 				<N3/>
-				<img src='/images/workExperience/p3.png' className={classes.projectPack}/>
-				<img src='/images/workExperience/pr3.jpg'className={classes.projectImage}/>
+				<div>
+					<img src='/images/workExperience/p3.png' className={classes.projectPack}/>
+					<img src='/images/workExperience/pr3.jpg'className={classes.projectImage}/>
+					<Typography variant='h3' block>Game Greed</Typography>
+				</div>
 			</div>
 			<div className={cx(classes.projectContainer, classes.fourthProject)} onClick={()=>onProjectClick("Mugler")}>
 				<N4/>

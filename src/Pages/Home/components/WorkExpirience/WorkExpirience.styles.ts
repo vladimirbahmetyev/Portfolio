@@ -47,44 +47,141 @@ export const useStyle = makeStyles()(()=> ({
 		display: "flex",
 		justifyContent: "space-between",
 		gap: 90,
-		"div:first-of-type":{
+		minHeight: 700,
+		"> div:first-of-type":{
 			marginLeft: 250,
 			marginTop: 250,
 		},
 	},
 	firstProject:{
+		marginLeft: 400,
+		marginRight: "auto",
+		div:{
+			position: "relative",
+		},
 		"img:first-of-type":{
-			width: 617,
-			height: 520,
+			minWidth: 617,
+			minHeight: 520,
+			top: 0,
+			transitionDuration: "300ms",
+			position: "absolute",
 		},
 		"img:last-of-type":{
-			width: 560,
-			height: 300,
-			right: 28,
-			top: 100
+			minWidth: 560,
+			minHeight: 300,
+			left: 30,
+			top: 100,
+			position: "absolute",
+			transitionDuration: "300ms",
+		},
+		span:{
+			position: "absolute",
+			left: 30,
+			top: 415,
+			transitionDuration: "300ms",
+		},
+		":hover":{
+			"img:first-of-type":{
+				top: 50,
+				transitionDuration: "300ms"
+			},
+			"img:last-of-type":{
+				transitionDuration: "300ms",
+				top: 50
+			},
+			span:{
+				top: 365
+			}
 		}
 	},
 	secondProject:{
+		div:{
+			position: "relative"
+		},
 		"img:first-of-type":{
-			width: 403,
-			height: 348,
+			minWidth: 403,
+			minHeight: 348,
+			top: 0,
+			position: "absolute",
+			transitionDuration: "300ms",
 		},
 		"img:last-of-type":{
-			width: 300,
-			height: 300,
-			right: 50,
-			top: 25
+			minWidth: 300,
+			minHeight: 300,
+			left: 50,
+			top: 50,
+			transitionDuration: "300ms",
+		},
+		span: {
+			position: "absolute",
+			left: 50,
+			top: 365,
+			transitionDuration: "300ms",
+		},
+		":hover":{
+			"img:first-of-type":{
+				minWidth: 403,
+				minHeight: 348,
+				top: 50,
+			},
+			"img:last-of-type":{
+				transitionDuration: "300ms",
+				top: 0
+			},
+			span: {
+				transitionDuration: "300ms",
+				top: 315
+			},
 		}
 	},
 	thirdProject:{
-		justifyContent:"flex-end",
+		justifyContent: "center",
+		minHeight: 600,
+		minWidth: 300,
+		div:{
+			position: "relative",
+			":hover":{
+				"img:first-of-type":{
+					position: "absolute",
+					transitionDuration: "300ms",
+					left: -30,
+				},
+				"img:last-of-type":{
+					width: 760,
+					height: 450,
+					position: "absolute",
+					transitionDuration: "300ms",
+					left: 70
+				},
+				span:{
+					position: "absolute",
+					left: 70,
+					transitionDuration: "300ms"
+				},
+			}
+		},
 		marginTop: 30,
+		"img:first-of-type":{
+			position: "absolute",
+			transitionDuration: "300ms",
+			left: 0,
+			top: 0,
+		},
 		"img:last-of-type":{
 			width: 760,
 			height: 450,
-			right: 25,
-			top: 55
-		}
+			position: "absolute",
+			transitionDuration: "300ms",
+			top: 30,
+			left: 20
+		},
+		span:{
+			position: "absolute",
+			left: 20,
+			top: 495,
+			transitionDuration: "300ms"
+		},
+
 	},
 	fourthProject:{
 		marginTop: 30,
