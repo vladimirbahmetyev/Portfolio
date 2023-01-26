@@ -137,8 +137,9 @@ export const useStyle = makeStyles()(()=> ({
 	thirdProject:{
 		justifyContent: "center",
 		minHeight: 600,
-		minWidth: 300,
+		marginLeft: 170,
 		div:{
+			minWidth: 300,
 			position: "relative",
 			":hover":{
 				"img:first-of-type":{
@@ -185,7 +186,7 @@ export const useStyle = makeStyles()(()=> ({
 	},
 	fourthProject:{
 		marginTop: 30,
-		marginLeft: 320,
+		marginLeft: 180,
 		div:{
 			position: "relative",
 			minHeight: 400,
@@ -248,8 +249,8 @@ export const useStyle = makeStyles()(()=> ({
 			}
 		},
 		justifyContent:"center",
-		marginLeft: 200,
-		marginTop: -10,
+		marginLeft: 250,
+		marginTop: -40,
 		"img:last-of-type":{
 			minWidth: 560,
 			minHeight: 300,
@@ -271,9 +272,9 @@ export const useStyle = makeStyles()(()=> ({
 		}
 	},
 	sixthProject:{
-		marginTop: -270,
+		marginTop: -140,
 		justifyContent:"center",
-		marginRight: 900,
+		marginRight: 700,
 		minHeight: 400,
 		div:{
 			position: "relative",
@@ -317,7 +318,7 @@ export const useStyle = makeStyles()(()=> ({
 		justifyContent: "center",
 		marginTop: 60,
 		minHeight: 800,
-		marginLeft: -350,
+		marginLeft: -100,
 		div:{
 			position: "relative",
 			":hover":{
