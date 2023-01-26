@@ -7,7 +7,7 @@ import {Mouse} from "icons";
 export const Greeting: FC = () => {
 	const {classes} = useStyle();
 	return (
-		<div className={classes.greetContainer}>
+		<div className={classes.greetContainer} id='greeting'>
 			<Navigation/>
 			<Typography variant='h1' color='black' block className={classes.greetText}>
 				HELLO, <br/>I’M VLADIMIR
