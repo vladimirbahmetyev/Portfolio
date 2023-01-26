@@ -9,6 +9,12 @@ export const WorkExpirience:FC= () => {
 	const {classes, cx} = useStyle();
 	const navigate = useNavigate();
 	const onProjectClick = (projectUrl: ProjectUrlType) => navigate(`/project/${projectUrl}`);
+	const currentDate = new Date();
+	const startDate = (new Date("2019-09-10"));
+
+	const yearsOfExp = ((Number(currentDate) - Number(startDate))/1000/3600/24/365)
+		.toFixed(1)
+		.replace(".", ",");
 
 	return (
 		<div className={classes.workExperienceContainer} id='work'>
@@ -16,7 +22,7 @@ export const WorkExpirience:FC= () => {
 			<div className={classes.titleContainer}>
 				<div className={classes.rowContainer}>
 					<div className={classes.yearsContainer}>
-						<Typography variant='h2'>3,5</Typography>
+						<Typography variant='h2'>{yearsOfExp}</Typography>
 						<Typography variant='h3'>years</Typography>
 					</div>
 					<WorkTitle/>

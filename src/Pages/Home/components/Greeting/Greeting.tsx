@@ -2,7 +2,6 @@ import { FC }  from "react";
 import React from "react";
 import { useStyle } from "./Greeting.styles";
 import {Typography, Navigation, RotatingText} from "ui-kit";
-import {Mouse} from "icons";
 
 export const Greeting: FC = () => {
 	const {classes} = useStyle();
@@ -17,6 +16,5 @@ export const Greeting: FC = () => {
 				<img src='/images/greetCatEnd.png' alt='Nice cat' className={classes.catEnd}/>
 				<img src='/images/greetCat.png' alt='Nice cat' className={classes.cat}/>
 			</div>
-			<Typography variant='h4' color='black' className={classes.mouseContainer}><Mouse/> scroll down</Typography>
 		</div>);
 };
