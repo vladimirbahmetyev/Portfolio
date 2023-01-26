@@ -3,7 +3,7 @@ import {makeStyles} from "theme";
 export const useStyle = makeStyles()(()=> ({
 	workExperienceContainer:{
 		marginTop: 230,
-		marginBottom: 300,
+		marginBottom: 50,
 		position: "relative"
 	},
 	titleContainer:{
