@@ -10,7 +10,8 @@ interface IAccordionProps {
 	skillName: string;
 	subSkillList: string[];
 	skillLevel: SkillLevelType,
-	isOpenDefault?:boolean
+	isOpen:boolean,
+	setIsOpen: (value: string) => void
 }
 
 const Level = ({level}:{level: number}) => {
@@ -23,17 +24,16 @@ const Level = ({level}:{level: number}) => {
 	return <><FilledStar/><FilledStar/><FilledStar/></>;
 };
 
-export const Accordion: FC<IAccordionProps> = ({skillName, skillLevel, subSkillList, isOpenDefault = false}) => {
-	const [isOpen, setIsOpen] = useState<boolean>(isOpenDefault);
-	const {classes} = useStyle({isOpen});
+export const Accordion: FC<IAccordionProps> = ({skillName, skillLevel, subSkillList, isOpen = false, setIsOpen}) => {
+	const {classes} = useStyle({isOpen, elementsCount: subSkillList.length});
 	return (
 		<div className={classes.accordionContainer}>
-			<div className={classes.accordionHead}>
+			<div className={classes.accordionHead} onClick={() => isOpen? setIsOpen("") : setIsOpen(skillName)}>
 				<div className={classes.starContainer}>
 					<Level level={skillLevel}/>
 				</div>
 				<Typography variant='h3' block>{skillName}</Typography>
-				{isOpen ? <Minus className={classes.icon} onClick={() => setIsOpen(false)}/> : <Plus className={classes.icon} onClick={() => setIsOpen(true)}/>}
+				{isOpen ? <Minus className={classes.icon} /> : <Plus className={classes.icon} />}
 			</div>
 			<div className={classes.subskillContainer}>
 				<List options={subSkillList}/>

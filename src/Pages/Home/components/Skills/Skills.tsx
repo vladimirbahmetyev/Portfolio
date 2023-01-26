@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC, useState} from "react";
 import {useStyle} from "./Skills.styles";
 import {Accordion} from "ui-kit";
 import {SkillsTitle} from "icons";
@@ -10,6 +10,7 @@ const skillSecond = skillsList.slice(6, 11);
 
 export const Skills: FC = () => {
 	const {classes} = useStyle();
+	const [openSkill, setOpenSkill] = useState<string>("React");
 	return (
 		<div className={classes.skillsContainer} id='skills'>
 			<div className={classes.skillsColumn}>
@@ -18,15 +19,18 @@ export const Skills: FC = () => {
 					<Accordion
 						{...skill}
 						key={skill.skillName}
+						isOpen={openSkill === skill.skillName}
+						setIsOpen={setOpenSkill}
 					/>
 				))}
 			</div>
 			<div className={classes.skillsColumn}>
-				{skillSecond.map((skill, index) =>(
+				{skillSecond.map((skill) =>(
 					<Accordion
 						{...skill}
 						key={skill.skillName}
-						isOpenDefault={index === 0}
+						isOpen={openSkill === skill.skillName}
+						setIsOpen={setOpenSkill}
 					/>
 				))}
 			</div>
