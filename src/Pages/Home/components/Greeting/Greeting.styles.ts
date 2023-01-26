@@ -33,5 +33,11 @@ export const useStyle = makeStyles()(() => ({
 		right: 0,
 		bottom: -600,
 		zIndex: 3,
+	},
+	mouseContainer:{
+		marginTop: 250,
+		display: "flex",
+		alignItems: "center",
+		gap: 12
 	}
 }));
