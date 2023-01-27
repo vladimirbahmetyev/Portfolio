@@ -25,7 +25,7 @@ export const Home: FC = () => {
 		<div className={classes.appContainer}>
 			<div className={classes.contentContainer}>
 				<Greeting/>
-				{/*<About/>*/}
+				<About/>
 				{/*<Skills/>*/}
 				{/*<WorkExpirience/>*/}
 			</div>
