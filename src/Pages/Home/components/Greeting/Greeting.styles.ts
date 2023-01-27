@@ -8,6 +8,7 @@ export const useStyle = makeStyles()(() => ({
 		position: "relative",
 		"@media (max-width: 480px)":{
 			paddingTop: "38px",
+			height: "fit-content"
 		}
 	},
 	greetText:{

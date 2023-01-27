@@ -8,9 +8,9 @@ export const About: FC = () => {
 	return(
 		<div className={classes.aboutContainer} id='about'>
 			<div className={classes.topContainer}>
-				<img src='/images/computer.png' alt='cat in the computer'/>
+				<img src='/images/computer.png' alt='cat in the computer' className={classes.catInPc}/>
 				<div className={classes.titleWithDescription}>
-					<AboutTitle/>
+					<AboutTitle className={classes.aboutTitle}/>
 					<Typography block variant='body' >
 					Frontend Developer with 3.5 years of experience
 and 5 years with passion to frontend.
