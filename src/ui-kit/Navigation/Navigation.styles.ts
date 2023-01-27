@@ -7,7 +7,12 @@ export const useStyle = makeStyles()(() => ({
 		gap: 32,
 		justifyContent: "flex-end",
 		position: "relative",
-		zIndex: 10
+		zIndex: 10,
+		"@media (max-width:480px)":{
+			gap: 16,
+			justifyContent: "center",
+		}
+
 	},
 	itemContainer:{
 		span: {

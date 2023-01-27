@@ -9,6 +9,10 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			lineHeight: "132px",
 			fontWeight: 400,
 			fontFamily: "Krona One,Nunito, sans-serif",
+			"@media (max-width: 480px)":{
+				fontSize: 40,
+				lineHeight: "44px"
+			}
 		},
 		h2:{
 			fontSize: 60,
@@ -26,7 +30,11 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			fontSize: 18,
 			fontWeight: 400,
 			lineHeight: "24px",
-			fontFamily: "Krona One,Nunito, sans-serif"
+			fontFamily: "Krona One,Nunito, sans-serif",
+			"@media (max-width: 480px)":{
+				fontSize: 16,
+				lineHeight: "23px"
+			}
 		},
 		body:{
 			fontSize: 20,

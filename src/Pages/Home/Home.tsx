@@ -25,11 +25,11 @@ export const Home: FC = () => {
 		<div className={classes.appContainer}>
 			<div className={classes.contentContainer}>
 				<Greeting/>
-				<About/>
-				<Skills/>
-				<WorkExpirience/>
+				{/*<About/>*/}
+				{/*<Skills/>*/}
+				{/*<WorkExpirience/>*/}
 			</div>
-			<Contacts/>
+			{/*<Contacts/>*/}
 			<HashLink to='/#greeting'>
 				<Back className={classes.backArrow}/>
 			</HashLink>
