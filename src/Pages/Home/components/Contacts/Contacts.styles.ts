@@ -91,7 +91,10 @@ export const useStyle = makeStyles()((theme)=>({
 		display:"flex",
 		gap: 40,
 		svg:{
-			cursor: "pointerw"
+			cursor: "pointer"
+		},
+		"@media (max-width: 480px)":{
+			gap: 20
 		}
 	}
 }));
