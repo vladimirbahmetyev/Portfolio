@@ -39,6 +39,6 @@ export const Skills: FC = () => {
 					))}
 				</div>
 			)}
-			{!showAll && (<Button onClick={onShowAllClick}>Show All ({skillSecond.length})</Button>)}
+			{!showAll && (<Button onClick={onShowAllClick} className={classes.button}>Show All ({skillSecond.length})</Button>)}
 		</div>);
 };

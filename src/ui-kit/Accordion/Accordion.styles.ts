@@ -5,7 +5,10 @@ export const useStyle = makeStyles<{isOpen: boolean, elementsCount: number}>()((
 		borderTop: `1px solid ${theme.palette.white}`,
 		borderBottom: `1px solid ${theme.palette.white}`,
 		width: "100%",
-		padding: "32px 0px"
+		padding: "32px 0px",
+		"@media (max-width: 480px)":{
+			padding: "26px 0px"
+		}
 	},
 	accordionHead:{
 		display: "flex",
@@ -13,7 +16,14 @@ export const useStyle = makeStyles<{isOpen: boolean, elementsCount: number}>()((
 		gap: 25,
 		alignItems: "center",
 		marginBottom: isOpen ? 20 : 0,
-		cursor: "pointer"
+		cursor: "pointer",
+		"@media (max-width: 480px)":{
+			"> svg:last-of-type":{
+				minWidth: 30,
+				minHeight: 30
+			}
+		}
+
 	},
 	starContainer:{
 		display: "flex",
@@ -27,10 +37,14 @@ export const useStyle = makeStyles<{isOpen: boolean, elementsCount: number}>()((
 		paddingLeft: 105,
 		display: "flex",
 		flexDirection: "column",
-		gap:  8
+		gap:  8,
+		"@media (max-width: 480px)":{
+			height: isOpen ? 29 * elementsCount : 0,
+			paddingLeft: 0
+		}
 	},
 	icon:{
 		marginLeft: "auto",
 		marginRight: 0
-	}
+	},
 }));

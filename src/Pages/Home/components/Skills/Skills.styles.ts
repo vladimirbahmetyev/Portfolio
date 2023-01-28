@@ -7,7 +7,7 @@ export const useStyle = makeStyles()(()=> ({
 		gap: 35,
 		"@media (max-width: 480px)":{
 			flexDirection: "column",
-			gap: 32,
+			gap: 0,
 			padding: 0,
 		}
 	},
@@ -16,7 +16,7 @@ export const useStyle = makeStyles()(()=> ({
 		marginBottom: 122,
 		"@media (max-width: 480px)":{
 			width: 187,
-			marginBottom: 0
+			marginBottom: 32
 		}
 	},
 	skillsColumn:{
@@ -26,5 +26,8 @@ export const useStyle = makeStyles()(()=> ({
 		"@media (max-width: 480px)":{
 			width: "100%"
 		}
+	},
+	button:{
+		marginTop: 24
 	}
 }));
