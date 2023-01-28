@@ -7,6 +7,13 @@ export const useStyle = makeStyles()(()=> ({
 		position: "relative",
 		"@media (max-width:480px)":{
 			marginTop: 200,
+			div:{
+				":nth-child(2n + 3)":{
+					svg:{
+						marginLeft: 100
+					}
+				}
+			}
 		}
 	},
 	titleContainer:{
@@ -52,6 +59,9 @@ export const useStyle = makeStyles()(()=> ({
 		display: "flex",
 		svg:{
 			marginTop: 80,
+		},
+		"@media (max-width: 480px)":{
+			flexDirection: "column",
 		}
 	},
 	projectPack:{
@@ -67,6 +77,24 @@ export const useStyle = makeStyles()(()=> ({
 			marginLeft: 250,
 			marginTop: 250,
 		},
+		"@media (max-width: 480px)":{
+			div:{
+				":nth-child(2n - 1)":{
+					svg:{
+						marginLeft: 100
+					},
+
+				},
+			},
+
+			minHeight: 0,
+			flexDirection: "column-reverse",
+			gap: 80,
+			"> div:first-of-type":{
+				marginLeft: 0,
+				marginTop: 0,
+			},
+		}
 	},
 	firstProject:{
 		marginLeft: 400,
@@ -106,6 +134,31 @@ export const useStyle = makeStyles()(()=> ({
 			},
 			span:{
 				top: 365
+			}
+		},
+		"@media (max-width: 480px)":{
+			margin: 0,
+			minHeight:330,
+			div:{
+				"img:first-of-type":{
+					minHeight:0,
+					minWidth: 0,
+					width: "110%",
+					left: "-5%",
+					position: "absolute",
+				},
+				"img:last-of-type":{
+					minWidth: 0,
+					minHeight:0,
+					left:0,
+					top: 80,
+					width: "100%",
+					position: "absolute",
+				},
+				span:{
+					top: -34,
+					left: 70
+				}
 			}
 		}
 	},
@@ -147,6 +200,32 @@ export const useStyle = makeStyles()(()=> ({
 				transitionDuration: "300ms",
 				top: 315
 			},
+		},
+		"@media (max-width: 480px)":{
+			minHeight: 300,
+			"img:first-of-type":{
+				minWidth: 0,
+				minHeight: 0,
+				width:"105%",
+				left: -10,
+				top: 0,
+				position: "absolute",
+				transitionDuration: "300ms",
+			},
+			"img:last-of-type":{
+				width:"90%",
+				minWidth: 0,
+				minHeight: 0,
+				left: 20,
+				top: 40,
+				transitionDuration: "300ms",
+			},
+			span: {
+				position: "absolute",
+				left: 170,
+				top: -35,
+				transitionDuration: "300ms",
+			},
 		}
 	},
 	thirdProject:{
@@ -174,7 +253,7 @@ export const useStyle = makeStyles()(()=> ({
 					left: 70,
 					transitionDuration: "300ms"
 				},
-			}
+			},
 		},
 		marginTop: 30,
 		"img:first-of-type":{
@@ -197,7 +276,34 @@ export const useStyle = makeStyles()(()=> ({
 			top: 495,
 			transitionDuration: "300ms"
 		},
-
+		"@media (max-width: 480px)":{
+			margin: 0,
+			width: "100%",
+			"img:first-of-type":{
+				minWidth: 0,
+				minHeight: 0,
+				width:"105%",
+				left: -10,
+				top: 0,
+				position: "absolute",
+				transitionDuration: "300ms",
+			},
+			"img:last-of-type":{
+				width:"100%",
+				height: "auto",
+				minWidth: 0,
+				minHeight: 0,
+				left: 0,
+				top: 40,
+				transitionDuration: "300ms",
+			},
+			span: {
+				position: "absolute",
+				left: 70,
+				top: -35,
+				transitionDuration: "300ms",
+			},
+		}
 	},
 	fourthProject:{
 		marginTop: 30,
@@ -242,6 +348,37 @@ export const useStyle = makeStyles()(()=> ({
 			top: 365,
 			transitionDuration: "300ms",
 			position: "absolute"
+		},
+		"@media (max-width: 480px)":{
+			margin: 0,
+			width: "100%",
+			div:{
+				minHeight: 250
+			},
+			"img:first-of-type":{
+				minWidth: 0,
+				minHeight: 0,
+				width:"105%",
+				left: -10,
+				top: 0,
+				position: "absolute",
+				transitionDuration: "300ms",
+			},
+			"img:last-of-type":{
+				width:"80%",
+				height: "auto",
+				minWidth: 0,
+				minHeight: 0,
+				left: 10,
+				top: 40,
+				transitionDuration: "300ms",
+			},
+			span: {
+				position: "absolute",
+				left: 170,
+				top: -35,
+				transitionDuration: "300ms",
+			},
 		}
 	},
 	fifthProject:{
@@ -284,6 +421,37 @@ export const useStyle = makeStyles()(()=> ({
 			transitionDuration: "300ms",
 			left: 30,
 			top: 405,
+		},
+		"@media (max-width: 480px)":{
+			margin: 0,
+			width: "100%",
+			div:{
+				minHeight: 250
+			},
+			"img:first-of-type":{
+				minWidth: 0,
+				minHeight: 0,
+				width:"105%",
+				left: -10,
+				top: 0,
+				position: "absolute",
+				transitionDuration: "300ms",
+			},
+			"img:last-of-type":{
+				width:"94%",
+				height: "auto",
+				minWidth: 0,
+				minHeight: 0,
+				left: 10,
+				top: 60,
+				transitionDuration: "300ms",
+			},
+			span: {
+				position: "absolute",
+				left: 70,
+				top: -35,
+				transitionDuration: "300ms",
+			},
 		}
 	},
 	sixthProject:{
@@ -327,6 +495,37 @@ export const useStyle = makeStyles()(()=> ({
 			position: "absolute",
 			left: 20,
 			transitionDuration: "300ms",
+		},
+		"@media (max-width: 480px)":{
+			margin: 0,
+			width: "100%",
+			div:{
+				minHeight: 250
+			},
+			"img:first-of-type":{
+				minWidth: 0,
+				minHeight: 0,
+				width:"105%",
+				left: -10,
+				top: 0,
+				position: "absolute",
+				transitionDuration: "300ms",
+			},
+			"img:last-of-type":{
+				width:"100%",
+				height: "auto",
+				minWidth: 0,
+				minHeight: 0,
+				left: 0,
+				top: 40,
+				transitionDuration: "300ms",
+			},
+			span: {
+				position: "absolute",
+				left: 170,
+				top: -35,
+				transitionDuration: "300ms",
+			},
 		}
 	},
 	seventhProject:{
@@ -370,6 +569,37 @@ export const useStyle = makeStyles()(()=> ({
 			transitionDuration: "300ms",
 			top: 505,
 			left: 25
+		},
+		"@media (max-width: 480px)":{
+			margin: 0,
+			width: "100%",
+			div:{
+				minHeight: 250
+			},
+			"img:first-of-type":{
+				minWidth: 0,
+				minHeight: 0,
+				width:"105%",
+				left: -10,
+				top: 0,
+				position: "absolute",
+				transitionDuration: "300ms",
+			},
+			"img:last-of-type":{
+				width:"100%",
+				height: "auto",
+				minWidth: 0,
+				minHeight: 0,
+				left: 0,
+				top: 40,
+				transitionDuration: "300ms",
+			},
+			span: {
+				position: "absolute",
+				left: 70,
+				top: -35,
+				transitionDuration: "300ms",
+			},
 		}
 	},
 	projectImage:{

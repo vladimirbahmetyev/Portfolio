@@ -51,7 +51,7 @@ export const WorkExpirience:FC= () => {
 				<N3/>
 				<div>
 					<img src='/images/workExperience/p3.png' className={classes.projectPack}/>
-					<img src='/images/workExperience/pr3.jpg'className={classes.projectImage}/>
+					<img src='/images/workExperience/pr3.jpg' className={classes.projectImage}/>
 					<Typography variant='h3' block>Game Greed</Typography>
 				</div>
 			</div>
