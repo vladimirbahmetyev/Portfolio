@@ -96,7 +96,8 @@ export const useStyle = makeStyles()(()=> ({
 			transform: "rotate(20deg)",
 			right:20,
 			top: -25,
-			zIndex: 1
+			zIndex: 1,
+			width: 200,
 		}
 	},
 
