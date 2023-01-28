@@ -12,7 +12,7 @@ export const useStyle = makeStyles()((theme)=>({
 		paddingRight:"calc((100% - 1400px)/2)",
 		position: "relative",
 		"@media (max-width: 480px)":{
-			paddingTop: 120
+			padding:"120px 20px 60px 20px"
 		}
 	},
 	description:{
@@ -21,7 +21,8 @@ export const useStyle = makeStyles()((theme)=>({
 	contactsTitle:{
 		marginBottom: 70,
 		"@media (max-width: 480px)":{
-			width: 300
+			width: 300,
+			marginBottom: 0
 		}
 	},
 	catEnd:{
@@ -40,7 +41,8 @@ export const useStyle = makeStyles()((theme)=>({
 		flexDirection: "column",
 		gap: 60,
 		"@media (max-width: 480px)":{
-			width: "100%"
+			width: "100%",
+			marginTop: 60
 		}
 	},
 	infoContainer:{
@@ -80,7 +82,10 @@ export const useStyle = makeStyles()((theme)=>({
 		paddingTop: 110,
 		display:"flex",
 		flexDirection: "column",
-		gap: 30
+		gap: 30,
+		"@media (max-width: 480px)":{
+			paddingTop: 30
+		}
 	},
 	contact:{
 		display:"flex",

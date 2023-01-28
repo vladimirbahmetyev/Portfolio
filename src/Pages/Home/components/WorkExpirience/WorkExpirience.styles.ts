@@ -8,9 +8,9 @@ export const useStyle = makeStyles()(()=> ({
 		"@media (max-width:480px)":{
 			marginTop: 200,
 			div:{
-				":nth-child(2n + 3)":{
+				":nth-child(2n+3)":{
 					svg:{
-						marginLeft: 100
+						marginLeft: 100,
 					}
 				}
 			}
@@ -79,9 +79,14 @@ export const useStyle = makeStyles()(()=> ({
 		},
 		"@media (max-width: 480px)":{
 			div:{
-				":nth-child(2n - 1)":{
+				":first-child":{
 					svg:{
 						marginLeft: 100
+					},
+				},
+				":last-child":{
+					svg:{
+						marginLeft: 0
 					},
 
 				},
@@ -574,7 +579,7 @@ export const useStyle = makeStyles()(()=> ({
 			margin: 0,
 			width: "100%",
 			div:{
-				minHeight: 250
+				minHeight: 100
 			},
 			"img:first-of-type":{
 				minWidth: 0,
