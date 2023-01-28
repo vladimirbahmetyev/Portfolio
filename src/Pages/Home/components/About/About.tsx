@@ -9,6 +9,7 @@ export const About: FC = () => {
 		<div className={classes.aboutContainer} id='about'>
 			<div className={classes.topContainer}>
 				<img src='/images/computer.png' alt='cat in the computer' className={classes.catInPc}/>
+				<img src='/images/photo.jpg' alt='Vladimir in the forest' className={classes.photoMobile}/>
 				<div className={classes.titleWithDescription}>
 					<AboutTitle className={classes.aboutTitle}/>
 					<Typography block variant='body' >
@@ -33,22 +34,24 @@ and 5 years with passion to frontend.
 					</div>
 					<div className={classes.itemContainer}>
 						<Typography variant='h4' block>Languages</Typography>
-						<div className={classes.languageContainer}>
-							<Typography variant='h4' block>Russian</Typography>
-							<Typography variant='description' block>Native</Typography>
-							<div className={classes.starContainer}>
-								<FilledStar/>
-								<FilledStar/>
-								<FilledStar/>
+						<div className={classes.languageSubcontainer}>
+							<div className={classes.languageContainer}>
+								<Typography variant='h4' block>Russian</Typography>
+								<Typography variant='description' block>Native</Typography>
+								<div className={classes.starContainer}>
+									<FilledStar/>
+									<FilledStar/>
+									<FilledStar/>
+								</div>
 							</div>
-						</div>
-						<div className={classes.languageContainer}>
-							<Typography variant='h4' block>English</Typography>
-							<Typography variant='description' block>B2</Typography>
-							<div className={classes.starContainer}>
-								<FilledStar/>
-								<FilledStar/>
-								<Star/>
+							<div className={classes.languageContainer}>
+								<Typography variant='h4' block>English</Typography>
+								<Typography variant='description' block>B2</Typography>
+								<div className={classes.starContainer}>
+									<FilledStar/>
+									<FilledStar/>
+									<Star/>
+								</div>
 							</div>
 						</div>
 					</div>

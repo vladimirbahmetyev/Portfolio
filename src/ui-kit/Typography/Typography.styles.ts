@@ -40,7 +40,11 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			fontSize: 20,
 			lineHeight:"27px",
 			fontWeight: 400,
-			fontFamily:"Montserrat, sans-serif"
+			fontFamily:"Montserrat, sans-serif",
+			"@media (max-width: 480px)":{
+				fontSize: 16,
+				lineHeight: "22px"
+			}
 		},
 		description:{
 			fontSize: 14,

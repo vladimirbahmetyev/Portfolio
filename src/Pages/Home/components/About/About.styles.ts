@@ -10,14 +10,15 @@ export const useStyle = makeStyles()(()=> ({
 		"@media (max-width: 480px)":{
 			padding: 0,
 			marginTop: 650,
-			position: "relative"
+			position: "relative",
 		}
 	},
 	topContainer:{
 		display: "flex",
 		gap:90,
 		width: "100%",
-		justifyContent: "center"
+		maxWidth: "100%",
+		justifyContent: "center",
 	},
 	titleWithDescription:{
 		display: "flex",
@@ -74,7 +75,9 @@ export const useStyle = makeStyles()(()=> ({
 		top: -75,
 		"@media (max-width: 480px)":{
 			position: "absolute",
-			top: "100%"
+			top: "95%",
+			width: 200,
+			right: -10
 		}
 	},
 	photo: {
@@ -82,20 +85,28 @@ export const useStyle = makeStyles()(()=> ({
 		top: -160,
 		right: -30,
 		"@media (max-width: 480px)":{
-			position: "absolute",
-			right: -35,
-			top: 0,
-			width: 247,
-			zIndex: 1,
-			transform: "rotate(20deg)"
+			display:"none"
 		}
 	},
+	photoMobile:{
+		display:"none",
+		"@media (max-width: 480px)":{
+			display:"block",
+			position: "absolute",
+			transform: "rotate(20deg)",
+			right:20,
+			top: -25,
+			zIndex: 1
+		}
+	},
+
 	catInPc:{
 		"@media (max-width: 480px)":{
-			width: 360,
+			width: 300,
 			position:"absolute",
 			transform:"rotate(-30deg)",
-			left: -85
+			left: -85,
+			zIndex: 2
 		}
 	},
 	aboutTitle:{
@@ -103,6 +114,9 @@ export const useStyle = makeStyles()(()=> ({
 			width: 184,
 			zIndex: 2,
 		}
+	},
+	languageSubcontainer:{
+		display: "flex",
+		gap: 40,
 	}
-
 }));
