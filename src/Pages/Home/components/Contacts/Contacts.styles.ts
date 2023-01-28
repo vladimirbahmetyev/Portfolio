@@ -10,18 +10,28 @@ export const useStyle = makeStyles()((theme)=>({
 		mixBlendMode: "lighten",
 		paddingLeft:"calc((100% - 1400px)/2)",
 		paddingRight:"calc((100% - 1400px)/2)",
-		position: "relative"
+		position: "relative",
+		"@media (max-width: 480px)":{
+			paddingTop: 120
+		}
 	},
 	description:{
 		maxWidth: 600
 	},
 	contactsTitle:{
 		marginBottom: 70,
+		"@media (max-width: 480px)":{
+			width: 300
+		}
 	},
 	catEnd:{
 		position: "absolute",
 		right: 0,
-		bottom: 0
+		bottom: 0,
+		"@media (max-width: 480px)":{
+			width: 360,
+			zIndex: -1
+		}
 	},
 	formContainer:{
 		marginTop: 100,
@@ -29,16 +39,26 @@ export const useStyle = makeStyles()((theme)=>({
 		display: "flex",
 		flexDirection: "column",
 		gap: 60,
+		"@media (max-width: 480px)":{
+			width: "100%"
+		}
 	},
 	infoContainer:{
 		width: "100%",
 		display: "flex",
-		gap: 20
+		gap: 20,
+		"@media (max-width: 480px)":{
+			flexDirection: "column",
+			gap: 60,
+		}
 	},
 	inputContainer:{
 		flexGrow: 1,
 		borderBottom:`1px solid ${theme.palette.white}`,
 		paddingBottom: 10,
+		"@media (max-width: 480px)":{
+			width: "100%"
+		}
 	},
 	button:{
 		border: `1px solid ${theme.palette.white}`,
@@ -50,7 +70,11 @@ export const useStyle = makeStyles()((theme)=>({
 	},
 	contentContainer:{
 		display: "flex",
-		gap: 200
+		gap: 200,
+		"@media (max-width: 480px)":{
+			gap: 50,
+			flexDirection: "column"
+		}
 	},
 	contactsContainer:{
 		paddingTop: 110,

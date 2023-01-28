@@ -29,7 +29,7 @@ export const Home: FC = () => {
 				<Skills/>
 				<WorkExpirience/>
 			</div>
-			{/*<Contacts/>*/}
+			<Contacts/>
 			<HashLink to='/#greeting'>
 				<Back className={classes.backArrow}/>
 			</HashLink>
