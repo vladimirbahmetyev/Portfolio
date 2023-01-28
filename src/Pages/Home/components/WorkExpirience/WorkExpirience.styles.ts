@@ -4,7 +4,10 @@ export const useStyle = makeStyles()(()=> ({
 	workExperienceContainer:{
 		marginTop: 230,
 		marginBottom: 50,
-		position: "relative"
+		position: "relative",
+		"@media (max-width:480px)":{
+			marginTop: 200,
+		}
 	},
 	titleContainer:{
 		display: "flex",
@@ -12,6 +15,9 @@ export const useStyle = makeStyles()(()=> ({
 		alignItems: "flex-end",
 		gap: 24,
 		marginBottom: 40,
+		"@media (max-width:480px)":{
+			gap: 0
+		}
 	},
 	rowContainer:{
 		display: "flex",
@@ -25,11 +31,20 @@ export const useStyle = makeStyles()(()=> ({
 	},
 	experience:{
 		marginRight: 122,
+		"@media (max-width: 480px)":{
+			width: 330,
+			marginRight: 0,
+			marginTop: -40
+		}
 	},
 	img:{
 		position: "absolute",
 		left: 90,
-		top: -66
+		top: -66,
+		"@media (max-width: 480px)":{
+			width: 392,
+			left:"-45%"
+		}
 	},
 	projectContainer:{
 		position: "relative",
@@ -360,5 +375,11 @@ export const useStyle = makeStyles()(()=> ({
 	projectImage:{
 		position: "absolute",
 		zIndex: 1,
+	},
+	workTitle:{
+		"@media (max-width: 480px)":{
+			width: 160
+		}
 	}
+
 }));

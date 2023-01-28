@@ -25,7 +25,7 @@ export const WorkExpirience:FC= () => {
 						<Typography variant='h2'>{yearsOfExp}</Typography>
 						<Typography variant='h3'>years</Typography>
 					</div>
-					<WorkTitle/>
+					<WorkTitle className={classes.workTitle}/>
 				</div>
 				<ExperienceTitle className={classes.experience}/>
 			</div>
