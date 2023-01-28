@@ -3,6 +3,7 @@ import {useStyle} from "./Skills.styles";
 import {Accordion, Button} from "ui-kit";
 import {SkillsTitle} from "icons";
 import {skillsList} from "./Skills.model";
+import {useScreenWidth} from "shared";
 
 const skillFirst = skillsList.slice(0, 6);
 const skillSecond = skillsList.slice(6, 11);
@@ -11,8 +12,9 @@ const skillSecond = skillsList.slice(6, 11);
 export const Skills: FC = () => {
 	const {classes} = useStyle();
 	const [openSkill, setOpenSkill] = useState<string>("React");
-	const isMobile = window.innerWidth <= 481;
-	const [showAll, setShowAll] = useState<boolean>(!isMobile);
+	const width = useScreenWidth();
+	const isMobile = width <= 481;
+	const [showAll, setShowAll] = useState<boolean>(false);
 	const onShowAllClick = () => setShowAll(true);
 	return (
 		<div className={classes.skillsContainer} id='skills'>
@@ -27,7 +29,7 @@ export const Skills: FC = () => {
 					/>
 				))}
 			</div>
-			{showAll && (
+			{(!isMobile ||  showAll) && (
 				<div className={classes.skillsColumn}>
 					{skillSecond.map((skill) =>(
 						<Accordion
@@ -39,6 +41,6 @@ export const Skills: FC = () => {
 					))}
 				</div>
 			)}
-			{!showAll && (<Button onClick={onShowAllClick} className={classes.button}>Show All ({skillSecond.length})</Button>)}
+			{isMobile && !showAll && (<Button onClick={onShowAllClick} className={classes.button}>Show All ({skillSecond.length})</Button>)}
 		</div>);
 };
