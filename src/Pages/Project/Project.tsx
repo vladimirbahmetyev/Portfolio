@@ -46,7 +46,15 @@ export const Project: FC = () => {
 				</div>
 				<Navigation isWhite/>
 			</div>
-
+			<img className={classes.manImgMobile} src={manMap[projectName]} alt='Man with tv'/>
+			{siteUrl && (
+				<a href={siteUrl} target='_blank' rel="noreferrer">
+					<div className={classes.mobileLinkButton}>
+						<Typography variant='h4'>
+					Open site
+						</Typography>
+					</div>
+				</a>)}
 			<div className={classes.contentContainer}>
 				<div className={classes.projectInfoContainer}>
 					<Typography variant='h2' block className={classes.title}>{name}</Typography>
