@@ -11,13 +11,16 @@ export const useStyle= makeStyles()(()=>{
 			[`char-${index}`]: {
 				"animation": `${keyframes(`
             0% {
-							transform:rotate3d(-1.1,2,1, ${+angle}deg) translateZ(180px) rotate(30deg);
+							transform:rotate3d(-0.44,0.8,0.4, ${+angle}deg) translate3d(0,0, 180px) rotate(30deg);
+            }
+            50% {
+            	transform: rotate3d(-0.44,0.8,0.4, ${+angle + 90}deg) translateZ(180px) rotate(30deg);
             }
             100% {
-							transform: rotate3d(-1.1,2,1, ${+angle + 180}deg) translateZ(180px) rotate(30deg);
+							transform: rotate3d(-0.44,0.8,0.4, ${+angle + 180}deg) translateZ(180px) rotate(30deg);
             }
             `)} 3s infinite linear`,
-				position: "absolute"
+				position: "absolute",
 			}
 		};
 	}).reduce((acc, curr) => ({...curr, ...acc}),{});

@@ -65,7 +65,6 @@ export const useStyle = makeStyles()(()=> ({
 		}
 	},
 	projectPack:{
-		mixBlendMode: "lighten",
 		zIndex: 2,
 	},
 	firstSecondProject:{
