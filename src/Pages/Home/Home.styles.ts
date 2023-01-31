@@ -8,6 +8,7 @@ export const useStyle = makeStyles<{isScrollVisible: boolean}>()((theme,{isScrol
 		backgroundSize: "contain, contain",
 		"@media (max-width: 820px)":{
 			backgroundImage:"url('/images/background/glitterMobile.png'), url('/images/background/paperBackground.png')",
+			backgroundSize: "100vw 100vh, contain"
 		}
 	},
 	contentContainer: {

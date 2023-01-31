@@ -9,7 +9,7 @@ export const useStyle = makeStyles()(()=> ({
 		marginTop: 100,
 		"@media (max-width: 820px)":{
 			padding: 0,
-			marginTop: 650,
+			marginTop: 50,
 			position: "relative",
 		}
 	},
@@ -26,7 +26,8 @@ export const useStyle = makeStyles()(()=> ({
 		gap: 35,
 		maxWidth: 550,
 		"@media (max-width: 820px)":{
-			marginTop: 370,
+			marginTop: "70%",
+			maxWidth: "100%",
 			gap: 20
 		}
 	},
@@ -41,6 +42,10 @@ export const useStyle = makeStyles()(()=> ({
 		flexDirection: "column",
 		gap: 40,
 		maxWidth: 530,
+		"@media (max-width: 820px) and (min-width: 481px)":{
+			maxWidth: "100%",
+			width: "100%"
+		}
 	},
 	educationContainer:{
 		display: "flex",
@@ -93,26 +98,30 @@ export const useStyle = makeStyles()(()=> ({
 		"@media (max-width: 820px)":{
 			display:"block",
 			position: "absolute",
-			transform: "rotate(20deg)",
-			right:20,
-			top: -25,
+			transform:"rotate(20deg) translateX(-50%)",
+			left: "70%",
 			zIndex: 1,
-			width: 200,
+			width: "40%",
+			top: "10%"
 		}
 	},
 
 	catInPc:{
 		"@media (max-width: 820px)":{
-			width: 300,
+			width: "60%",
 			position:"absolute",
-			transform:"rotate(-30deg)",
-			left: -85,
+			transform:"rotate(-30deg) translateX(-50%)",
+			left: "30%",
 			zIndex: 2
 		}
 	},
 	aboutTitle:{
-		"@media (max-width: 820px)":{
+		"@media (max-width: 480px)":{
 			width: 184,
+			zIndex: 2,
+		},
+		"@media (max-width: 820px) and (min-width: 481px)":{
+			width: 360,
 			zIndex: 2,
 		}
 	},

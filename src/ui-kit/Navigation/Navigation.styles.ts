@@ -11,8 +11,10 @@ export const useStyle = makeStyles()(() => ({
 		"@media (max-width: 820px)":{
 			gap: 16,
 			justifyContent: "center",
+		},
+		"@media (max-width: 820px) and (min-width: 480px)":{
+			gap: 64
 		}
-
 	},
 	itemContainer:{
 		span: {

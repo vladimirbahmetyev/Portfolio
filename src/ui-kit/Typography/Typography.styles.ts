@@ -9,7 +9,11 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			lineHeight: "132px",
 			fontWeight: 400,
 			fontFamily: "Krona One,Nunito, sans-serif",
-			"@media (max-width: 820px)":{
+			"@media (max-width: 820px) and (min-width: 481px)":{
+				fontSize: 60,
+				lineHeight: "66px"
+			},
+			"@media (max-width: 480px)":{
 				fontSize: 40,
 				lineHeight: "44px"
 			}
@@ -39,20 +43,20 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			fontWeight: 400,
 			lineHeight: "24px",
 			fontFamily: "Krona One,Nunito, sans-serif",
-			"@media (max-width: 820px)":{
+			"@media (max-width: 480px)":{
 				fontSize: 16,
 				lineHeight: "23px"
-			}
+			},
 		},
 		body:{
 			fontSize: 20,
 			lineHeight:"27px",
 			fontWeight: 400,
 			fontFamily:"Montserrat, sans-serif",
-			"@media (max-width: 820px)":{
+			"@media (max-width: 480px)":{
 				fontSize: 16,
 				lineHeight: "22px"
-			}
+			},
 		},
 		description:{
 			fontSize: 14,

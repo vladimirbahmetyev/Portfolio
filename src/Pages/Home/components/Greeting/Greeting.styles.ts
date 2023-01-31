@@ -8,7 +8,7 @@ export const useStyle = makeStyles()(() => ({
 		position: "relative",
 		"@media (max-width: 820px)":{
 			paddingTop: "38px",
-			height: "fit-content"
+			height: "100vh"
 		}
 	},
 	greetText:{
@@ -25,13 +25,18 @@ export const useStyle = makeStyles()(() => ({
 		right: 0,
 		bottom: -600,
 		"@media (max-width: 820px)":{
-			width: "435px",
-			right: -20
+			right: "50%",
+			transform: "translateX(50%)",
+			height: "100%",
+			top: 0
 		}
 	},
 	catContainer:{
 		position:"relative",
 		zIndex: 1,
+		"@media (max-width: 820px)":{
+			minHeight: "60vh"
+		}
 	},
 	rotatingText:{
 		position: "absolute",
@@ -40,7 +45,8 @@ export const useStyle = makeStyles()(() => ({
 		zIndex: 2,
 		"@media (max-width: 820px)":{
 			right: "50%",
-			top: 300,
+			transform:"translateX(50%)",
+			top: "58%"
 		}
 	},
 	catEnd:{
@@ -49,8 +55,10 @@ export const useStyle = makeStyles()(() => ({
 		bottom: -600,
 		zIndex: 3,
 		"@media (max-width: 820px)":{
-			width: 435,
-			right: -20
+			right: "50%",
+			transform: "translateX(50%)",
+			height: "100%",
+			top: 0
 		}
 	},
 	mouseContainer:{
