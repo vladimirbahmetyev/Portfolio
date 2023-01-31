@@ -41,21 +41,17 @@ export const useStyle = makeStyles()(()=> ({
 		"@media (max-width: 820px)":{
 		}
 	},
-	experience:{
-		marginRight: 122,
-		"@media (max-width: 820px)":{
-			width: 330,
-			marginRight: 0,
-			marginTop: -40
-		}
-	},
 	img:{
 		position: "absolute",
 		left: 90,
 		top: -66,
-		"@media (max-width: 820px)":{
+		"@media (max-width: 480px)":{
 			width: 392,
 			left:"-45%"
+		},
+		"@media (max-width: 820px) and (min-width:481px)":{
+			left: "0",
+			width: "70%"
 		}
 	},
 	projectContainer:{
@@ -310,9 +306,22 @@ export const useStyle = makeStyles()(()=> ({
 		zIndex: 1,
 	},
 	workTitle:{
-		"@media (max-width: 820px)":{
+		"@media (max-width: 480px)":{
 			width: 160
+		},
+		"@media (max-width: 820px) and (min-width:481px)":{
+			width: 290
 		}
-	}
-
+	},
+	experience:{
+		marginRight: 122,
+		"@media (max-width: 480px)":{
+			width: 330,
+			marginRight: 0,
+			marginTop: -40
+		},
+		"@media (max-width: 820px) and (min-width:481px)":{
+			width: 500
+		}
+	},
 }));

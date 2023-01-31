@@ -6,7 +6,7 @@ import {useNavigate} from "react-router-dom";
 import {ProjectUrlType} from "types";
 
 export const WorkExpirience:FC= () => {
-	const {classes, cx} = useStyle();
+	const {classes} = useStyle();
 	const navigate = useNavigate();
 	const onProjectClick = (projectUrl: ProjectUrlType) => navigate(`/project/${projectUrl}`);
 	const currentDate = new Date();
