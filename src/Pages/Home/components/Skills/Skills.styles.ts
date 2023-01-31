@@ -14,8 +14,12 @@ export const useStyle = makeStyles()(()=> ({
 	skillsTitle:{
 		marginTop: 120,
 		marginBottom: 122,
-		"@media (max-width: 820px)":{
+		"@media (max-width: 480px)":{
 			width: 187,
+			marginBottom: 32
+		},
+		"@media (min-width: 480px) and (max-width: 820px)":{
+			width: 360,
 			marginBottom: 32
 		}
 	},

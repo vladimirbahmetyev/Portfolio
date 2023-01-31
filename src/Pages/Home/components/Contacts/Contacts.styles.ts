@@ -20,8 +20,12 @@ export const useStyle = makeStyles()((theme)=>({
 	},
 	contactsTitle:{
 		marginBottom: 70,
-		"@media (max-width: 820px)":{
+		"@media (max-width: 480px)":{
 			width: 300,
+			marginBottom: 0
+		},
+		"@media (min-width: 481px) and (max-width: 820px)":{
+			width: 450,
 			marginBottom: 0
 		}
 	},
