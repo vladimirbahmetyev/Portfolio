@@ -29,12 +29,17 @@ export const useStyle = makeStyles()(()=> ({
 	rowContainer:{
 		display: "flex",
 		justifyContent:"center",
-		gap: 400
+		gap: 400,
+		"@media (max-width: 480px)":{
+			gap: 80
+		}
 	},
 	yearsContainer:{
 		display: "flex",
 		flexDirection: "column",
-		gap: 2
+		gap: 2,
+		"@media (max-width: 480px)":{
+		}
 	},
 	experience:{
 		marginRight: 122,
