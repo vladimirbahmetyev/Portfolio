@@ -30,62 +30,62 @@ export const WorkExpirience:FC= () => {
 				<ExperienceTitle className={classes.experience}/>
 			</div>
 			<div className={classes.firstSecondProject}>
-				<div className={cx(classes.projectContainer,classes.secondProject)} onClick={()=>onProjectClick("Jobswidget")}>
+				<div className={classes.secondProjectContainer} onClick={()=>onProjectClick("Jobswidget")}>
 					<N2/>
-					<div>
-						<img src='/images/workExperience/p2.png' className={classes.projectPack}/>
-						<img src='/images/workExperience/pr2.jpg' className={classes.projectImage}/>
+					<div className={classes.projectContainer}>
+						<img src='/images/workExperience/p2.png' className={cx(classes.projectPack, classes.secondProjectPack)}/>
+						<img src='/images/workExperience/pr2.jpg' className={cx(classes.projectImage, classes.secondProjectImage)}/>
 						<Typography variant='h3' block>JobsWidget</Typography>
 					</div>
 				</div>
-				<div className={cx(classes.projectContainer, classes.firstProject)} onClick={()=>onProjectClick("Metamap")}>
+				<div className={classes.firstProjectContainer  } onClick={()=>onProjectClick("Metamap")}>
 					<N1/>
-					<div>
-						<img src='/images/workExperience/p1.png' className={classes.projectPack}/>
-						<img src='/images/workExperience/pr1.jpg'className={classes.projectImage}/>
+					<div className={classes.projectContainer}>
+						<img src='/images/workExperience/p1.png' className={cx(classes.projectPack, classes.firstProjectPack)}/>
+						<img src='/images/workExperience/pr1.jpg'className={cx(classes.projectImage, classes.firstProjectImage)}/>
 						<Typography variant='h3' block>Metamap</Typography>
 					</div>
 				</div>
 			</div>
-			<div className={cx(classes.projectContainer, classes.thirdProject)} onClick={()=>onProjectClick("GameGreed")}>
+			<div className={classes.thirdProjectContainer} onClick={()=>onProjectClick("GameGreed")}>
 				<N3/>
-				<div>
-					<img src='/images/workExperience/p3.png' className={classes.projectPack}/>
-					<img src='/images/workExperience/pr3.jpg' className={classes.projectImage}/>
+				<div className={classes.projectContainer}>
+					<img src='/images/workExperience/p3.png' className={classes.thirdProjectPack}/>
+					<img src='/images/workExperience/pr3.jpg' className={classes.thirdProjectImage}/>
 					<Typography variant='h3' block>Game Greed</Typography>
 				</div>
 			</div>
-			<div className={cx(classes.projectContainer, classes.fourthProject)} onClick={()=>onProjectClick("Mugler")}>
-				<N4/>
-				<div>
-					<img src='/images/workExperience/p4.png' className={classes.projectPack}/>
-					<img src='/images/workExperience/pr4.jpg'className={classes.projectImage}/>
-					<Typography variant='h3' block>Mugler</Typography>
-				</div>
-			</div>
-			<div className={cx(classes.projectContainer, classes.fifthProject)} onClick={()=>onProjectClick("MyGlo")}>
-				<N5/>
-				<div>
-					<img src='/images/workExperience/p5.png' className={classes.projectPack}/>
-					<img src='/images/workExperience/pr5.jpg'className={classes.projectImage}/>
-					<Typography variant='h3' block>MyGlo</Typography>
-				</div>
-			</div>
-			<div className={cx(classes.projectContainer, classes.sixthProject)} onClick={()=>onProjectClick("CorpPass")}>
-				<N6/>
-				<div>
-					<img src='/images/workExperience/p6.png' className={classes.projectPack}/>
-					<img src='/images/workExperience/pr6.jpg'className={classes.projectImage}/>
-					<Typography variant='h3' block>CorpPass</Typography>
-				</div>
-			</div>
-			<div className={cx(classes.projectContainer, classes.seventhProject)} onClick={()=>onProjectClick("Shopic")}>
-				<N7/>
-				<div>
-					<img src='/images/workExperience/p7.png' className={classes.projectPack}/>
-					<img src='/images/workExperience/pr7.jpg'className={classes.projectImage}/>
-					<Typography variant='h3' block>Shopic</Typography>
-				</div>
-			</div>
+			{/*<div className={cx(classes.projectContainer, classes.fourthProject)} onClick={()=>onProjectClick("Mugler")}>*/}
+			{/*	<N4/>*/}
+			{/*	<div>*/}
+			{/*		<img src='/images/workExperience/p4.png' className={classes.projectPack}/>*/}
+			{/*		<img src='/images/workExperience/pr4.jpg'className={classes.projectImage}/>*/}
+			{/*		<Typography variant='h3' block>Mugler</Typography>*/}
+			{/*	</div>*/}
+			{/*</div>*/}
+			{/*<div className={cx(classes.projectContainer, classes.fifthProject)} onClick={()=>onProjectClick("MyGlo")}>*/}
+			{/*	<N5/>*/}
+			{/*	<div>*/}
+			{/*		<img src='/images/workExperience/p5.png' className={classes.projectPack}/>*/}
+			{/*		<img src='/images/workExperience/pr5.jpg'className={classes.projectImage}/>*/}
+			{/*		<Typography variant='h3' block>MyGlo</Typography>*/}
+			{/*	</div>*/}
+			{/*</div>*/}
+			{/*<div className={cx(classes.projectContainer, classes.sixthProject)} onClick={()=>onProjectClick("CorpPass")}>*/}
+			{/*	<N6/>*/}
+			{/*	<div>*/}
+			{/*		<img src='/images/workExperience/p6.png' className={classes.projectPack}/>*/}
+			{/*		<img src='/images/workExperience/pr6.jpg'className={classes.projectImage}/>*/}
+			{/*		<Typography variant='h3' block>CorpPass</Typography>*/}
+			{/*	</div>*/}
+			{/*</div>*/}
+			{/*<div className={cx(classes.projectContainer, classes.seventhProject)} onClick={()=>onProjectClick("Shopic")}>*/}
+			{/*	<N7/>*/}
+			{/*	<div>*/}
+			{/*		<img src='/images/workExperience/p7.png' className={classes.projectPack}/>*/}
+			{/*		<img src='/images/workExperience/pr7.jpg'className={classes.projectImage}/>*/}
+			{/*		<Typography variant='h3' block>Shopic</Typography>*/}
+			{/*	</div>*/}
+			{/*</div>*/}
 		</div>);
 };

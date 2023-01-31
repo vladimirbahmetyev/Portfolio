@@ -62,256 +62,108 @@ export const useStyle = makeStyles()(()=> ({
 		position: "relative",
 		cursor: "pointer",
 		display: "flex",
-		svg:{
-			marginTop: 80,
-		},
-		"@media (max-width: 820px)":{
-			flexDirection: "column",
-		}
 	},
 	projectPack:{
 		zIndex: 2,
 	},
 	firstSecondProject:{
 		display: "flex",
-		justifyContent: "space-between",
+		justifyContent: "center",
 		gap: 90,
-		minHeight: 700,
-		"> div:first-of-type":{
-			marginLeft: 250,
-			marginTop: 250,
-		},
 		"@media (max-width: 820px)":{
-			div:{
-				":first-child":{
-					svg:{
-						marginLeft: 100
-					},
-				},
-				":last-child":{
-					svg:{
-						marginLeft: 0
-					},
-
-				},
-			},
-
-			minHeight: 0,
-			flexDirection: "column-reverse",
-			gap: 80,
-			"> div:first-of-type":{
-				marginLeft: 0,
-				marginTop: 0,
-			},
+			flexDirection: "column-reverse"
 		}
 	},
-	firstProject:{
-		marginLeft: 400,
-		marginRight: "auto",
-		div:{
-			position: "relative",
-		},
-		"img:first-of-type":{
-			minWidth: 617,
-			minHeight: 520,
-			top: 0,
-			transitionDuration: "300ms",
-			position: "absolute",
-		},
-		"img:last-of-type":{
-			minWidth: 560,
-			minHeight: 300,
-			left: 30,
-			top: 100,
-			position: "absolute",
-			transitionDuration: "300ms",
-		},
-		span:{
-			position: "absolute",
-			left: 30,
-			top: 415,
-			transitionDuration: "300ms",
-		},
-		":hover":{
-			"img:first-of-type":{
-				top: 50,
-				transitionDuration: "300ms"
-			},
-			"img:last-of-type":{
-				transitionDuration: "300ms",
-				top: 50
-			},
-			span:{
-				top: 365
-			}
+	firstProjectContainer:{
+		display: "flex",
+		svg:{
+			marginTop: 80,
 		},
 		"@media (max-width: 820px)":{
-			margin: 0,
-			minHeight:330,
-			div:{
-				"img:first-of-type":{
-					minHeight:0,
-					minWidth: 0,
-					width: "110%",
-					left: "-5%",
-					position: "absolute",
-				},
-				"img:last-of-type":{
-					minWidth: 0,
-					minHeight:0,
-					left:0,
-					top: 80,
-					width: "100%",
-					position: "absolute",
-				},
-				span:{
-					top: -34,
-					left: 70
-				}
+			flexDirection: "column",
+			svg:{
+				marginTop: 0
 			}
-		}
-	},
-	secondProject:{
-		div:{
-			position: "relative"
-		},
-		"img:first-of-type":{
-			minWidth: 403,
-			minHeight: 348,
-			top: 0,
-			position: "absolute",
-			transitionDuration: "300ms",
-		},
-		"img:last-of-type":{
-			minWidth: 300,
-			minHeight: 300,
-			left: 50,
-			top: 50,
-			transitionDuration: "300ms",
 		},
 		span: {
 			position: "absolute",
-			left: 50,
-			top: 365,
-			transitionDuration: "300ms",
-		},
-		":hover":{
-			"img:first-of-type":{
-				minWidth: 403,
-				minHeight: 348,
-				top: 50,
-			},
-			"img:last-of-type":{
-				transitionDuration: "300ms",
-				top: 0
-			},
-			span: {
-				transitionDuration: "300ms",
-				top: 315
-			},
-		},
+			left: "5%",
+			bottom: "15%"
+		}
+
+	},
+	firstProjectImage:{
+		position: "absolute",
+		top: "20%",
+		left: "5%",
+		width: "90%",
+	},
+	firstProjectPack:{
+		width:"auto",
 		"@media (max-width: 820px)":{
-			minHeight: 300,
-			"img:first-of-type":{
-				minWidth: 0,
-				minHeight: 0,
-				width:"105%",
-				left: -10,
-				top: 0,
-				position: "absolute",
-				transitionDuration: "300ms",
-			},
-			"img:last-of-type":{
-				width:"90%",
-				minWidth: 0,
-				minHeight: 0,
-				left: 20,
-				top: 40,
-				transitionDuration: "300ms",
-			},
-			span: {
-				position: "absolute",
-				left: 170,
-				top: -35,
-				transitionDuration: "300ms",
-			},
+			width: "100%"
 		}
 	},
-	thirdProject:{
-		justifyContent: "center",
-		minHeight: 600,
-		marginLeft: 170,
-		div:{
-			minWidth: 300,
-			position: "relative",
-			":hover":{
-				"img:first-of-type":{
-					position: "absolute",
-					transitionDuration: "300ms",
-					left: -30,
-				},
-				"img:last-of-type":{
-					width: 760,
-					height: 450,
-					position: "absolute",
-					transitionDuration: "300ms",
-					left: 70
-				},
-				span:{
-					position: "absolute",
-					left: 70,
-					transitionDuration: "300ms"
-				},
-			},
-		},
-		marginTop: 30,
-		"img:first-of-type":{
+	secondProjectContainer:{
+		position: "relative",
+		top: 160,
+		span: {
 			position: "absolute",
-			transitionDuration: "300ms",
-			left: 0,
-			top: 0,
-		},
-		"img:last-of-type":{
-			width: 760,
-			height: 450,
-			position: "absolute",
-			transitionDuration: "300ms",
-			top: 30,
-			left: 20
-		},
-		span:{
-			position: "absolute",
-			left: 20,
-			top: 495,
-			transitionDuration: "300ms"
+			left: "5%",
+			bottom: "5%"
 		},
 		"@media (max-width: 820px)":{
-			margin: 0,
-			width: "100%",
-			"img:first-of-type":{
-				minWidth: 0,
-				minHeight: 0,
-				width:"105%",
-				left: -10,
-				top: 0,
-				position: "absolute",
-				transitionDuration: "300ms",
-			},
-			"img:last-of-type":{
-				width:"100%",
-				height: "auto",
-				minWidth: 0,
-				minHeight: 0,
-				left: 0,
-				top: 40,
-				transitionDuration: "300ms",
-			},
-			span: {
-				position: "absolute",
-				left: 70,
-				top: -35,
-				transitionDuration: "300ms",
-			},
+			top: 0,
+		}
+	},
+	secondProjectImage:{
+		position: "absolute",
+		top: "10%",
+		left: "5%",
+		width: "90%",
+	},
+	secondProjectPack:{
+		"@media (max-width:820px)":{
+			width: "100%"
+		}
+	},
+	thirdProjectContainer:{
+		display: "flex",
+		justifyContent: "center",
+		paddingLeft: "20%",
+		marginTop: 100,
+		svg:{
+			marginTop: 80,
+		},
+		"@media (max-width: 820px)":{
+			flexDirection: "column",
+			padding: 0,
+			marginTop: 50,
+			svg:{
+				marginTop: 0
+			}
+		},
+		span: {
+			position: "absolute",
+			left: "5%",
+			bottom: "10%"
+		}
+
+	},
+	thirdProjectImage:{
+		position: "absolute",
+		top: "10%",
+		left: "5%",
+		width: "90%",
+		"@media (max-width: 820px)":{
+			width: "80%"
+		}
+	},
+	thirdProjectPack:{
+		width:"auto",
+		zIndex: 1,
+		"@media (max-width: 820px)":{
+			width: "100%"
 		}
 	},
 	fourthProject:{
