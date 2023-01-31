@@ -29,5 +29,13 @@ export const useStyle = makeStyles<{isScrollVisible: boolean}>()((theme,{isScrol
 		transform: "rotate(90deg)",
 		transitionDuration: "300ms",
 		opacity: isScrollVisible ? 1 : 0,
+	},
+	backArrowImg:{
+		position: "fixed",
+		zIndex: 10,
+		bottom: 40,
+		right: 40,
+		transitionDuration: "300ms",
+		opacity: isScrollVisible ? 1 : 0,
 	}
 }));
