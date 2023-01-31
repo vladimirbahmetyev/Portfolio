@@ -17,14 +17,36 @@ const Description:FC<{description: string | string[]}> = ({description}) => {
 	})}</>;
 };
 
-const manMap: Record<ProjectUrlType, string> = {
-	Mugler: "/images/project/m4.png",
-	Metamap: "/images/project/m1.png",
-	Jobswidget: "/images/project/m2.png",
-	CorpPass: "/images/project/m6.png",
-	GameGreed: "/images/project/m3.png",
-	MyGlo: "/images/project/m5.png",
-	Shopic:"/images/project/m7.png"
+const manMap: Record<ProjectUrlType, {manUrl:string, screenUrl: string}> = {
+	Mugler:
+		{
+			manUrl:"/images/project/m4.png",
+			screenUrl:"/images/project/s4.png"
+		},
+	Metamap: {
+		manUrl:"/images/project/m1.png",
+		screenUrl:"/images/project/s1.png"
+	},
+	Jobswidget: {
+		manUrl:"/images/project/m2.png",
+		screenUrl:"/images/project/s2.png"
+	},
+	CorpPass: {
+		manUrl:"/images/project/m6.png",
+		screenUrl:"/images/project/s6.png"
+	},
+	GameGreed: {
+		manUrl:"/images/project/m3.png",
+		screenUrl:"/images/project/s3.png"
+	},
+	MyGlo: {
+		manUrl:"/images/project/m5.png",
+		screenUrl:"/images/project/s5.png"
+	},
+	Shopic:{
+		manUrl:"/images/project/m7.png",
+		screenUrl:"/images/project/s7.png"
+	},
 };
 
 export const Project: FC = () => {
@@ -46,9 +68,12 @@ export const Project: FC = () => {
 				</div>
 				<Navigation isWhite/>
 			</div>
-			<img className={classes.manImgMobile} src={manMap[projectName]} alt='Man with tv'/>
+			<div className={classes.mobileImgContainer}>
+				<img className={classes.manImgMobile} src={manMap[projectName].manUrl} alt='Man with tv'/>
+				<img className={classes.screenImgMobile} src={manMap[projectName].screenUrl} alt='Project screenshot'/>
+			</div>
 			{siteUrl && (
-				<a href={siteUrl} target='_blank' rel="noreferrer">
+				<a href={siteUrl} target='_blank' rel="noreferrer" className={classes.mobileLink}>
 					<div className={classes.mobileLinkButton}>
 						<Typography variant='h4'>
 					Open site
@@ -72,7 +97,8 @@ export const Project: FC = () => {
 							</Button>
 						</a>
 					)}
-					<img className={classes.manImg} src={manMap[projectName]} alt='Man with tv'/>
+					<img className={classes.manImg} src={manMap[projectName].manUrl} alt='Man with tv'/>
+					<img className={classes.screenImg} src={manMap[projectName].screenUrl} alt='Project screen'/>
 				</div>
 			</div>
 

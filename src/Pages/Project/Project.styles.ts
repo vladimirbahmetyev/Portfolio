@@ -66,12 +66,20 @@ export const useStyle = makeStyles()((theme)=>({
 		}
 	},
 	button:{
-		width: 360
+		width: 360,
+		zIndex: 2,
 	},
 	manImg:{
 		position: "fixed",
 		right: 0,
 		bottom: 0,
+		zIndex: 1
+	},
+	screenImg:{
+		position: "fixed",
+		right: 0,
+		bottom: 0,
+		zIndex: 0
 	},
 	manImgMobile: {
 		display: "none",
@@ -79,11 +87,28 @@ export const useStyle = makeStyles()((theme)=>({
 			display:"block",
 			width: "100%",
 			marginTop: 24,
+			zIndex: 2,
+			position:"relative",
 		}
+	},
+	screenImgMobile:{
+		display: "none",
+		"@media (max-width: 480px)":{
+			display:"block",
+			width: "100%",
+			zIndex:0,
+			position: "absolute",
+			top: 0
+		}
+	},
+	mobileLink:{
+		textDecoration: "none",
+		underline: "none"
 	},
 	mobileLinkButton: {
 		display: "none",
 		"@media (max-width: 480px)":{
+			underline: "none",
 			display:"flex",
 			padding:"25px 0",
 			boxSizing:"border-box",
@@ -93,5 +118,9 @@ export const useStyle = makeStyles()((theme)=>({
 			borderTop: `1px solid ${theme.palette.white}`,
 			borderBottom: `1px solid ${theme.palette.white}`,
 		}
+	},
+	mobileImgContainer:{
+		width: "100%",
+		position: "relative"
 	}
 }));
