@@ -9,7 +9,7 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			lineHeight: "132px",
 			fontWeight: 400,
 			fontFamily: "Krona One,Nunito, sans-serif",
-			"@media (max-width: 480px)":{
+			"@media (max-width: 820px)":{
 				fontSize: 40,
 				lineHeight: "44px"
 			}
@@ -19,7 +19,7 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			lineHeight: "66px",
 			fontWeight: 400,
 			fontFamily: "Krona One,Nunito, sans-serif",
-			"@media (max-width: 480px)":{
+			"@media (max-width: 820px)":{
 				fontSize: 24,
 				lineHeight: "32px"
 			}
@@ -29,7 +29,7 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			lineHeight: "30px",
 			fontWeight: 400,
 			fontFamily: "Krona One,Nunito, sans-serif",
-			"@media (max-width: 480px)":{
+			"@media (max-width: 820px)":{
 				fontSize: 20,
 				lineHeight: "25px"
 			}
@@ -39,7 +39,7 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			fontWeight: 400,
 			lineHeight: "24px",
 			fontFamily: "Krona One,Nunito, sans-serif",
-			"@media (max-width: 480px)":{
+			"@media (max-width: 820px)":{
 				fontSize: 16,
 				lineHeight: "23px"
 			}
@@ -49,7 +49,7 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			lineHeight:"27px",
 			fontWeight: 400,
 			fontFamily:"Montserrat, sans-serif",
-			"@media (max-width: 480px)":{
+			"@media (max-width: 820px)":{
 				fontSize: 16,
 				lineHeight: "22px"
 			}

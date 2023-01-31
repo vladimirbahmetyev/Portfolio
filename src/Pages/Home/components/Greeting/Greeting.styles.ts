@@ -6,7 +6,7 @@ export const useStyle = makeStyles()(() => ({
 		height:"110vh",
 		width: "100%",
 		position: "relative",
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			paddingTop: "38px",
 			height: "fit-content"
 		}
@@ -16,7 +16,7 @@ export const useStyle = makeStyles()(() => ({
 		textAlign: "left",
 		position: "relative",
 		zIndex: 2,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			marginTop: 63,
 		}
 	},
@@ -24,7 +24,7 @@ export const useStyle = makeStyles()(() => ({
 		position: "absolute",
 		right: 0,
 		bottom: -600,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			width: "435px",
 			right: -20
 		}
@@ -38,7 +38,7 @@ export const useStyle = makeStyles()(() => ({
 		top: 200,
 		right: 350,
 		zIndex: 2,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			right: "50%",
 			top: 300,
 		}
@@ -48,7 +48,7 @@ export const useStyle = makeStyles()(() => ({
 		right: 0,
 		bottom: -600,
 		zIndex: 3,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			width: 435,
 			right: -20
 		}

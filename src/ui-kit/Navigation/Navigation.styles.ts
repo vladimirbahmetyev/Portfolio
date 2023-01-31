@@ -8,7 +8,7 @@ export const useStyle = makeStyles()(() => ({
 		justifyContent: "flex-end",
 		position: "relative",
 		zIndex: 10,
-		"@media (max-width:480px)":{
+		"@media (max-width: 820px)":{
 			gap: 16,
 			justifyContent: "center",
 		}

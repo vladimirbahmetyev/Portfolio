@@ -6,7 +6,7 @@ export const useStyle = makeStyles<{isScrollVisible: boolean}>()((theme,{isScrol
 		backgroundRepeat: "no-repeat, repeat",
 		backgroundColor: theme.palette.black,
 		backgroundSize: "contain, contain",
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			backgroundImage:"url('/images/background/glitterMobile.png'), url('/images/background/paperBackground.png')",
 		}
 	},
@@ -14,7 +14,7 @@ export const useStyle = makeStyles<{isScrollVisible: boolean}>()((theme,{isScrol
 		maxWidth: 1400,
 		marginLeft: "auto",
 		marginRight: "auto",
-		"@media (max-width:480px)":{
+		"@media (max-width: 820px)":{
 			maxWidth: "100%",
 			width: "calc(100% - 40px)",
 			margin: 0,

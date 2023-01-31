@@ -7,7 +7,7 @@ export const useStyle = makeStyles()(()=> ({
 		gap: 90,
 		padding: "0 140px",
 		marginTop: 100,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			padding: 0,
 			marginTop: 650,
 			position: "relative",
@@ -25,7 +25,7 @@ export const useStyle = makeStyles()(()=> ({
 		flexDirection: "column",
 		gap: 35,
 		maxWidth: 550,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			marginTop: 370,
 			gap: 20
 		}
@@ -55,7 +55,7 @@ export const useStyle = makeStyles()(()=> ({
 	itemContainer:{
 		display: "flex",
 		gap: 40,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			flexDirection: "column",
 			gap: 20
 		}
@@ -73,7 +73,7 @@ export const useStyle = makeStyles()(()=> ({
 	tap:{
 		position: "relative",
 		top: -75,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			position: "absolute",
 			top: "95%",
 			width: 200,
@@ -84,13 +84,13 @@ export const useStyle = makeStyles()(()=> ({
 		position: "relative",
 		top: -160,
 		right: -30,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			display:"none"
 		}
 	},
 	photoMobile:{
 		display:"none",
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			display:"block",
 			position: "absolute",
 			transform: "rotate(20deg)",
@@ -102,7 +102,7 @@ export const useStyle = makeStyles()(()=> ({
 	},
 
 	catInPc:{
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			width: 300,
 			position:"absolute",
 			transform:"rotate(-30deg)",
@@ -111,7 +111,7 @@ export const useStyle = makeStyles()(()=> ({
 		}
 	},
 	aboutTitle:{
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			width: 184,
 			zIndex: 2,
 		}

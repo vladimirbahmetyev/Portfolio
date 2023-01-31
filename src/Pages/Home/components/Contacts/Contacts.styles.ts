@@ -11,7 +11,7 @@ export const useStyle = makeStyles()((theme)=>({
 		paddingLeft:"calc((100% - 1400px)/2)",
 		paddingRight:"calc((100% - 1400px)/2)",
 		position: "relative",
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			padding:"120px 20px 60px 20px"
 		}
 	},
@@ -20,7 +20,7 @@ export const useStyle = makeStyles()((theme)=>({
 	},
 	contactsTitle:{
 		marginBottom: 70,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			width: 300,
 			marginBottom: 0
 		}
@@ -29,7 +29,7 @@ export const useStyle = makeStyles()((theme)=>({
 		position: "absolute",
 		right: 0,
 		bottom: 0,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			width: 360,
 			zIndex: -1
 		}
@@ -40,7 +40,7 @@ export const useStyle = makeStyles()((theme)=>({
 		display: "flex",
 		flexDirection: "column",
 		gap: 60,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			width: "100%",
 			marginTop: 60
 		}
@@ -49,7 +49,7 @@ export const useStyle = makeStyles()((theme)=>({
 		width: "100%",
 		display: "flex",
 		gap: 20,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			flexDirection: "column",
 			gap: 60,
 		}
@@ -58,7 +58,7 @@ export const useStyle = makeStyles()((theme)=>({
 		flexGrow: 1,
 		borderBottom:`1px solid ${theme.palette.white}`,
 		paddingBottom: 10,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			width: "100%"
 		}
 	},
@@ -73,7 +73,7 @@ export const useStyle = makeStyles()((theme)=>({
 	contentContainer:{
 		display: "flex",
 		gap: 200,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			gap: 50,
 			flexDirection: "column"
 		}
@@ -83,7 +83,7 @@ export const useStyle = makeStyles()((theme)=>({
 		display:"flex",
 		flexDirection: "column",
 		gap: 30,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			paddingTop: 30
 		}
 	},
@@ -98,7 +98,7 @@ export const useStyle = makeStyles()((theme)=>({
 		svg:{
 			cursor: "pointer"
 		},
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			gap: 20
 		}
 	}

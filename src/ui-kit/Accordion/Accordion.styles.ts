@@ -6,7 +6,7 @@ export const useStyle = makeStyles<{isOpen: boolean, elementsCount: number}>()((
 		borderBottom: `1px solid ${theme.palette.white}`,
 		width: "100%",
 		padding: "32px 0px",
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			padding: "26px 0px"
 		}
 	},
@@ -17,7 +17,7 @@ export const useStyle = makeStyles<{isOpen: boolean, elementsCount: number}>()((
 		alignItems: "center",
 		marginBottom: isOpen ? 20 : 0,
 		cursor: "pointer",
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			"> svg:last-of-type":{
 				minWidth: 30,
 				minHeight: 30
@@ -38,7 +38,7 @@ export const useStyle = makeStyles<{isOpen: boolean, elementsCount: number}>()((
 		display: "flex",
 		flexDirection: "column",
 		gap:  8,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			height: isOpen ? 29 * elementsCount : 0,
 			paddingLeft: 0
 		}

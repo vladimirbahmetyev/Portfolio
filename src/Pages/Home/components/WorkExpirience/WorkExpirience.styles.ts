@@ -5,7 +5,7 @@ export const useStyle = makeStyles()(()=> ({
 		marginTop: 230,
 		marginBottom: 50,
 		position: "relative",
-		"@media (max-width:480px)":{
+		"@media (max-width: 820px)":{
 			marginTop: 200,
 			div:{
 				":nth-child(2n+3)":{
@@ -22,7 +22,7 @@ export const useStyle = makeStyles()(()=> ({
 		alignItems: "flex-end",
 		gap: 24,
 		marginBottom: 40,
-		"@media (max-width:480px)":{
+		"@media (max-width: 820px)":{
 			gap: 0
 		}
 	},
@@ -30,7 +30,7 @@ export const useStyle = makeStyles()(()=> ({
 		display: "flex",
 		justifyContent:"center",
 		gap: 400,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			gap: 80
 		}
 	},
@@ -38,12 +38,12 @@ export const useStyle = makeStyles()(()=> ({
 		display: "flex",
 		flexDirection: "column",
 		gap: 2,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 		}
 	},
 	experience:{
 		marginRight: 122,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			width: 330,
 			marginRight: 0,
 			marginTop: -40
@@ -53,7 +53,7 @@ export const useStyle = makeStyles()(()=> ({
 		position: "absolute",
 		left: 90,
 		top: -66,
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			width: 392,
 			left:"-45%"
 		}
@@ -65,7 +65,7 @@ export const useStyle = makeStyles()(()=> ({
 		svg:{
 			marginTop: 80,
 		},
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			flexDirection: "column",
 		}
 	},
@@ -81,7 +81,7 @@ export const useStyle = makeStyles()(()=> ({
 			marginLeft: 250,
 			marginTop: 250,
 		},
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			div:{
 				":first-child":{
 					svg:{
@@ -145,7 +145,7 @@ export const useStyle = makeStyles()(()=> ({
 				top: 365
 			}
 		},
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			margin: 0,
 			minHeight:330,
 			div:{
@@ -210,7 +210,7 @@ export const useStyle = makeStyles()(()=> ({
 				top: 315
 			},
 		},
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			minHeight: 300,
 			"img:first-of-type":{
 				minWidth: 0,
@@ -285,7 +285,7 @@ export const useStyle = makeStyles()(()=> ({
 			top: 495,
 			transitionDuration: "300ms"
 		},
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			margin: 0,
 			width: "100%",
 			"img:first-of-type":{
@@ -358,7 +358,7 @@ export const useStyle = makeStyles()(()=> ({
 			transitionDuration: "300ms",
 			position: "absolute"
 		},
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			margin: 0,
 			width: "100%",
 			div:{
@@ -431,7 +431,7 @@ export const useStyle = makeStyles()(()=> ({
 			left: 30,
 			top: 405,
 		},
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			margin: 0,
 			width: "100%",
 			div:{
@@ -505,7 +505,7 @@ export const useStyle = makeStyles()(()=> ({
 			left: 20,
 			transitionDuration: "300ms",
 		},
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			margin: 0,
 			width: "100%",
 			div:{
@@ -579,7 +579,7 @@ export const useStyle = makeStyles()(()=> ({
 			top: 505,
 			left: 25
 		},
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			margin: 0,
 			width: "100%",
 			div:{
@@ -616,7 +616,7 @@ export const useStyle = makeStyles()(()=> ({
 		zIndex: 1,
 	},
 	workTitle:{
-		"@media (max-width: 480px)":{
+		"@media (max-width: 820px)":{
 			width: 160
 		}
 	}
