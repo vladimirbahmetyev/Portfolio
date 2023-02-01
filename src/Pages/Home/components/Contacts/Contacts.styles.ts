@@ -47,7 +47,8 @@ export const useStyle = makeStyles()(()=>({
 		position: "relative",
 		"@media (max-width: 820px)":{
 			width: "100%",
-			marginTop: 60
+			marginTop: 60,
+			gap: 48
 		}
 	},
 	animationTrack:{
@@ -59,6 +60,9 @@ export const useStyle = makeStyles()(()=>({
 		},
 		position: "absolute",
 		top: "14%",
+		"@media (max-width: 820px)":{
+			display: "none"
+		}
 	},
 	nameTrackFocus:{
 		path:{
@@ -100,12 +104,15 @@ export const useStyle = makeStyles()(()=>({
 		gap: 20,
 		"@media (max-width: 820px)":{
 			flexDirection: "column",
-			gap: 60,
+			gap: 48,
 		}
 	},
 	button:{
 		marginTop: 9,
 		zIndex: 2,
+		"@media (max-width: 820px)":{
+			marginTop: 0
+		}
 	},
 	contentContainer:{
 		display: "flex",
@@ -137,6 +144,16 @@ export const useStyle = makeStyles()(()=>({
 		},
 		"@media (max-width: 820px)":{
 			gap: 20
+		}
+	},
+	animationTrackMobile:{
+		display: "none",
+		position: "absolute",
+		marginTop: 31,
+		"@media (max-width: 820px)":{
+			display: "block",
+			width: "100%",
+			transform: "scaleX(1.1)"
 		}
 	}
 }));

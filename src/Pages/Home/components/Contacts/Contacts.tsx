@@ -2,7 +2,7 @@ import {FC, useState} from "react";
 import {useStyle} from "./Contacts.styles";
 import {ContactsTitle, HH, Instagram, LinkedIn, Telegram} from "icons";
 import {Button, Input, Typography} from "ui-kit";
-import {Track} from "./Assets";
+import {Track, TrackMobile} from "./Assets";
 
 export const Contacts:FC = () => {
 	const {classes, cx} =useStyle();
@@ -19,6 +19,7 @@ export const Contacts:FC = () => {
 			<div className={classes.contentContainer}>
 				<div className={classes.formContainer}>
 					<Track className={cx(classes.animationTrack, isButtonFocus ? classes.buttonHover :  focus) }/>
+					<TrackMobile className={classes.animationTrackMobile}/>
 					<div className={classes.infoContainer}>
 						<Input
 							value={name}
