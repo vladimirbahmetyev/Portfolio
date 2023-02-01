@@ -10,7 +10,7 @@ export const Contacts:FC = () => {
 	const [name, setName] = useState<string>("");
 	const [email, setEmail] = useState<string>("");
 	const [message, setMessage] = useState<string>("");
-
+	const [isButtonFocus, setIsButtonFocus] = useState<boolean>(false);
 
 	return (
 		<div className={classes.container} id='contacts'>
@@ -18,7 +18,7 @@ export const Contacts:FC = () => {
 			<Typography className={classes.description} block variant='body'>I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form.</Typography>
 			<div className={classes.contentContainer}>
 				<div className={classes.formContainer}>
-					<Track className={cx(classes.animationTrack, focus) }/>
+					<Track className={cx(classes.animationTrack, isButtonFocus ? classes.buttonHover :  focus) }/>
 					<div className={classes.infoContainer}>
 						<Input
 							value={name}
@@ -42,7 +42,12 @@ export const Contacts:FC = () => {
 						onFocus={() => setFocus(classes.messageFocus)}
 						className={classes.bottomInput}
 					/>
-					<Button className={classes.button} onClick={()=> setFocus(classes.buttonHover)} transparent={focus === classes.buttonHover}>
+					<Button
+						className={classes.button}
+						transparent={focus === classes.buttonHover}
+						onMouseEnter={() => setIsButtonFocus(true)}
+						onMouseLeave={() => setIsButtonFocus(false)}
+					>
 						Send message
 					</Button>
 				</div>
