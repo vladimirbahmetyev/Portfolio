@@ -19,6 +19,7 @@ export const useStyle = makeStyles<{isLabelUp: boolean}>()((theme, {isLabelUp})=
 		},
 		width: "100%",
 		paddingBottom: 10,
+		borderRadius: 0,
 	},
 	inputContainer:{
 		position: "relative"

@@ -93,10 +93,16 @@ export const useStyle = makeStyles<{screenWidth: number}>()((_, {screenWidth})=>
 		}
 	},
 	topInput:{
-		minWidth: "calc(50% - 10px)"
+		minWidth: "calc(50% - 10px)",
+		"@media (max-width: 820px)":{
+			width: "calc(100% - 20px)"
+		}
 	},
 	bottomInput:{
-		minWidth: "100%"
+		minWidth: "100%",
+		"@media (max-width: 820px)":{
+			width: "calc(100% - 20px)"
+		}
 	},
 	infoContainer:{
 		width: "100%",
@@ -111,7 +117,7 @@ export const useStyle = makeStyles<{screenWidth: number}>()((_, {screenWidth})=>
 		marginTop: 9,
 		zIndex: 2,
 		"@media (max-width: 820px)":{
-			marginTop: 0
+			marginTop: -8
 		}
 	},
 	contentContainer:{
@@ -149,7 +155,7 @@ export const useStyle = makeStyles<{screenWidth: number}>()((_, {screenWidth})=>
 	animationTrackMobile:{
 		display: "none",
 		position: "absolute",
-		marginTop: 31,
+		marginTop: 40,
 		path:{
 			stroke: "url(#g1)",
 			strokeWidth: 4,
@@ -159,8 +165,8 @@ export const useStyle = makeStyles<{screenWidth: number}>()((_, {screenWidth})=>
 		},
 		"@media (max-width: 820px)":{
 			display: "block",
-			transform: `scaleX(${(screenWidth - 40)/324})`,
-
+			transform: `translateX(10px) scaleX(${(screenWidth - 40)/324})`,
+			left: 0
 		}
 	},
 	nameFocusMobile:{
