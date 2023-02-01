@@ -44,7 +44,7 @@ export const Contacts:FC = () => {
 					/>
 					<Button
 						className={classes.button}
-						transparent={focus === classes.buttonHover}
+						transparent={isButtonFocus}
 						onMouseEnter={() => setIsButtonFocus(true)}
 						onMouseLeave={() => setIsButtonFocus(false)}
 					>
