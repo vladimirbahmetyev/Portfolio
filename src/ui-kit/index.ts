@@ -4,4 +4,5 @@ export {Navigation} from "./Navigation";
 export {List} from "./List";
 export {Button} from "./Button";
 export {RotatingText} from "./RotatingText";
+export {Input} from "./Input";
 

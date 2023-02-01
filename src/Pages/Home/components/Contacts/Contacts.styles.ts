@@ -88,6 +88,12 @@ export const useStyle = makeStyles()((theme)=>({
 			strokeDashoffset: -1377,
 		}
 	},
+	topInput:{
+		minWidth: "calc(50% - 10px)"
+	},
+	bottomInput:{
+		minWidth: "100%"
+	},
 	infoContainer:{
 		width: "100%",
 		display: "flex",
@@ -95,15 +101,6 @@ export const useStyle = makeStyles()((theme)=>({
 		"@media (max-width: 820px)":{
 			flexDirection: "column",
 			gap: 60,
-		}
-	},
-	inputContainer:{
-		borderBottom:`1px solid ${theme.palette.white}`,
-		paddingBottom: 10,
-		zIndex: 2,
-		minWidth:"calc(50% - 10px)",
-		"@media (max-width: 820px)":{
-			width: "100%"
 		}
 	},
 	button:{

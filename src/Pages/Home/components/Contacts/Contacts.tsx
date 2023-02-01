@@ -1,12 +1,17 @@
 import {FC, useState} from "react";
 import {useStyle} from "./Contacts.styles";
 import {ContactsTitle, HH, Instagram, LinkedIn, Telegram} from "icons";
-import {Button, Typography} from "ui-kit";
+import {Button, Input, Typography} from "ui-kit";
 import {Track} from "./Assets";
 
 export const Contacts:FC = () => {
 	const {classes, cx} =useStyle();
 	const [focus, setFocus] = useState<string>("");
+	const [name, setName] = useState<string>("");
+	const [email, setEmail] = useState<string>("");
+	const [message, setMessage] = useState<string>("");
+
+
 	return (
 		<div className={classes.container} id='contacts'>
 			<ContactsTitle className={classes.contactsTitle}/>
@@ -15,16 +20,28 @@ export const Contacts:FC = () => {
 				<div className={classes.formContainer}>
 					<Track className={cx(classes.animationTrack, focus) }/>
 					<div className={classes.infoContainer}>
-						<div className={classes.inputContainer} onClick={()=> setFocus(classes.nameTrackFocus)}>
-							<Typography variant='body'>Name</Typography>
-						</div>
-						<div className={classes.inputContainer}  onClick={()=> setFocus(classes.emailFocus)}>
-							<Typography variant='body'>Email</Typography>
-						</div>
+						<Input
+							value={name}
+							onChange={setName}
+							label='Name'
+							onFocus={() => setFocus(classes.nameTrackFocus)}
+							className={classes.topInput}
+						/>
+						<Input value={email}
+							onChange={setEmail}
+							label='Email'
+							type='email'
+							onFocus={() => setFocus(classes.emailFocus)}
+							className={classes.topInput}
+						/>
 					</div>
-					<div className={classes.inputContainer} onClick={()=> setFocus(classes.messageFocus)}>
-						<Typography variant='body'>Message</Typography>
-					</div>
+					<Input
+						value={message}
+						onChange={setMessage}
+						label='Message'
+						onFocus={() => setFocus(classes.messageFocus)}
+						className={classes.bottomInput}
+					/>
 					<Button className={classes.button} onClick={()=> setFocus(classes.buttonHover)}>
 						Send message
 					</Button>
