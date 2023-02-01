@@ -1,6 +1,6 @@
 import {makeStyles} from "theme";
 
-export const useStyle = makeStyles()((theme)=>({
+export const useStyle = makeStyles()(()=>({
 	container:{
 		backgroundImage:"url('/images/background/contacts.png')",
 		paddingTop: 200,
