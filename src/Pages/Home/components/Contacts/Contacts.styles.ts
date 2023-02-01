@@ -43,11 +43,24 @@ export const useStyle = makeStyles()((theme)=>({
 		width: 600,
 		display: "flex",
 		flexDirection: "column",
-		gap: 60,
+		gap: 46,
+		position: "relative",
 		"@media (max-width: 820px)":{
 			width: "100%",
 			marginTop: 60
 		}
+	},
+	animationTrack:{
+		path:{
+			stroke: "url(#g)",
+			strokeWidth: 2,
+			strokeDasharray: "50% 2000%",
+			// strokeDashoffset: 100,
+			fill:"none"
+		},
+		position: "absolute",
+		top: "14%",
+
 	},
 	infoContainer:{
 		width: "100%",
@@ -59,7 +72,6 @@ export const useStyle = makeStyles()((theme)=>({
 		}
 	},
 	inputContainer:{
-		flexGrow: 1,
 		borderBottom:`1px solid ${theme.palette.white}`,
 		paddingBottom: 10,
 		"@media (max-width: 820px)":{
@@ -67,12 +79,7 @@ export const useStyle = makeStyles()((theme)=>({
 		}
 	},
 	button:{
-		border: `1px solid ${theme.palette.white}`,
-		borderRadius: 50,
-		padding: "25px 50px",
-		backgroundColor: "transparent",
-		cursor: "pointer"
-
+		marginTop: 9
 	},
 	contentContainer:{
 		display: "flex",
@@ -107,3 +114,4 @@ export const useStyle = makeStyles()((theme)=>({
 		}
 	}
 }));
+

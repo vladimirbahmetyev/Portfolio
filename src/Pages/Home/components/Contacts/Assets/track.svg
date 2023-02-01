@@ -1,0 +1,19 @@
+<svg width="604" height="218" viewBox="0 0 604 218" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L602 2V87H2L2 179.5M2 143V179.5M2 179.5C2 197.5 17.5 216 38.5 216H565.5C586.5 216 602 197.5 602 179.5C602 161.5 586.5 143 565.5 143H38.5C17.5 143 2 161.5 2 179.5Z"/>
+    <defs>
+        <linearGradient id='g'>
+            <stop stop-color='#FF75C3'/>
+            <stop offset='.094' stop-color='#FFA647'/>
+            <stop offset='.183' stop-color='#FFE83F'/>
+            <stop offset='.295' stop-color='#9FFF5B'/>
+            <stop offset='.392' stop-color='#70E2FF'/>
+            <stop offset='.482' stop-color='#CD93FF'/>
+            <stop offset='.535' stop-color='#CD93FF'/>
+            <stop offset='.646' stop-color='#70E2FF'/>
+            <stop offset='.727' stop-color='#9FFF5B'/>
+            <stop offset='.819' stop-color='#FFE83F'/>
+            <stop offset='.907' stop-color='#FFA647'/>
+            <stop offset='1' stop-color='#FF75C3'/>
+        </linearGradient>
+    </defs>
+</svg>
