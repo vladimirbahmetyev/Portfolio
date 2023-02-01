@@ -25,12 +25,12 @@ export const Home: FC = () => {
 
 	return(
 		<div className={classes.appContainer}>
-			{/*<div className={classes.contentContainer}>*/}
-			<Greeting/>
-			{/*	<About/>*/}
-			{/*	<Skills/>*/}
-			{/*	<WorkExpirience/>*/}
-			{/*</div>*/}
+			<div className={classes.contentContainer}>
+				<Greeting/>
+				<About/>
+				<Skills/>
+				<WorkExpirience/>
+			</div>
 			<Contacts/>
 			<HashLink to='/#greeting'>
 				{isMobile ?
