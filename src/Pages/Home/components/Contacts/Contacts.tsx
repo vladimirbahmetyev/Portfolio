@@ -3,14 +3,16 @@ import {useStyle} from "./Contacts.styles";
 import {ContactsTitle, HH, Instagram, LinkedIn, Telegram} from "icons";
 import {Button, Input, Typography} from "ui-kit";
 import {Track, TrackMobile} from "./Assets";
+import {useScreenWidth} from "../../../../shared";
 
 export const Contacts:FC = () => {
-	const {classes, cx} =useStyle();
 	const [focus, setFocus] = useState<string>("");
 	const [name, setName] = useState<string>("");
 	const [email, setEmail] = useState<string>("");
 	const [message, setMessage] = useState<string>("");
 	const [isButtonFocus, setIsButtonFocus] = useState<boolean>(false);
+	const width = useScreenWidth();
+	const {classes, cx} =useStyle({screenWidth: width});
 
 	return (
 		<div className={classes.container} id='contacts'>

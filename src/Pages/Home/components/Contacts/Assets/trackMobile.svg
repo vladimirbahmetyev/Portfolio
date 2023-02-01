@@ -1,3 +1,19 @@
 <svg width="324" height="292" viewBox="0 0 324 292" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 2L322 2V84H2L2 166H322V217V253.5 C322 234 305.5 217 285.5 217H272H38.5C18.5 217 2 234 2 253.5C2 273 18.5 290 38.5 290H285.5C305.5 290 322 273 322 253.5" stroke="#11CEDA"/>
+<path d="M2 2L322 2V84H2L2 166H322V217V253.5 C322 234 305.5 217 285.5 217H272H38.5C18.5 217 2 234 2 253.5C2 273 18.5 290 38.5 290H285.5C305.5 290 322 273 322 253.5"/>
+    <defs>
+        <linearGradient id='g1'>
+            <stop stop-color='#FF75C3'/>
+            <stop offset='.094' stop-color='#FFA647'/>
+            <stop offset='.183' stop-color='#FFE83F'/>
+            <stop offset='.295' stop-color='#9FFF5B'/>
+            <stop offset='.392' stop-color='#70E2FF'/>
+            <stop offset='.482' stop-color='#CD93FF'/>
+            <stop offset='.535' stop-color='#CD93FF'/>
+            <stop offset='.646' stop-color='#70E2FF'/>
+            <stop offset='.727' stop-color='#9FFF5B'/>
+            <stop offset='.819' stop-color='#FFE83F'/>
+            <stop offset='.907' stop-color='#FFA647'/>
+            <stop offset='1' stop-color='#FF75C3'/>
+        </linearGradient>
+    </defs>
 </svg>

@@ -1,6 +1,6 @@
 import {makeStyles} from "theme";
 
-export const useStyle = makeStyles()(()=>({
+export const useStyle = makeStyles<{screenWidth: number}>()((_, {screenWidth})=>({
 	container:{
 		backgroundImage:"url('/images/background/contacts.png')",
 		paddingTop: 200,
@@ -150,11 +150,46 @@ export const useStyle = makeStyles()(()=>({
 		display: "none",
 		position: "absolute",
 		marginTop: 31,
+		path:{
+			stroke: "url(#g1)",
+			strokeWidth: 4,
+			strokeDasharray: "0 626%",
+			transitionDuration: "500ms",
+			strokeDashoffset: 0,
+		},
 		"@media (max-width: 820px)":{
 			display: "block",
-			width: "100%",
-			transform: "scaleX(1.1)"
+			transform: `scaleX(${(screenWidth - 40)/324})`,
+
 		}
-	}
+	},
+	nameFocusMobile:{
+		path:{
+			strokeDasharray: "104% 626%",
+			transitionDuration: "500ms",
+			strokeDashoffset: 0,
+		}
+	},
+	emailFocusMobile:{
+		path:{
+			strokeDasharray: "105% 626%",
+			transitionDuration: "500ms",
+			strokeDashoffset: -400,
+		}
+	},
+	messageFocusMobile:{
+		path:{
+			transitionDuration: "500ms",
+			strokeDasharray: "105% 626%",
+			strokeDashoffset: -802,
+		}
+	},
+	buttonHoverMobile:{
+		path:{
+			transitionDuration: "500ms",
+			strokeDasharray: "283% 522%",
+			strokeDashoffset: -1206,
+		}
+	},
 }));
 
