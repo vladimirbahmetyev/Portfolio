@@ -53,34 +53,37 @@ export const useStyle = makeStyles()((theme)=>({
 	animationTrack:{
 		path:{
 			stroke: "url(#g)",
+			strokeWidth: 4,
+			strokeDasharray: "1% 623%",
+			strokeDashoffset: 6
 		},
 		position: "absolute",
 		top: "14%",
 	},
 	nameTrackFocus:{
 		path:{
-			strokeWidth: 2,
+			transitionDuration: "500ms",
 			strokeDasharray: "64% 522%",
 			strokeDashoffset: 0,
 		}
 	},
 	emailFocus:{
 		path:{
-			strokeWidth: 2,
+			transitionDuration: "500ms",
 			strokeDasharray: "64% 522%",
 			strokeDashoffset: -307,
 		}
 	},
 	messageFocus:{
 		path:{
-			strokeWidth: 2,
+			transitionDuration: "500ms",
 			strokeDasharray: "132% 522%",
 			strokeDashoffset: -686,
 		}
 	},
 	buttonHover:{
 		path:{
-			strokeWidth: 2,
+			transitionDuration: "500ms",
 			strokeDasharray: "283% 522%",
 			strokeDashoffset: -1377,
 		}
@@ -97,13 +100,15 @@ export const useStyle = makeStyles()((theme)=>({
 	inputContainer:{
 		borderBottom:`1px solid ${theme.palette.white}`,
 		paddingBottom: 10,
+		zIndex: 2,
 		minWidth:"calc(50% - 10px)",
 		"@media (max-width: 820px)":{
 			width: "100%"
 		}
 	},
 	button:{
-		marginTop: 9
+		marginTop: 9,
+		zIndex: 2,
 	},
 	contentContainer:{
 		display: "flex",
