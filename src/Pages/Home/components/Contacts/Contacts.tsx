@@ -42,7 +42,7 @@ export const Contacts:FC = () => {
 						onFocus={() => setFocus(classes.messageFocus)}
 						className={classes.bottomInput}
 					/>
-					<Button className={classes.button} onClick={()=> setFocus(classes.buttonHover)}>
+					<Button className={classes.button} onClick={()=> setFocus(classes.buttonHover)} transparent={focus === classes.buttonHover}>
 						Send message
 					</Button>
 				</div>
