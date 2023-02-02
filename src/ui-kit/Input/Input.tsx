@@ -39,7 +39,7 @@ export const Input:FC<IInputProps> = ({className= "",label = "",type = "text", o
 
 	const isLabelUp = !!value || isFocus;
 	const {classes, cx} = useStyle({isLabelUp});
-	return <label className={cx(className, classes.inputContainer)}>
+	return <label className={cx(className, classes.inputContainer)} >
 		{label && (
 			<Typography variant='body' className={classes.inputLabel}>{label}</Typography>
 		)}

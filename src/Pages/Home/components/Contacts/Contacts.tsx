@@ -32,7 +32,7 @@ export const Contacts:FC = () => {
 			<ContactsTitle className={classes.contactsTitle}/>
 			<Typography className={classes.description} block variant='body'>I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form.</Typography>
 			<div className={classes.contentContainer}>
-				<div className={classes.formContainer}>
+				<div className={classes.formContainer} >
 					<Track className={cx(classes.animationTrack, isButtonFocus ? classes.buttonHover :  animationClasses[focus]) }/>
 					<TrackMobile className={cx(classes.animationTrackMobile, isButtonFocus ? classes.buttonHoverMobile : animationClassesMobile[focus])}/>
 					<div className={classes.infoContainer}>

@@ -18,11 +18,15 @@ export const useStyle = makeStyles<{isLabelUp: boolean}>()((theme, {isLabelUp})=
 			transitionDuration: "300ms"
 		},
 		width: "100%",
-		paddingBottom: 10,
+		padding: "2px 0 10px 0",
 		borderRadius: 0,
+		boxSizing: "border-box",
+		margin: 0,
+		// padding: 0
 	},
 	inputContainer:{
 		position: "relative",
+		boxSizing: "border-box"
 	},
 	inputLabel:{
 		position: "absolute",

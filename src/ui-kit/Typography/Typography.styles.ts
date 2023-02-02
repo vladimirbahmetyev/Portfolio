@@ -45,7 +45,7 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			fontFamily: "Krona One,Nunito, sans-serif",
 			"@media (max-width: 480px)":{
 				fontSize: 16,
-				lineHeight: "23px"
+				lineHeight: "24px"
 			},
 		},
 		body:{
