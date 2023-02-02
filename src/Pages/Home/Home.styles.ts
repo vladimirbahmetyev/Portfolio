@@ -15,7 +15,7 @@ export const useStyle = makeStyles<{isScrollVisible: boolean}>()((theme,{isScrol
 		maxWidth: 1400,
 		marginLeft: "auto",
 		marginRight: "auto",
-		"@media (max-width: 820px)":{
+		"@media (max-width: 1400px)":{
 			maxWidth: "100%",
 			width: "calc(100% - 40px)",
 			margin: 0,

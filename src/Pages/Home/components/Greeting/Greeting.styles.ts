@@ -9,6 +9,9 @@ export const useStyle = makeStyles()(() => ({
 		"@media (max-width: 820px)":{
 			paddingTop: "38px",
 			height: "100vh"
+		},
+		"@media (min-width: 821px) and (max-width: 1399px)":{
+			height: "50vw"
 		}
 	},
 	greetText:{

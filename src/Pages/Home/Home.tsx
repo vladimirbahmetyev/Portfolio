@@ -27,9 +27,9 @@ export const Home: FC = () => {
 		<div className={classes.appContainer}>
 			<div className={classes.contentContainer}>
 				<Greeting/>
-				{/*<About/>
-				<Skills/>
-				<WorkExpirience/>*/}
+				<About/>
+				{/*<Skills/>*/}
+				{/*<WorkExpirience/>*/}
 			</div>
 			{/*<Contacts/>*/}
 			{/*<HashLink to='/#greeting'>*/}
