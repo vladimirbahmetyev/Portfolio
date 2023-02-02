@@ -22,7 +22,7 @@ export const useStyle = makeStyles<{isLabelUp: boolean}>()((theme, {isLabelUp})=
 		borderRadius: 0,
 	},
 	inputContainer:{
-		position: "relative"
+		position: "relative",
 	},
 	inputLabel:{
 		position: "absolute",

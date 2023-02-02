@@ -3,7 +3,6 @@ import {useStyle} from "./Contacts.styles";
 import {ContactsTitle, HH, Instagram, LinkedIn, Telegram} from "icons";
 import {Button, Input, Typography} from "ui-kit";
 import {Track, TrackMobile} from "./Assets";
-import {useScreenWidth} from "shared";
 
 type FocusElementType = "name" | "email" | "message" | ""
 
@@ -13,8 +12,7 @@ export const Contacts:FC = () => {
 	const [email, setEmail] = useState<string>("");
 	const [message, setMessage] = useState<string>("");
 	const [isButtonFocus, setIsButtonFocus] = useState<boolean>(false);
-	const width = useScreenWidth();
-	const {classes, cx} = useStyle({screenWidth: width});
+	const {classes, cx} = useStyle();
 
 	const animationClasses: Record<FocusElementType, string> = {
 		name: classes.nameTrackFocus,

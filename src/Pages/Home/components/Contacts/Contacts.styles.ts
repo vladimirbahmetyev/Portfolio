@@ -1,6 +1,6 @@
 import {makeStyles} from "theme";
 
-export const useStyle = makeStyles<{screenWidth: number}>()((_, {screenWidth})=>({
+export const useStyle = makeStyles()(()=>({
 	container:{
 		backgroundImage:"url('/images/background/contacts.png')",
 		paddingTop: 200,
@@ -47,6 +47,7 @@ export const useStyle = makeStyles<{screenWidth: number}>()((_, {screenWidth})=>
 		position: "relative",
 		"@media (max-width: 820px)":{
 			width: "100%",
+			maxWidth: 350,
 			marginTop: 60,
 			gap: 48
 		}
@@ -95,7 +96,7 @@ export const useStyle = makeStyles<{screenWidth: number}>()((_, {screenWidth})=>
 	topInput:{
 		minWidth: "calc(50% - 10px)",
 		"@media (max-width: 820px)":{
-			width: "calc(100% - 20px)"
+			width: "100%"
 		}
 	},
 	bottomInput:{
@@ -165,7 +166,7 @@ export const useStyle = makeStyles<{screenWidth: number}>()((_, {screenWidth})=>
 		},
 		"@media (max-width: 820px)":{
 			display: "block",
-			transform: `translateX(10px) scaleX(${(screenWidth - 40)/324})`,
+			transform: " scaleX(1.1) translateX(4%)",
 			left: 0
 		}
 	},
