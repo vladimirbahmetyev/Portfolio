@@ -124,9 +124,14 @@ export const useStyle = makeStyles()(()=>({
 	contentContainer:{
 		display: "flex",
 		gap: 200,
-		"@media (max-width: 820px)":{
+		"@media (max-width: 747px)":{
 			gap: 50,
 			flexDirection: "column"
+		},
+		"@media (min-width: 748px) and (max-width: 820px)":{
+			gap: 0,
+			justifyContent: "space-between",
+			alignItems: "flex-end"
 		}
 	},
 	contactsContainer:{
