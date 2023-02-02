@@ -16,6 +16,10 @@ export const useStyle = makeStyles<{variant:TypoVariantType, color: TypoColorTyp
 			"@media (max-width: 480px)":{
 				fontSize: 40,
 				lineHeight: "44px"
+			},
+			"@media (min-width: 821px) and (max-width: 1399px)":{
+				fontSize: 80,
+				lineHeight: "88px"
 			}
 		},
 		h2:{

@@ -27,16 +27,16 @@ export const Home: FC = () => {
 		<div className={classes.appContainer}>
 			<div className={classes.contentContainer}>
 				<Greeting/>
-				<About/>
+				{/*<About/>
 				<Skills/>
-				<WorkExpirience/>
+				<WorkExpirience/>*/}
 			</div>
-			<Contacts/>
-			<HashLink to='/#greeting'>
-				{isMobile ?
-					<img src='/images/backBtn.png' alt='backbtn' className={classes.backArrowImg}/>
-					: <Back className={classes.backArrow}/>}
-			</HashLink>
+			{/*<Contacts/>*/}
+			{/*<HashLink to='/#greeting'>*/}
+			{/*	{isMobile ?*/}
+			{/*		<img src='/images/backBtn.png' alt='backbtn' className={classes.backArrowImg}/>*/}
+			{/*		: <Back className={classes.backArrow}/>}*/}
+			{/*</HashLink>*/}
 		</div>
 	);
 };
