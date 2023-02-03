@@ -73,7 +73,7 @@ export const useStyle = makeStyles()(()=> ({
 		display: "flex",
 		justifyContent: "center",
 		gap: 90,
-		"@media (max-width: 820px)":{
+		"@media (max-width: 1150px)":{
 			flexDirection: "column-reverse"
 		}
 	},
@@ -117,6 +117,12 @@ export const useStyle = makeStyles()(()=> ({
 		},
 		"@media (max-width: 820px)":{
 			top: 0,
+		},
+		"@media (max-width: 1150px) and (min-width: 821px)":{
+			top: 0,
+			justifyContent: "flex-end",
+			display: "flex",
+			paddingRight: 100
 		}
 	},
 	secondProjectImage:{
@@ -124,6 +130,10 @@ export const useStyle = makeStyles()(()=> ({
 		top: "10%",
 		left: "5%",
 		width: "90%",
+		"@media (max-width: 1150px) and (min-width: 821px)":{
+			height: "70%",
+			width: "auto"
+		}
 	},
 	secondProjectPack:{
 		"@media (max-width:820px)":{
@@ -150,6 +160,9 @@ export const useStyle = makeStyles()(()=> ({
 			position: "absolute",
 			left: "5%",
 			bottom: "10%"
+		},
+		"@media (max-width: 1150px) and (min-width: 821px)":{
+			padding: 0
 		}
 
 	},
@@ -160,6 +173,10 @@ export const useStyle = makeStyles()(()=> ({
 		width: "90%",
 		"@media (max-width: 820px)":{
 			width: "80%"
+		},
+		"@media (max-width: 1150px) and (min-width: 821px)":{
+			width: "auto",
+			height: "70%"
 		}
 	},
 	thirdProjectPack:{
@@ -167,6 +184,9 @@ export const useStyle = makeStyles()(()=> ({
 		zIndex: 1,
 		"@media (max-width: 820px)":{
 			width: "100%"
+		},
+		"@media (max-width: 1150px) and (min-width: 821px)":{
+			width: "80%"
 		}
 	},
 	fourthProjectContainer:{
@@ -188,6 +208,9 @@ export const useStyle = makeStyles()(()=> ({
 			position: "absolute",
 			left: "5%",
 			bottom: "5%"
+		},
+		"@media (max-width: 1150px) and (min-width: 821px)":{
+			justifyContent: "flex-end"
 		}
 
 	},
@@ -223,8 +246,10 @@ export const useStyle = makeStyles()(()=> ({
 			position: "absolute",
 			left: "5%",
 			bottom: "15%"
+		},
+		"@media (max-width: 1150px) and (min-width: 821px)":{
+			justifyContent: "flex-start"
 		}
-
 	},
 	fifthProjectImage:{
 		position: "absolute",
@@ -251,6 +276,11 @@ export const useStyle = makeStyles()(()=> ({
 			top: 0,
 			padding: 0,
 			maxWidth: "100%",
+		},
+		"@media (max-width: 1150px) and (min-width: 821px)":{
+			top: 0,
+			display: "flex",
+			justifyContent: "center"
 		}
 	},
 	sixthProjectImage:{
@@ -289,8 +319,12 @@ export const useStyle = makeStyles()(()=> ({
 			position: "absolute",
 			left: "5%",
 			bottom: "10%"
+		},
+		"@media (max-width: 1150px) and (min-width: 821px)":{
+			marginTop: 0,
+			padding: 0,
+			justifyContent: "flex-start"
 		}
-
 	},
 	seventhProjectImage:{
 		position: "absolute",
@@ -299,6 +333,10 @@ export const useStyle = makeStyles()(()=> ({
 		width: "90%",
 		"@media (max-width: 820px)":{
 			width: "80%"
+		},
+		"@media (max-width: 1150px) and (min-width: 821px)":{
+			width: "auto",
+			height: "72%"
 		}
 	},
 	seventhProjectPack:{
@@ -306,6 +344,9 @@ export const useStyle = makeStyles()(()=> ({
 		zIndex: 1,
 		"@media (max-width: 820px)":{
 			width: "100%"
+		},
+		"@media (max-width: 1150px) and (min-width: 821px)":{
+			width: "80%"
 		}
 	},
 	projectImage:{
