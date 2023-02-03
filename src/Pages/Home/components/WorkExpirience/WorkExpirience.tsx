@@ -1,6 +1,5 @@
 import {FC} from "react";
 import {useStyle} from "./WorkExpirience.styles";
-import {N1, N2 , N3, N4, N5, N6, N7} from "icons";
 import {Typography} from "ui-kit";
 import {useNavigate} from "react-router-dom";
 import {ProjectUrlType} from "types";
@@ -31,7 +30,7 @@ export const WorkExpirience:FC= () => {
 			</div>
 			<div className={classes.firstSecondProject}>
 				<div className={classes.secondProjectContainer} onClick={()=>onProjectClick("Jobswidget")}>
-					<N2/>
+					<img src='/images/workExperience/n2.webp' alt='n2 number'/>
 					<div className={classes.projectContainer}>
 						<img src='/images/workExperience/p2.webp' className={classes.secondProjectPack}/>
 						<img src='/images/workExperience/pr2.jpg' className={ classes.secondProjectImage}/>
@@ -39,7 +38,7 @@ export const WorkExpirience:FC= () => {
 					</div>
 				</div>
 				<div className={classes.firstProjectContainer  } onClick={()=>onProjectClick("Metamap")}>
-					<N1/>
+					<img src='/images/workExperience/n1.webp' alt='n1 number'/>
 					<div className={classes.projectContainer}>
 						<img src='/images/workExperience/p1.webp' className={classes.firstProjectPack}/>
 						<img src='/images/workExperience/pr1.jpg'className={classes.firstProjectImage}/>
@@ -48,7 +47,7 @@ export const WorkExpirience:FC= () => {
 				</div>
 			</div>
 			<div className={classes.thirdProjectContainer} onClick={()=>onProjectClick("GameGreed")}>
-				<N3/>
+				<img src='/images/workExperience/n3.webp' alt='n3 number'/>
 				<div className={classes.projectContainer}>
 					<img src='/images/workExperience/p3.webp' className={classes.thirdProjectPack}/>
 					<img src='/images/workExperience/pr3.jpg' className={classes.thirdProjectImage}/>
@@ -56,7 +55,7 @@ export const WorkExpirience:FC= () => {
 				</div>
 			</div>
 			<div className={classes.fourthProjectContainer} onClick={()=>onProjectClick("Mugler")}>
-				<N4/>
+				<img src='/images/workExperience/n4.webp' alt='n4 number'/>
 				<div className={classes.projectContainer}>
 					<img src='/images/workExperience/p4.webp' className={classes.fourthProjectPack}/>
 					<img src='/images/workExperience/pr4.jpg'className={classes.fourthProjectImage}/>
@@ -64,7 +63,7 @@ export const WorkExpirience:FC= () => {
 				</div>
 			</div>
 			<div className={classes.fifthProjectContainer} onClick={()=>onProjectClick("MyGlo")}>
-				<N5/>
+				<img src='/images/workExperience/n5.webp' alt='n5 number'/>
 				<div className={classes.projectContainer}>
 					<img src='/images/workExperience/p5.webp' className={classes.fifthProjectPack}/>
 					<img src='/images/workExperience/pr5.jpg'className={classes.fifthProjectImage}/>
@@ -72,7 +71,7 @@ export const WorkExpirience:FC= () => {
 				</div>
 			</div>
 			<div className={classes.sixthProjectContainer} onClick={()=>onProjectClick("CorpPass")}>
-				<N6/>
+				<img src='/images/workExperience/n6.webp' alt='n6 number'/>
 				<div className={classes.projectContainer}>
 					<img src='/images/workExperience/p6.webp' className={classes.sixthProjectPack}/>
 					<img src='/images/workExperience/pr6.jpg'className={classes.sixthProjectImage}/>
@@ -80,7 +79,7 @@ export const WorkExpirience:FC= () => {
 				</div>
 			</div>
 			<div className={classes.seventhProjectContainer} onClick={()=>onProjectClick("Shopic")}>
-				<N7/>
+				<img src='/images/workExperience/n7.webp' alt='n7 number'/>
 				<div className={classes.projectContainer}>
 					<img src='/images/workExperience/p7.webp' className={classes.seventhProjectPack}/>
 					<img src='/images/workExperience/pr7.jpg'className={classes.seventhProjectImage}/>

@@ -9,7 +9,7 @@ export const useStyle = makeStyles()(()=> ({
 			marginTop: 200,
 			div:{
 				":nth-child(2n+3)":{
-					"> svg":{
+					"> img":{
 						marginLeft: 100,
 					}
 				}
@@ -48,11 +48,11 @@ export const useStyle = makeStyles()(()=> ({
 		top: -66,
 		"@media (max-width: 480px)":{
 			width: 392,
-			left:"-45%"
+			right: 150
 		},
 		"@media (max-width: 820px) and (min-width:481px)":{
-			left: "0",
-			width: "70%"
+			right: 180,
+			width: 374
 		},
 		"@media (max-width: 1400px) and (min-width:1151px)":{
 			right: 666,
@@ -77,8 +77,8 @@ export const useStyle = makeStyles()(()=> ({
 			flexDirection: "column-reverse"
 		},
 		"@media (max-width: 820px)":{
-			"div:first-of-type":{
-				svg:{
+			"> div:first-of-type":{
+				"> img":{
 					marginLeft: 100
 				}
 			}
@@ -86,12 +86,14 @@ export const useStyle = makeStyles()(()=> ({
 	},
 	firstProjectContainer:{
 		display: "flex",
-		svg:{
+		"> img":{
+			maxWidth: 60,
 			marginTop: 80,
+			maxHeight: 40
 		},
 		"@media (max-width: 820px)":{
 			flexDirection: "column",
-			svg:{
+			"> img" :{
 				marginTop: 0
 			}
 		},
@@ -117,6 +119,10 @@ export const useStyle = makeStyles()(()=> ({
 	secondProjectContainer:{
 		position: "relative",
 		top: 160,
+		"> img":{
+			maxWidth: 60,
+			maxHeight: 40
+		},
 		span: {
 			position: "absolute",
 			left: "5%",
@@ -129,7 +135,10 @@ export const useStyle = makeStyles()(()=> ({
 			top: 0,
 			justifyContent: "flex-end",
 			display: "flex",
-			paddingRight: 100
+			paddingRight: 100,
+			"> img":{
+				marginTop: 80
+			}
 		}
 	},
 	secondProjectImage:{
@@ -152,14 +161,16 @@ export const useStyle = makeStyles()(()=> ({
 		justifyContent: "center",
 		paddingLeft: "20%",
 		marginTop: 100,
-		svg:{
+		"> img":{
+			maxWidth: 60,
 			marginTop: 80,
+			maxHeight: 40
 		},
 		"@media (max-width: 820px)":{
 			flexDirection: "column",
 			padding: 0,
 			marginTop: 50,
-			svg:{
+			"> img":{
 				marginTop: 0
 			}
 		},
@@ -200,14 +211,16 @@ export const useStyle = makeStyles()(()=> ({
 		display: "flex",
 		justifyContent: "flex-start",
 		marginTop: 100,
-		svg:{
+		"> img":{
+			maxWidth: 60,
 			marginTop: 80,
+			maxHeight: 40
 		},
 		"@media (max-width: 820px)":{
 			flexDirection: "column",
 			padding: 0,
 			marginTop: 50,
-			svg:{
+			"> img":{
 				marginTop: 0
 			}
 		},
@@ -240,12 +253,14 @@ export const useStyle = makeStyles()(()=> ({
 	fifthProjectContainer:{
 		display: "flex",
 		justifyContent:"flex-end",
-		svg:{
+		"> img":{
+			maxWidth: 60,
 			marginTop: 80,
+			maxHeight: 40
 		},
 		"@media (max-width: 820px)":{
 			flexDirection: "column",
-			svg:{
+			"> img":{
 				marginTop: 0
 			}
 		},
@@ -272,6 +287,10 @@ export const useStyle = makeStyles()(()=> ({
 	},
 	sixthProjectContainer:{
 		position: "relative",
+		"> img":{
+			maxWidth: 60,
+			maxHeight: 40
+		},
 		paddingLeft:"20%",
 		top: -320,
 		span: {
@@ -307,18 +326,20 @@ export const useStyle = makeStyles()(()=> ({
 		}
 	},
 	seventhProjectContainer:{
+		"> img":{
+			maxWidth: 60,
+			marginTop: 80,
+			maxHeight: 40
+		},
 		display: "flex",
 		justifyContent: "center",
 		paddingLeft: "20%",
 		marginTop: -250,
-		svg:{
-			marginTop: 80,
-		},
 		"@media (max-width: 820px)":{
 			flexDirection: "column",
 			padding: 0,
 			marginTop: 50,
-			svg:{
+			"> img":{
 				marginTop: 0
 			}
 		},
@@ -362,13 +383,16 @@ export const useStyle = makeStyles()(()=> ({
 	},
 	workTitle:{
 		"@media (max-width: 480px)":{
-			width: 160
+			width: 160,
+			height: 33
 		},
 		"@media (max-width: 820px) and (min-width:481px)":{
-			width: 290
+			width: 200,
+			height: 41
 		},
 		"@media (max-width: 1150px) and (min-width:821px)":{
-			width: 340
+			width: 340,
+			height: 70
 		}
 	},
 	experience:{
@@ -376,10 +400,12 @@ export const useStyle = makeStyles()(()=> ({
 		"@media (max-width: 480px)":{
 			width: 330,
 			marginRight: 0,
-			marginTop: -40
+			marginTop: 0
 		},
 		"@media (max-width: 820px) and (min-width:481px)":{
-			width: 500
+			width: 400,
+			marginRight: 0,
+			marginTop: 0
 		},
 		"@media (max-width: 1150px) and (min-width:821px)":{
 			width: 700
