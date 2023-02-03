@@ -389,7 +389,8 @@ export const useStyle = makeStyles()(()=> ({
 		span: {
 			position: "absolute",
 			left: "1%",
-			bottom: "5%"
+			bottom: "5%",
+			transitionDuration: "300ms"
 		},
 		"@media (max-width: 820px)":{
 			top: 0,
