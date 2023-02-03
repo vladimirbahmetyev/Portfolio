@@ -326,6 +326,7 @@ export const useStyle = makeStyles()(()=> ({
 	fifthProjectContainer:{
 		display: "flex",
 		justifyContent:"flex-end",
+		zIndex: 5,
 		"> img":{
 			maxWidth: 60,
 			marginTop: 80,
