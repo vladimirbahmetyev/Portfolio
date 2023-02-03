@@ -13,6 +13,9 @@ export const useStyle = makeStyles()(()=>({
 		position: "relative",
 		"@media (max-width: 820px)":{
 			padding:"120px 20px 60px 20px"
+		},
+		"@media (max-width: 1400px) and (min-width: 821px)": {
+			padding: "200px 20px 150px 20px"
 		}
 	},
 	description:{
@@ -27,6 +30,9 @@ export const useStyle = makeStyles()(()=>({
 		"@media (min-width: 481px) and (max-width: 820px)":{
 			width: 450,
 			marginBottom: 0
+		},
+		"@media (max-width: 1150px) and (min-width: 821px)": {
+			width: 600
 		}
 	},
 	catEnd:{
@@ -36,6 +42,9 @@ export const useStyle = makeStyles()(()=>({
 		"@media (max-width: 820px)":{
 			width: 360,
 			zIndex: -1
+		},
+		"@media (max-width: 1400px) and (min-width: 821px)": {
+			bottom: 280
 		}
 	},
 	formContainer:{
@@ -124,14 +133,17 @@ export const useStyle = makeStyles()(()=>({
 	contentContainer:{
 		display: "flex",
 		gap: 200,
-		"@media (max-width: 747px)":{
+		"@media (max-width: 1149px)":{
 			gap: 50,
 			flexDirection: "column"
 		},
 		"@media (min-width: 748px) and (max-width: 820px)":{
 			gap: 0,
 			justifyContent: "space-between",
-			alignItems: "flex-end"
+			// alignItems: "flex-end"
+		},
+		"@media (max-width: 1200px)":{
+			gap: 50
 		}
 	},
 	contactsContainer:{
@@ -141,6 +153,9 @@ export const useStyle = makeStyles()(()=>({
 		gap: 30,
 		"@media (max-width: 820px)":{
 			paddingTop: 30
+		},
+		"@media (max-width: 1149px) and (min-width: 821px)":{
+			padding: 0
 		}
 	},
 	contact:{
