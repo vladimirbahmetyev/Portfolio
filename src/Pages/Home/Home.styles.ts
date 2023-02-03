@@ -2,12 +2,12 @@ import {makeStyles} from "theme";
 
 export const useStyle = makeStyles<{isScrollVisible: boolean}>()((theme,{isScrollVisible}) => ({
 	appContainer:{
-		backgroundImage:"url('/images/background/greeting.webp'), url('/images/background/paperBackground.png')",
+		backgroundImage:"url('/images/background/greeting.webp'), url('/images/background/paperBackground.webp')",
 		backgroundRepeat: "no-repeat, repeat",
 		backgroundColor: theme.palette.black,
 		backgroundSize: "contain, contain",
 		"@media (max-width: 820px)":{
-			backgroundImage:"url('/images/background/glitterMobile.png'), url('/images/background/paperBackground.png')",
+			backgroundImage:"url('/images/background/glitterMobile.webp'), url('/images/background/paperBackground.webp')",
 			backgroundSize: "100vw 100vh, contain"
 		}
 	},

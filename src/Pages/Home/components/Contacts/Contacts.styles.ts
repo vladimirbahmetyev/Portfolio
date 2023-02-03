@@ -2,7 +2,7 @@ import {makeStyles} from "theme";
 
 export const useStyle = makeStyles()(()=>({
 	container:{
-		backgroundImage:"url('/images/background/contacts.png')",
+		backgroundImage:"url('/images/background/contacts.webp')",
 		paddingTop: 200,
 		paddingBottom: 150,
 		backgroundSize: "cover",

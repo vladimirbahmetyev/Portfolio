@@ -5,7 +5,7 @@ export const useStyle = makeStyles()((theme)=>({
 		paddingTop: 48,
 		boxSizing: "border-box",
 		width: "100%",
-		backgroundImage: "url('/images/background/paperBackground.png')",
+		backgroundImage: "url('/images/background/paperBackground.webp')",
 		minHeight: "100vh",
 		backgroundColor: theme.palette.black,
 		backgroundSize: "cover",
