@@ -2,7 +2,7 @@ import {FC, useState} from "react";
 import {useStyle} from "./Contacts.styles";
 import {Instagram, LinkedIn, Telegram, Github} from "icons";
 import {Button, Input, Typography} from "ui-kit";
-import {Track, TrackMobile} from "./Assets";
+import {CircleTrack, Track, TrackMobile} from "./Assets";
 
 
 type FocusElementType = "name" | "email" | "message" | ""
@@ -78,10 +78,22 @@ export const Contacts:FC = () => {
 						<Typography variant='body' block>vladimir240298perm@gmail.com</Typography>
 					</div>
 					<div className={classes.socialContainer}>
-						<Instagram/>
-						<Telegram/>
-						<LinkedIn/>
-						<Github/>
+						<a className={classes.linkContainer} href='https://www.instagram.com/vladimirstirlingit/' target='_blank' rel="noreferrer">
+							<CircleTrack className={classes.circleTrack}/>
+							<Instagram/>
+						</a>
+						<a className={classes.linkContainer} href='https://t.me/stirlingit' target='_blank' rel="noreferrer">
+							<CircleTrack className={classes.circleTrack}/>
+							<Telegram/>
+						</a>
+						<a className={classes.linkContainer} href='https://www.linkedin.com/in/stirlingit/' target='_blank' rel="noreferrer">
+							<CircleTrack className={classes.circleTrack}/>
+							<LinkedIn/>
+						</a>
+						<a className={classes.linkContainer} href='https://github.com/vladimirbahmetyev' target='_blank' rel="noreferrer">
+							<CircleTrack className={classes.circleTrack}/>
+							<Github/>
+						</a>
 					</div>
 				</div>
 			</div>

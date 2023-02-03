@@ -1,4 +1,5 @@
 import {makeStyles} from "theme";
+import {CircleTrack} from "./Assets";
 
 export const useStyle = makeStyles()(()=>({
 	container:{
@@ -217,6 +218,22 @@ export const useStyle = makeStyles()(()=>({
 			strokeDasharray: "283% 522%",
 			strokeDashoffset: -1206,
 		}
+	},
+	linkContainer:{
+		position: "relative",
+		":hover svg:first-of-type":{
+			transitionDuration: "600ms",
+			strokeDasharray: "189 197"
+		}
+	},
+	circleTrack:{
+		position: "absolute",
+		left: -2,
+		top: -2,
+		stroke: "url(#gc)",
+		strokeWidth: 3,
+		transitionDuration: "600ms",
+		strokeDasharray: "0 197"
 	},
 }));
 
