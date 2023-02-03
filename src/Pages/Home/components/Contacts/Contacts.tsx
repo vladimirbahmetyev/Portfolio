@@ -1,6 +1,6 @@
 import {FC, useState} from "react";
 import {useStyle} from "./Contacts.styles";
-import {ContactsTitle, HH, Instagram, LinkedIn, Telegram} from "icons";
+import {ContactsTitle, Instagram, LinkedIn, Telegram} from "icons";
 import {Button, Input, Typography} from "ui-kit";
 import {Track, TrackMobile} from "./Assets";
 import {Github} from "../../../../icons/Contacts";
