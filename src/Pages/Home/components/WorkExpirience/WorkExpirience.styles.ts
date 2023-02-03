@@ -91,6 +91,20 @@ export const useStyle = makeStyles()(()=> ({
 			marginTop: 80,
 			maxHeight: 40,
 		},
+		":hover div":{
+			"img:first-of-type":{
+				transform: "translateY(10%)",
+				transitionDuration: "300ms"
+			},
+			"img:last-of-type":{
+				top: "10%",
+				transitionDuration: "300ms"
+			},
+			span:{
+				bottom: "25%",
+				transitionDuration: "300ms"
+			}
+		},
 		"@media (max-width: 820px)":{
 			flexDirection: "column",
 			"> img" :{
@@ -101,7 +115,8 @@ export const useStyle = makeStyles()(()=> ({
 		span: {
 			position: "absolute",
 			left: "5%",
-			bottom: "15%"
+			bottom: "15%",
+			transitionDuration: "300ms"
 		}
 
 	},
@@ -110,12 +125,15 @@ export const useStyle = makeStyles()(()=> ({
 		top: "20%",
 		left: "5%",
 		width: "90%",
+		transitionDuration: "300ms"
 	},
 	firstProjectPack:{
 		width:"auto",
+		zIndex: 2,
 		"@media (max-width: 820px)":{
 			width: "100%"
-		}
+		},
+		transitionDuration: "300ms"
 	},
 	secondProjectContainer:{
 		position: "relative",
@@ -127,7 +145,9 @@ export const useStyle = makeStyles()(()=> ({
 		span: {
 			position: "absolute",
 			left: "5%",
-			bottom: "5%"
+			bottom: "5%",
+			transitionDuration: "300ms",
+			zIndex: 0
 		},
 		"@media (max-width: 820px)":{
 			top: 0,
@@ -140,7 +160,21 @@ export const useStyle = makeStyles()(()=> ({
 			"> img":{
 				marginTop: 80
 			}
-		}
+		},
+		":hover div":{
+			"img:first-of-type":{
+				transform: "translateY(10%)",
+				transitionDuration: "300ms"
+			},
+			"img:last-of-type":{
+				top: "0%",
+				transitionDuration: "300ms"
+			},
+			span:{
+				bottom: "15%",
+				transitionDuration: "300ms",
+			}
+		},
 	},
 	secondProjectImage:{
 		position: "absolute",
@@ -150,12 +184,15 @@ export const useStyle = makeStyles()(()=> ({
 		"@media (max-width: 1150px) and (min-width: 821px)":{
 			height: "70%",
 			width: "auto"
-		}
+		},
+		transitionDuration: "300ms"
 	},
 	secondProjectPack:{
+		zIndex: 2,
 		"@media (max-width:820px)":{
 			width: "100%"
-		}
+		},
+		transitionDuration: "300ms"
 	},
 	thirdProjectContainer:{
 		display: "flex",
@@ -179,11 +216,26 @@ export const useStyle = makeStyles()(()=> ({
 		span: {
 			position: "absolute",
 			left: "5%",
-			bottom: "10%"
+			bottom: "10%",
+			transitionDuration: "300ms",
 		},
 		"@media (max-width: 1150px) and (min-width: 821px)":{
 			padding: 0
-		}
+		},
+		":hover div":{
+			"img:first-of-type":{
+				transform: "translateX(-10%)",
+				transitionDuration: "300ms"
+			},
+			"img:last-of-type":{
+				left: "15%",
+				transitionDuration: "300ms"
+			},
+			span:{
+				left: "15%",
+				transitionDuration: "300ms",
+			}
+		},
 
 	},
 	thirdProjectImage:{
@@ -197,7 +249,8 @@ export const useStyle = makeStyles()(()=> ({
 		"@media (max-width: 1150px) and (min-width: 821px)":{
 			width: "auto",
 			height: "70%"
-		}
+		},
+		transitionDuration: "300ms",
 	},
 	thirdProjectPack:{
 		width:"auto",
@@ -207,7 +260,8 @@ export const useStyle = makeStyles()(()=> ({
 		},
 		"@media (max-width: 1150px) and (min-width: 821px)":{
 			width: "80%"
-		}
+		},
+		transitionDuration: "300ms",
 	},
 	fourthProjectContainer:{
 		display: "flex",
@@ -229,11 +283,26 @@ export const useStyle = makeStyles()(()=> ({
 		span: {
 			position: "absolute",
 			left: "5%",
-			bottom: "5%"
+			bottom: "5%",
+			transitionDuration: "300ms",
 		},
 		"@media (max-width: 1150px) and (min-width: 821px)":{
 			justifyContent: "flex-end"
-		}
+		},
+		":hover div":{
+			"img:first-of-type":{
+				transform: "translateY(10%)",
+				transitionDuration: "300ms"
+			},
+			"img:last-of-type":{
+				top: "-5%",
+				transitionDuration: "300ms"
+			},
+			span:{
+				bottom: "15%",
+				transitionDuration: "300ms",
+			}
+		},
 
 	},
 	fourthProjectImage:{
@@ -243,14 +312,16 @@ export const useStyle = makeStyles()(()=> ({
 		width: "80%",
 		"@media (max-width: 820px)":{
 			width: "75%"
-		}
+		},
+		transitionDuration: "300ms",
 	},
 	fourthProjectPack:{
 		width:"auto",
 		zIndex: 1,
 		"@media (max-width: 820px)":{
 			width: "100%"
-		}
+		},
+		transitionDuration: "300ms",
 	},
 	fifthProjectContainer:{
 		display: "flex",
@@ -271,19 +342,36 @@ export const useStyle = makeStyles()(()=> ({
 		span: {
 			position: "absolute",
 			left: "5%",
-			bottom: "15%"
+			bottom: "15%",
+			transitionDuration: "300ms"
 		},
 		"@media (max-width: 1150px) and (min-width: 821px)":{
 			justifyContent: "flex-start"
-		}
+		},
+		":hover div":{
+			"img:first-of-type":{
+				transform: "translateY(10%)",
+				transitionDuration: "300ms"
+			},
+			"img:last-of-type":{
+				top: "10%",
+				transitionDuration: "300ms"
+			},
+			span:{
+				bottom: "25%",
+				transitionDuration: "300ms"
+			}
+		},
 	},
 	fifthProjectImage:{
 		position: "absolute",
 		top: "20%",
 		left: "5%",
 		width: "90%",
+		transitionDuration: "300ms"
 	},
 	fifthProjectPack:{
+		transitionDuration: "300ms",
 		width:"auto",
 		"@media (max-width: 820px)":{
 			width: "100%"
@@ -312,7 +400,21 @@ export const useStyle = makeStyles()(()=> ({
 			top: 0,
 			display: "flex",
 			justifyContent: "center"
-		}
+		},
+		":hover div":{
+			"img:first-of-type":{
+				transform: "translateY(10%)",
+				transitionDuration: "300ms"
+			},
+			"img:last-of-type":{
+				top: "0%",
+				transitionDuration: "300ms"
+			},
+			span:{
+				bottom: "15%",
+				transitionDuration: "300ms",
+			}
+		},
 	},
 	sixthProjectImage:{
 		position: "absolute",
@@ -320,6 +422,7 @@ export const useStyle = makeStyles()(()=> ({
 		left: "1%",
 		width: "90%",
 		maxWidth: 310,
+		transitionDuration: "300ms",
 		"@media (max-width:820px)":{
 			left:"5%",
 			maxWidth: "90%"
@@ -328,7 +431,9 @@ export const useStyle = makeStyles()(()=> ({
 	sixthProjectPack:{
 		"@media (max-width:820px)":{
 			width: "100%"
-		}
+		},
+		transitionDuration: "300ms",
+		zIndex: 2
 	},
 	seventhProjectContainer:{
 		"> img":{
@@ -352,15 +457,31 @@ export const useStyle = makeStyles()(()=> ({
 		span: {
 			position: "absolute",
 			left: "5%",
-			bottom: "10%"
+			bottom: "10%",
+			transitionDuration: "300ms",
 		},
 		"@media (max-width: 1150px) and (min-width: 821px)":{
 			marginTop: 0,
 			padding: 0,
 			justifyContent: "flex-start"
-		}
+		},
+		":hover div":{
+			"img:first-of-type":{
+				transform: "translateX(-10%)",
+				transitionDuration: "300ms"
+			},
+			"img:last-of-type":{
+				left: "15%",
+				transitionDuration: "300ms"
+			},
+			span:{
+				left: "15%",
+				transitionDuration: "300ms",
+			}
+		},
 	},
 	seventhProjectImage:{
+		transitionDuration: "300ms",
 		position: "absolute",
 		top: "10%",
 		left: "5%",
@@ -374,6 +495,7 @@ export const useStyle = makeStyles()(()=> ({
 		}
 	},
 	seventhProjectPack:{
+		transitionDuration: "300ms",
 		width:"auto",
 		zIndex: 1,
 		"@media (max-width: 820px)":{
