@@ -13,8 +13,8 @@ export const Greeting: FC = () => {
 			</Typography>
 			<div className={classes.catContainer}>
 				<RotatingText className={classes.rotatingText}/>
-				<img src='/images/greetCatEnd.png' alt='Nice cat' className={classes.catEnd}/>
-				<img src='/images/greetCat.png' alt='Nice cat' className={classes.cat}/>
+				<img src='/images/greetCatEnd.webp' alt='Nice cat' className={classes.catEnd}/>
+				<img src='/images/greetCat.webp' alt='Nice cat' className={classes.cat}/>
 			</div>
 		</div>);
 };
