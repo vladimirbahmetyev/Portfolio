@@ -1,5 +1,4 @@
 import {makeStyles} from "theme";
-import {CircleTrack} from "./Assets";
 
 export const useStyle = makeStyles()(()=>({
 	container:{
