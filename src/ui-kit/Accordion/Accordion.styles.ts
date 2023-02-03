@@ -30,7 +30,7 @@ export const useStyle = makeStyles<{isOpen: boolean, elementsCount: number}>()((
 		gap:9
 	},
 	subskillContainer:{
-		width: "100%",
+		width: "calc(100% - 105px)",
 		overflow: "hidden",
 		transitionDuration: "300ms",
 		height: isOpen ? 34 * elementsCount : 0,
@@ -40,7 +40,8 @@ export const useStyle = makeStyles<{isOpen: boolean, elementsCount: number}>()((
 		gap:  8,
 		"@media (max-width: 820px)":{
 			height: isOpen ? 29 * elementsCount : 0,
-			paddingLeft: 0
+			paddingLeft: 0,
+			width: "100%"
 		}
 	},
 	icon:{

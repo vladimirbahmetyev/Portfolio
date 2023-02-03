@@ -32,18 +32,19 @@ export const useStyle = makeStyles()(()=> ({
 		gap: 400,
 		"@media (max-width: 820px)":{
 			gap: 80
+		},
+		"@media (max-width: 1150px) and (min-width: 821px)":{
+			gap: 250
 		}
 	},
 	yearsContainer:{
 		display: "flex",
 		flexDirection: "column",
 		gap: 2,
-		"@media (max-width: 820px)":{
-		}
 	},
 	img:{
 		position: "absolute",
-		left: 90,
+		right: 666,
 		top: -66,
 		"@media (max-width: 480px)":{
 			width: 392,
@@ -52,6 +53,12 @@ export const useStyle = makeStyles()(()=> ({
 		"@media (max-width: 820px) and (min-width:481px)":{
 			left: "0",
 			width: "70%"
+		},
+		"@media (max-width: 1400px) and (min-width:1151px)":{
+			right: 666,
+		},
+		"@media (max-width: 1150px) and (min-width:821px)":{
+			right: 400,
 		}
 	},
 	projectContainer:{
@@ -311,6 +318,9 @@ export const useStyle = makeStyles()(()=> ({
 		},
 		"@media (max-width: 820px) and (min-width:481px)":{
 			width: 290
+		},
+		"@media (max-width: 1150px) and (min-width:821px)":{
+			width: 340
 		}
 	},
 	experience:{
@@ -322,6 +332,9 @@ export const useStyle = makeStyles()(()=> ({
 		},
 		"@media (max-width: 820px) and (min-width:481px)":{
 			width: 500
+		},
+		"@media (max-width: 1150px) and (min-width:821px)":{
+			width: 700
 		}
 	},
 }));

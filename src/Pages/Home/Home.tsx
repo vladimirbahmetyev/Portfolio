@@ -29,7 +29,7 @@ export const Home: FC = () => {
 				<Greeting/>
 				<About/>
 				<Skills/>
-				{/*<WorkExpirience/>*/}
+				<WorkExpirience/>
 			</div>
 			{/*<Contacts/>*/}
 			{/*<HashLink to='/#greeting'>*/}
