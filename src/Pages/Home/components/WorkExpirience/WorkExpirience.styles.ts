@@ -89,12 +89,13 @@ export const useStyle = makeStyles()(()=> ({
 		"> img":{
 			maxWidth: 60,
 			marginTop: 80,
-			maxHeight: 40
+			maxHeight: 40,
 		},
 		"@media (max-width: 820px)":{
 			flexDirection: "column",
 			"> img" :{
-				marginTop: 0
+				marginTop: 0,
+				marginLeft: 20
 			}
 		},
 		span: {
@@ -171,7 +172,8 @@ export const useStyle = makeStyles()(()=> ({
 			padding: 0,
 			marginTop: 50,
 			"> img":{
-				marginTop: 0
+				marginTop: 0,
+				marginLeft: 20
 			}
 		},
 		span: {
@@ -259,9 +261,11 @@ export const useStyle = makeStyles()(()=> ({
 			maxHeight: 40
 		},
 		"@media (max-width: 820px)":{
+			marginTop: 50,
 			flexDirection: "column",
 			"> img":{
-				marginTop: 0
+				marginTop: 0,
+				marginLeft: 20
 			}
 		},
 		span: {
@@ -302,6 +306,7 @@ export const useStyle = makeStyles()(()=> ({
 			top: 0,
 			padding: 0,
 			maxWidth: "100%",
+			marginTop: 50
 		},
 		"@media (max-width: 1150px) and (min-width: 821px)":{
 			top: 0,
@@ -340,7 +345,8 @@ export const useStyle = makeStyles()(()=> ({
 			padding: 0,
 			marginTop: 50,
 			"> img":{
-				marginTop: 0
+				marginTop: 0,
+				marginLeft: 20
 			}
 		},
 		span: {
