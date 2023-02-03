@@ -25,7 +25,7 @@ export const useStyle = makeStyles<{isScrollVisible: boolean}>()((theme,{isScrol
 	},
 	backArrow:{
 		position: "fixed",
-		top: "40vh",
+		top: "80vh",
 		right: 54,
 		transform: "rotate(90deg)",
 		transitionDuration: "300ms",
@@ -35,7 +35,7 @@ export const useStyle = makeStyles<{isScrollVisible: boolean}>()((theme,{isScrol
 		position: "fixed",
 		zIndex: 10,
 		bottom: 40,
-		right: 40,
+		right: 10,
 		transitionDuration: "300ms",
 		opacity: isScrollVisible ? 1 : 0,
 	}

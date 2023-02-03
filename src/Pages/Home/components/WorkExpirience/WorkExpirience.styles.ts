@@ -9,7 +9,7 @@ export const useStyle = makeStyles()(()=> ({
 			marginTop: 200,
 			div:{
 				":nth-child(2n+3)":{
-					svg:{
+					"> svg":{
 						marginLeft: 100,
 					}
 				}
@@ -75,6 +75,13 @@ export const useStyle = makeStyles()(()=> ({
 		gap: 90,
 		"@media (max-width: 1150px)":{
 			flexDirection: "column-reverse"
+		},
+		"@media (max-width: 820px)":{
+			"div:first-of-type":{
+				svg:{
+					marginLeft: 100
+				}
+			}
 		}
 	},
 	firstProjectContainer:{
