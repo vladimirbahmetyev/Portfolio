@@ -18,7 +18,7 @@ export const WorkExpirience:FC= () => {
 
 	return (
 		<div className={classes.workExperienceContainer} id='work'>
-			<img src='/images/expTap.png' className={classes.img}/>
+			<img src='/images/expTap.webp' className={classes.img}/>
 			<div className={classes.titleContainer}>
 				<div className={classes.rowContainer}>
 					<div className={classes.yearsContainer}>

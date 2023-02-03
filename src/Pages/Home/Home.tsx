@@ -34,7 +34,7 @@ export const Home: FC = () => {
 			<Contacts/>
 			<HashLink to='/#greeting'>
 				{isMobile ?
-					<img src='/images/backBtn.png' alt='backbtn' className={classes.backArrowImg}/>
+					<img src='/images/backBtn.webp' alt='backbtn' className={classes.backArrowImg}/>
 					: <Back className={classes.backArrow}/>}
 			</HashLink>
 		</div>

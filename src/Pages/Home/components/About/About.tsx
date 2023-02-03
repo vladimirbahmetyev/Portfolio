@@ -8,7 +8,7 @@ export const About: FC = () => {
 	return(
 		<div className={classes.aboutContainer} id='about'>
 			<div className={classes.topContainer}>
-				<img src='/images/computer.png' alt='cat in the computer' className={classes.catInPc}/>
+				<img src='/images/computer.webp' alt='cat in the computer' className={classes.catInPc}/>
 				<img src='/images/photo.jpg' alt='Vladimir in the forest' className={classes.photoMobile}/>
 				<div className={classes.titleWithDescription}>
 					<AboutTitle className={classes.aboutTitle}/>
@@ -56,7 +56,7 @@ and 5 years with passion to frontend.
 						</div>
 					</div>
 				</div>
-				<img src='/images/tape.png'alt='tape' className={classes.tap}/>
+				<img src='/images/tape.webp'alt='tape' className={classes.tap}/>
 				<img src='/images/photo.jpg' alt='Vladimir in the forest' className={classes.photo}/>
 			</div>
 		</div>);

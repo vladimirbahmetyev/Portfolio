@@ -85,6 +85,6 @@ export const Contacts:FC = () => {
 					</div>
 				</div>
 			</div>
-			<img src='/images/catEnd.png' className={classes.catEnd}  alt='cat with sign'/>
+			<img src='/images/catEnd.webp' className={classes.catEnd}  alt='cat with sign'/>
 		</div>);
 };
