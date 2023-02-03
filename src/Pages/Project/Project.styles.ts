@@ -9,7 +9,7 @@ export const useStyle = makeStyles()((theme)=>({
 		minHeight: "100vh",
 		backgroundColor: theme.palette.black,
 		backgroundSize: "cover",
-		"@media (max-width: 820px)":{
+		"@media (max-width: 1400px)":{
 			paddingBottom: 80
 		}
 	},
@@ -18,7 +18,7 @@ export const useStyle = makeStyles()((theme)=>({
 		display:"flex",
 		gap: 100,
 		margin: "50px auto 0 auto",
-		"@media (max-width: 820px)":{
+		"@media (max-width: 1400px)":{
 			width: "calc(100% - 40px)",
 			padding: "0 20px"
 		}
@@ -30,7 +30,7 @@ export const useStyle = makeStyles()((theme)=>({
 		alignItems: "center",
 		padding: "0 200px",
 		boxSizing:"border-box",
-		"@media (max-width: 820px)":{
+		"@media (max-width: 1400px)":{
 			padding:"0 20px",
 			flexDirection: "column-reverse",
 			alignItems: "flex-start",
@@ -61,7 +61,7 @@ export const useStyle = makeStyles()((theme)=>({
 	sideContainer:{
 		position:"relative",
 		paddingTop: 90,
-		"@media (max-width: 820px)":{
+		"@media (max-width: 1400px)":{
 			display:"none"
 		}
 	},
@@ -83,7 +83,7 @@ export const useStyle = makeStyles()((theme)=>({
 	},
 	manImgMobile: {
 		display: "none",
-		"@media (max-width: 820px)":{
+		"@media (max-width: 1400px)":{
 			display:"block",
 			width: "100%",
 			marginTop: 24,
@@ -93,7 +93,7 @@ export const useStyle = makeStyles()((theme)=>({
 	},
 	screenImgMobile:{
 		display: "none",
-		"@media (max-width: 820px)":{
+		"@media (max-width: 1400px)":{
 			display:"block",
 			width: "100%",
 			zIndex:0,
@@ -107,7 +107,7 @@ export const useStyle = makeStyles()((theme)=>({
 	},
 	mobileLinkButton: {
 		display: "none",
-		"@media (max-width: 820px)":{
+		"@media (max-width: 1400px)":{
 			underline: "none",
 			display:"flex",
 			padding:"25px 0",
