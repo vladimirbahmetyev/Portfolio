@@ -20,32 +20,32 @@ const Description:FC<{description: string | string[]}> = ({description}) => {
 const manMap: Record<ProjectUrlType, {manUrl:string, screenUrl: string}> = {
 	Mugler:
 		{
-			manUrl:"/images/project/m4.png",
-			screenUrl:"/images/project/s4.png"
+			manUrl:"/images/project/m4.webp",
+			screenUrl:"/images/project/s4.webp"
 		},
 	Metamap: {
-		manUrl:"/images/project/m1.png",
-		screenUrl:"/images/project/s1.png"
+		manUrl:"/images/project/m1.webp",
+		screenUrl:"/images/project/s1.webp"
 	},
 	Jobswidget: {
-		manUrl:"/images/project/m2.png",
-		screenUrl:"/images/project/s2.png"
+		manUrl:"/images/project/m2.webp",
+		screenUrl:"/images/project/s2.webp"
 	},
 	CorpPass: {
-		manUrl:"/images/project/m6.png",
-		screenUrl:"/images/project/s6.png"
+		manUrl:"/images/project/m6.webp",
+		screenUrl:"/images/project/s6.webp"
 	},
 	GameGreed: {
-		manUrl:"/images/project/m3.png",
-		screenUrl:"/images/project/s3.png"
+		manUrl:"/images/project/m3.webp",
+		screenUrl:"/images/project/s3.webp"
 	},
 	MyGlo: {
-		manUrl:"/images/project/m5.png",
-		screenUrl:"/images/project/s5.png"
+		manUrl:"/images/project/m5.webp",
+		screenUrl:"/images/project/s5.webp"
 	},
 	Shopic:{
-		manUrl:"/images/project/m7.png",
-		screenUrl:"/images/project/s7.png"
+		manUrl:"/images/project/m7.webp",
+		screenUrl:"/images/project/s7.webp"
 	},
 };
 
