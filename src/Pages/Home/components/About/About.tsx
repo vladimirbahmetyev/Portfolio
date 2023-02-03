@@ -1,7 +1,7 @@
 import {FC} from "react";
 import {useStyle} from "./About.styles";
 import {Typography} from "ui-kit";
-import {AboutTitle, FilledStar, Star} from "icons";
+import { FilledStar, Star} from "icons";
 
 export const About: FC = () => {
 	const {classes} = useStyle();
@@ -11,7 +11,7 @@ export const About: FC = () => {
 				<img src='/images/computer.webp' alt='cat in the computer' className={classes.catInPc}/>
 				<img src='/images/photo.jpg' alt='Vladimir in the forest' className={classes.photoMobile}/>
 				<div className={classes.titleWithDescription}>
-					<AboutTitle className={classes.aboutTitle}/>
+					<img src='/images/titles/about.webp' className={classes.aboutTitle} alt='about title'/>
 					<Typography block variant='body' >
 					Frontend Developer with 3.5 years of experience
 and 5 years with passion to frontend.

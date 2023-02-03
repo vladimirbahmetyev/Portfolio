@@ -1,6 +1,6 @@
 import {FC} from "react";
 import {useStyle} from "./WorkExpirience.styles";
-import {ExperienceTitle, WorkTitle, N1, N2 , N3, N4, N5, N6, N7} from "icons";
+import {N1, N2 , N3, N4, N5, N6, N7} from "icons";
 import {Typography} from "ui-kit";
 import {useNavigate} from "react-router-dom";
 import {ProjectUrlType} from "types";
@@ -25,9 +25,9 @@ export const WorkExpirience:FC= () => {
 						<Typography variant='h2'>{yearsOfExp}</Typography>
 						<Typography variant='h3'>years</Typography>
 					</div>
-					<WorkTitle className={classes.workTitle}/>
+					<img src='/images/titles/work.webp' className={classes.workTitle} alt='Work title'/>
 				</div>
-				<ExperienceTitle className={classes.experience}/>
+				<img src='/images/titles/experience.webp' className={classes.experience} alt='Experience title'/>
 			</div>
 			<div className={classes.firstSecondProject}>
 				<div className={classes.secondProjectContainer} onClick={()=>onProjectClick("Jobswidget")}>

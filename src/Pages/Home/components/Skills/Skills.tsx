@@ -1,7 +1,6 @@
 import {FC, useState} from "react";
 import {useStyle} from "./Skills.styles";
 import {Accordion, Button} from "ui-kit";
-import {SkillsTitle} from "icons";
 import {skillsList} from "./Skills.model";
 import {useScreenWidth} from "shared";
 
@@ -19,7 +18,7 @@ export const Skills: FC = () => {
 	return (
 		<div className={classes.skillsContainer} id='skills'>
 			<div className={classes.skillsColumn}>
-				<SkillsTitle className={classes.skillsTitle}/>
+				<img src='/images/titles/skills.webp' className={classes.skillsTitle} alt='Skills title'/>
 				{skillFirst.map((skill) => (
 					<Accordion
 						{...skill}

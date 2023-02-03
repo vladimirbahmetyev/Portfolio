@@ -1,9 +1,9 @@
 import {FC, useState} from "react";
 import {useStyle} from "./Contacts.styles";
-import {ContactsTitle, Instagram, LinkedIn, Telegram} from "icons";
+import {Instagram, LinkedIn, Telegram, Github} from "icons";
 import {Button, Input, Typography} from "ui-kit";
 import {Track, TrackMobile} from "./Assets";
-import {Github} from "../../../../icons/Contacts";
+
 
 type FocusElementType = "name" | "email" | "message" | ""
 
@@ -30,7 +30,7 @@ export const Contacts:FC = () => {
 
 	return (
 		<div className={classes.container} id='contacts'>
-			<ContactsTitle className={classes.contactsTitle}/>
+			<img src='/images/titles/contacts.webp' className={classes.contactsTitle} alt='Contacts title'/>
 			<Typography className={classes.description} block variant='body'>I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form.</Typography>
 			<div className={classes.contentContainer}>
 				<div className={classes.formContainer} >
