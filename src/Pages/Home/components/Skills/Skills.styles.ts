@@ -19,11 +19,13 @@ export const useStyle = makeStyles()(()=> ({
 		marginBottom: 122,
 		"@media (max-width: 480px)":{
 			width: 187,
+			height: 33,
 			marginBottom: 32
 		},
-		"@media (min-width: 480px) and (max-width: 820px)":{
+		"@media (min-width: 480px) and (max-width: 1400px)":{
 			width: 360,
-			marginBottom: 32
+			marginBottom: 32,
+			height: 63
 		},
 	},
 	skillsColumn:{
