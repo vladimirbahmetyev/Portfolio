@@ -1,8 +1,9 @@
-import {FC, useState} from "react";
+import {FC, useEffect, useState} from "react";
 import {useStyle} from "./Contacts.styles";
 import {Instagram, LinkedIn, Telegram, Github} from "icons";
 import {Button, Input, Typography} from "ui-kit";
 import {CircleTrack, Track, TrackMobile} from "./Assets";
+import {AnimatePresence, motion} from "framer-motion";
 
 
 type FocusElementType = "name" | "email" | "message" | ""
@@ -13,6 +14,34 @@ export const Contacts:FC = () => {
 	const [email, setEmail] = useState<string>("");
 	const [message, setMessage] = useState<string>("");
 	const [isButtonFocus, setIsButtonFocus] = useState<boolean>(false);
+
+	const [isEmailCopied, setIsEmailCopied] = useState<boolean>(false);
+	const [isPhoneCopied, setIsPhoneCopied] = useState<boolean>(false);
+
+	const onPhoneClick = () => {
+		setIsPhoneCopied(true);
+		navigator.clipboard.writeText("+955 522 222 819");
+	};
+	const onEmailClick = () => {
+		setIsEmailCopied(true);
+		navigator.clipboard.writeText("vladimir240298perm@gmail.com");
+	};
+
+	useEffect(() => {
+		if(isPhoneCopied){
+			const timer = setTimeout(() => setIsPhoneCopied(false), 3000);
+			return () => clearTimeout(timer);
+		}
+	}, [isPhoneCopied]);
+
+	useEffect(() => {
+		if(isEmailCopied){
+			const timer = setTimeout(() => setIsEmailCopied(false), 3000);
+			return () => clearTimeout(timer);
+		}
+	}, [isEmailCopied]);
+
+
 	const {classes, cx} = useStyle();
 
 	const animationClasses: Record<FocusElementType, string> = {
@@ -69,11 +98,11 @@ export const Contacts:FC = () => {
 					</Button>
 				</div>
 				<div className={classes.contactsContainer}>
-					<div className={classes.contact}>
+					<div className={classes.contact} onClick={onPhoneClick}>
 						<Typography variant='h4' block>Phone</Typography>
 						<Typography variant='body' block>+955 522 222 819</Typography>
 					</div>
-					<div className={classes.contact}>
+					<div className={classes.contact} onClick={onEmailClick}>
 						<Typography variant='h4' block>Email</Typography>
 						<Typography variant='body' block>vladimir240298perm@gmail.com</Typography>
 					</div>
@@ -98,5 +127,27 @@ export const Contacts:FC = () => {
 				</div>
 			</div>
 			<img src='/images/catEnd.webp' className={classes.catEnd}  alt='cat with sign'/>
+			<AnimatePresence>
+				{isEmailCopied && (
+					<motion.img className={classes.copyMessage}
+						src='/images/emailCopy.webp'
+						alt='Copy email message'
+						initial={{ opacity: 0, right:-500, rotate:"100deg" }}
+						animate={{ opacity: 1, right:0, rotate:"0deg" }}
+						exit={{ opacity: 0, right:-500, rotate:"100deg" }}
+					/>
+
+				)}
+				{isPhoneCopied && (
+					<motion.img className={classes.copyMessage}
+						initial={{ opacity: 0, right:-500, rotate:"100deg" }}
+						animate={{ opacity: 1, right:0, rotate:"0deg" }}
+						exit={{ opacity: 0, right:-500, rotate:"100deg" }}
+						src='/images/phoneCopy.webp'
+						alt='Copy phone message'
+					/>
+
+				)}
+			</AnimatePresence>
 		</div>);
 };

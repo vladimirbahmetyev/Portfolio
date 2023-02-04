@@ -11,6 +11,7 @@ export const useStyle = makeStyles()(()=>({
 		paddingLeft:"calc((100% - 1400px)/2)",
 		paddingRight:"calc((100% - 1400px)/2)",
 		position: "relative",
+		overflowX: "hidden",
 		"@media (max-width: 820px)":{
 			padding:"120px 20px 60px 20px"
 		},
@@ -45,6 +46,15 @@ export const useStyle = makeStyles()(()=>({
 		},
 		"@media (max-width: 1400px) and (min-width: 821px)": {
 			bottom: 280
+		}
+	},
+	copyMessage:{
+		position: "absolute",
+		right: 0,
+		bottom: 300,
+		zIndex: 3,
+		"@media (max-width: 1400px) and (min-width: 821px)": {
+			bottom: 580
 		}
 	},
 	formContainer:{
@@ -161,7 +171,8 @@ export const useStyle = makeStyles()(()=>({
 	contact:{
 		display:"flex",
 		flexDirection: "column",
-		gap: 10
+		gap: 10,
+		cursor: "pointer"
 	},
 	socialContainer:{
 		display:"flex",
