@@ -30,14 +30,13 @@ export const Contacts:FC = () => {
 	};
 
 	const onEmailSubmit = () => {
-		setIsMessageSent(true);
 		send("service_2tb7cto", "template_i94yxrr", {
 			sender_name:name,
 			sender_email: email,
 			message: message
 		},
 		"e98n-xW02BbB6H1GP"
-		);
+		).then(() => setIsMessageSent(true));
 	};
 
 
