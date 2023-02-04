@@ -4,6 +4,7 @@ import {Instagram, LinkedIn, Telegram, Github, Check} from "icons";
 import {Button, Input, Typography} from "ui-kit";
 import {CircleTrack, Track, TrackMobile} from "./Assets";
 import {AnimatePresence, motion} from "framer-motion";
+import {send} from "emailjs-com";
 
 
 type FocusElementType = "name" | "email" | "message" | ""
@@ -27,6 +28,18 @@ export const Contacts:FC = () => {
 		setIsEmailCopied(true);
 		navigator.clipboard.writeText("vladimirbakhmetevwork@gmail.com");
 	};
+
+	const onEmailSubmit = () => {
+		setIsMessageSent(true);
+		send("service_2tb7cto", "template_i94yxrr", {
+			sender_name:name,
+			sender_email: email,
+			message: message
+		},
+		"e98n-xW02BbB6H1GP"
+		);
+	};
+
 
 	useEffect(() => {
 		if(isPhoneCopied){
@@ -101,7 +114,7 @@ export const Contacts:FC = () => {
 						transparent={isButtonFocus}
 						onMouseEnter={() => setIsButtonFocus(true)}
 						onMouseLeave={() => setIsButtonFocus(false)}
-						onClick={() => setIsMessageSent(true)}
+						onClick={onEmailSubmit}
 					>
 						Send message
 					</Button>
