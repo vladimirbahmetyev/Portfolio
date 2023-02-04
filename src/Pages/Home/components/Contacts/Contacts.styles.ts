@@ -245,5 +245,20 @@ export const useStyle = makeStyles()(()=>({
 		transitionDuration: "600ms",
 		strokeDasharray: "0 197"
 	},
+	messageNotification:{
+		zIndex: 2,
+		position: "fixed",
+		width: "100%",
+		bottom: 0,
+		left: 0,
+		display: "flex",
+		justifyContent: "center",
+		alignItems: "center",
+		padding: 10,
+		boxSizing: "border-box",
+		backgroundImage:"url('/images/background/greeting.webp')",
+		gap: 8,
+
+	}
 }));
 

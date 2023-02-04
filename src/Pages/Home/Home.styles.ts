@@ -34,7 +34,7 @@ export const useStyle = makeStyles<{isScrollVisible: boolean}>()((theme,{isScrol
 	backArrowImg:{
 		position: "fixed",
 		zIndex: 10,
-		bottom: 40,
+		bottom: 100,
 		right: 10,
 		transitionDuration: "300ms",
 		opacity: isScrollVisible ? 1 : 0,

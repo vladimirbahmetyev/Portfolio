@@ -1,6 +1,6 @@
 import {FC, useEffect, useState} from "react";
 import {useStyle} from "./Contacts.styles";
-import {Instagram, LinkedIn, Telegram, Github} from "icons";
+import {Instagram, LinkedIn, Telegram, Github, Check} from "icons";
 import {Button, Input, Typography} from "ui-kit";
 import {CircleTrack, Track, TrackMobile} from "./Assets";
 import {AnimatePresence, motion} from "framer-motion";
@@ -17,6 +17,7 @@ export const Contacts:FC = () => {
 
 	const [isEmailCopied, setIsEmailCopied] = useState<boolean>(false);
 	const [isPhoneCopied, setIsPhoneCopied] = useState<boolean>(false);
+	const [isMessageSent, setIsMessageSent] = useState<boolean>(false);
 
 	const onPhoneClick = () => {
 		setIsPhoneCopied(true);
@@ -40,6 +41,13 @@ export const Contacts:FC = () => {
 			return () => clearTimeout(timer);
 		}
 	}, [isEmailCopied]);
+
+	useEffect(() => {
+		if(isMessageSent){
+			const timer = setTimeout(() => setIsMessageSent(false), 6000);
+			return () => clearTimeout(timer);
+		}
+	}, [isMessageSent]);
 
 
 	const {classes, cx} = useStyle();
@@ -93,6 +101,7 @@ export const Contacts:FC = () => {
 						transparent={isButtonFocus}
 						onMouseEnter={() => setIsButtonFocus(true)}
 						onMouseLeave={() => setIsButtonFocus(false)}
+						onClick={() => setIsMessageSent(true)}
 					>
 						Send message
 					</Button>
@@ -147,6 +156,19 @@ export const Contacts:FC = () => {
 						alt='Copy phone message'
 					/>
 
+				)}
+				{isMessageSent && (
+					<motion.div className={classes.messageNotification}
+						transformTemplate={({y}) => `translateY(${y})`}
+						initial={{ y:"100%" }}
+						animate={{  y:"0" }}
+						exit={{  y:"110%" }}
+					>
+						<Check style={{minWidth: 30, minHeight: 30}}/>
+						<Typography color='black' variant='h4' block>
+							Your message has been sent! I will reply shortly. If I&apos;m busy, the cat will answer you.
+						</Typography>
+					</motion.div>
 				)}
 			</AnimatePresence>
 		</div>);
