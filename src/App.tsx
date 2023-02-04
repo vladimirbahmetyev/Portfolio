@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Home, Project} from "Pages";
+import {AnimatePresence} from "framer-motion";
 
 
 const router = createBrowserRouter([
@@ -17,7 +18,9 @@ const router = createBrowserRouter([
 
 function App() {
 	return (
-		<RouterProvider router={router}/>
+		<AnimatePresence mode='wait'>
+			<RouterProvider router={router}/>
+		</AnimatePresence>
 	);
 }
 

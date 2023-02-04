@@ -8,7 +8,7 @@ export const useStyle = makeStyles()(()=> ({
 		"@media (max-width: 820px)":{
 			marginTop: 200,
 			div:{
-				":nth-child(2n+3)":{
+				":nth-of-type(2n+3)":{
 					"> img":{
 						marginLeft: 100,
 					}

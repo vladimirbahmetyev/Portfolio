@@ -1,10 +1,11 @@
-import {FC} from "react";
+import {FC, useEffect} from "react";
 import {useStyle} from "./Project.styles";
 import {useNavigate, useParams} from "react-router-dom";
 import {Button, List, Navigation, Typography} from "ui-kit";
 import {Back} from "icons";
 import {ProjectUrlType} from "types";
 import {projectsData} from "./projectsData";
+import { motion} from "framer-motion";
 
 const Description:FC<{description: string | string[]}> = ({description}) => {
 	if(typeof description === "string"){
@@ -57,8 +58,17 @@ export const Project: FC = () => {
 		return null;
 	}
 	const {name, description, roleDescription, listOfResp, siteUrl} = projectsData[projectName];
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	},[]);
 	return (
-		<div className={classes.projectContainer}>
+		<motion.div className={classes.projectContainer}
+			initial={{opacity: 0}}
+			animate={{opacity: 1}}
+			exit={{opacity: 0}}
+			transition={{duration: 0.5}}
+		>
 			<div className={classes.navigationContainer}>
 				<div onClick={() => navigate(-1)} className={classes.backContainer}>
 					<Back/>
@@ -102,5 +112,5 @@ export const Project: FC = () => {
 				</div>
 			</div>
 
-		</div>);
+		</motion.div>);
 };
