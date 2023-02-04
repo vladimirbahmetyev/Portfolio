@@ -24,7 +24,7 @@ export const Contacts:FC = () => {
 	};
 	const onEmailClick = () => {
 		setIsEmailCopied(true);
-		navigator.clipboard.writeText("vladimir240298perm@gmail.com");
+		navigator.clipboard.writeText("vladimirbakhmetevwork@gmail.com");
 	};
 
 	useEffect(() => {
@@ -104,7 +104,7 @@ export const Contacts:FC = () => {
 					</div>
 					<div className={classes.contact} onClick={onEmailClick}>
 						<Typography variant='h4' block>Email</Typography>
-						<Typography variant='body' block>vladimir240298perm@gmail.com</Typography>
+						<Typography variant='body' block>vladimirbakhmetevwork@gmail.com</Typography>
 					</div>
 					<div className={classes.socialContainer}>
 						<a className={classes.linkContainer} href='https://www.instagram.com/vladimirstirlingit/' target='_blank' rel="noreferrer">

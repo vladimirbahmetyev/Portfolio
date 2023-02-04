@@ -59,6 +59,7 @@ export const Project: FC = () => {
 	}
 	const {name, description, roleDescription, listOfResp, siteUrl} = projectsData[projectName];
 
+	
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	},[]);
