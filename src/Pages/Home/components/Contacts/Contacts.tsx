@@ -20,6 +20,8 @@ export const Contacts:FC = () => {
 	const [isPhoneCopied, setIsPhoneCopied] = useState<boolean>(false);
 	const [isMessageSent, setIsMessageSent] = useState<boolean>(false);
 
+	const [error, setError] = useState<string>("");
+
 	const onPhoneClick = () => {
 		setIsPhoneCopied(true);
 		navigator.clipboard.writeText("+955 522 222 819");
@@ -30,6 +32,24 @@ export const Contacts:FC = () => {
 	};
 
 	const onEmailSubmit = () => {
+		if(!name){
+			setError("Name is empty :(");
+			return;
+		}
+		if(!email){
+			setError("Email is empty :(");
+			return;
+		}
+		const isEmail = !!email.match(/^\S+@\S+\.\S+$/);
+		if(!isEmail){
+			setError("The email doesn't look like an email ~_~");
+			return;
+		}
+		if(!message){
+			setError("Message is empty :O");
+			return;
+		}
+
 		send("service_2tb7cto", "template_i94yxrr", {
 			sender_name:name,
 			sender_email: email,
@@ -60,6 +80,13 @@ export const Contacts:FC = () => {
 			return () => clearTimeout(timer);
 		}
 	}, [isMessageSent]);
+
+	useEffect(() => {
+		if(error){
+			const timer = setTimeout(() => setError(""), 3000);
+			return () => clearTimeout(timer);
+		}
+	}, [error]);
 
 
 	const {classes, cx} = useStyle();
@@ -179,6 +206,18 @@ export const Contacts:FC = () => {
 						<Check style={{minWidth: 30, minHeight: 30}}/>
 						<Typography color='black' variant='h4' block>
 							Your message has been sent! I will reply shortly. If I&apos;m busy, the cat will answer you.
+						</Typography>
+					</motion.div>
+				)}
+				{error && (
+					<motion.div className={classes.messageNotification}
+						transformTemplate={({y}) => `translateY(${y})`}
+						initial={{ y:"100%" }}
+						animate={{  y:"0" }}
+						exit={{  y:"110%" }}
+					>
+						<Typography color='black' variant='h4' block>
+							{error}
 						</Typography>
 					</motion.div>
 				)}
